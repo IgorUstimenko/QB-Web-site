@@ -1,0 +1,140 @@
+:root {
+    font-size: calc(100vw / 80);
+    /* 24px */
+    /* font-size: calc(1em + 4vw); */
+    /* 16px */
+    height: 100vh;
+}
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Open Sans', sans-serif; */
+/* font-family: raleway, sans-serif; */
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'raleway';
+    src: url('../fonts/Raleway-ExtraBold.ttf') format("truetype");
+    font-style: normal;
+    font-weight: 800;
+}
+
+/* Стили первого основоного экрана */
+.main-part-page {
+    background-image: url(../img/main_bg.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100vw;
+}
+
+/* nav */
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 3.33em;
+    margin-right: 2.7em;
+    padding-top: 2.85em;
+    align-items: center;
+}
+
+.logos-ul,
+.links-ul {
+    display: flex;
+}
+
+.logos-ul {
+    justify-content: space-between;
+    margin-right: 5.79em;
+    margin-top: 0.2em;
+}
+
+.logo+.logo {
+    padding-left: 2.25em;
+}
+
+.links-ul {
+    margin-top: 0.05em;
+    margin-left: -4.35em;
+}
+
+.links-li+.links-li {
+    padding-left: 3em;
+}
+
+.user-icon {
+    margin-top: 0.1em;
+    margin-left: 0.2em;
+}
+
+
+.link-li-a {
+    opacity: 0.8;
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.833rem;
+    font-weight: 400;
+    line-height: 1.155rem;
+}
+
+.active {
+    opacity: 1;
+    font-weight: 700;
+}
+
+
+.tell-btn {
+    width: 23.4em;
+    padding-top: 1.2em;
+    padding-bottom: 1em;
+    text-align: center;
+    border: 0.125rem solid #f54068;
+    border-radius: 0.667rem;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 0.833rem;
+    font-weight: 700;
+    line-height: 1.155rem;
+}
+
+/* Основная часть главной страницы */
+.creative-and-soc {
+    display: flex;
+    justify-content: space-between;
+}
+
+.creative {
+    margin-top: 15.9em;
+    margin-left: 7.15em;
+}
+
+
+
+.creative-tech {
+    font-family: raleway, sans-serif;
+    color: #ffffff;
+    font-size: 3.292rem;
+    font-weight: 800;
+    line-height: 4.287rem;
+
+}
+
+.down-arrow {
+    margin-top: 1.8em;
+}
+
+.soc {
+    margin-right: 1.3em;
+    margin-top: 12.03em;
+    text-align: center;
+}
+
+.soc-li+.soc-li {
+    margin-top: 1.625em;
+}
