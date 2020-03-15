@@ -1,13 +1,10 @@
 :root {
   font-size: calc(100vw / 80);
   /* 24px */
-  /* font-size: calc(1em + 4vw); */
-  /* 16px */
   height: 100vh;
 }
 
 /* font-family: 'Montserrat', sans-serif;
-font-family: 'Raleway', sans-serif;
 font-family: 'Open Sans', sans-serif; */
 /* font-family: raleway, sans-serif; */
 
@@ -29,7 +26,6 @@ body {
 /* Стили первого основоного экрана */
 .main-part-page {
   background-image: url(../img/main_bg.png);
-
   background-repeat: no-repeat;
   background-size: 100vw;
 }
@@ -56,7 +52,7 @@ body {
   margin-top: 0.2em;
 }
 
-.logo + .logo {
+.logo+.logo {
   padding-left: 2.25em;
 }
 
@@ -65,7 +61,7 @@ body {
   margin-left: 0em;
 }
 
-.links-li + .links-li {
+.links-li+.links-li {
   padding-left: 2.95em;
 }
 
@@ -83,6 +79,7 @@ body {
   font-weight: 400;
   line-height: 1.155rem;
 }
+
 
 .active {
   opacity: 1;
@@ -133,7 +130,7 @@ body {
   margin-bottom: 1.7em;
 }
 
-.soc-li + .soc-li {
+.soc-li+.soc-li {
   margin-top: 1.625em;
 }
 
@@ -141,7 +138,6 @@ body {
 
 .second-part-page {
   background-color: #2d4cd1;
-  height: 100vh;
   display: flex;
 }
 
@@ -149,6 +145,7 @@ body {
   margin-top: 13.9em;
   margin-left: 6.708em;
 }
+
 .we-cont {
   color: #ffffff;
   font-family: "Open Sans";
@@ -165,14 +162,188 @@ body {
   font-size: 0.833rem;
   font-weight: 400;
   line-height: 1.155rem;
+  padding-bottom: 0.7em;
+  border-bottom: 1.5px solid #f54068;
+
 }
+
+
 
 /* Сетка работ */
 
-.works-grid {
+.partners-grid {
   width: 39.75rem;
   height: 31.167rem;
   background-color: #ffffff;
   margin-top: 9.3em;
   margin-left: 6.5em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.partner-box {
+  text-align: center;
+  line-height: 10.3rem;
+}
+
+.partner-logo-img {
+  vertical-align: middle;
+}
+
+/* Расположение логотипов компаний-парнеров относительно центра блока */
+.sber_partner {
+  width: 2.292rem;
+  height: 2.25rem;
+  margin-left: 0.2em;
+}
+
+.lamoda_partner {
+  width: 2.417rem;
+  height: 2.208rem;
+  margin-left: 0.8em;
+}
+
+.kislorod_partner {
+  margin-left: 1.3em;
+  width: 1.708rem;
+  height: 2.208rem;
+}
+
+.brig_partner {
+  width: 5.1rem;
+  height: 1.665rem;
+  margin-top: 0.5em;
+  margin-left: 0.3em;
+}
+
+.taggsm_partner {
+  margin-top: -0.1em;
+  margin-left: 0.7em;
+  width: 6.333rem;
+  height: 0.958rem;
+}
+
+.te_partner {
+  margin-left: 1.1em;
+  margin-top: -0.2em;
+  width: 2.708rem;
+  height: 1.542rem;
+}
+
+.dr_partner {
+  width: 2.25rem;
+  height: 2.083rem;
+  margin-left: 0.2em;
+}
+
+.td_partner {
+  width: 8.5rem;
+  height: 1.55rem;
+}
+
+.btn-right {
+  margin-left: 1.1em;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+/* Третий экран */
+
+.third-part-page {
+  background-color: #2d4cd1;
+  display: block;
+}
+
+.our-works {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.333rem;
+  font-weight: 700;
+  padding-top: 4.15em;
+  margin-left: 2.87em;
+}
+
+
+
+/* Стили для сетки работ */
+
+.works-grid {
+  margin-top: 2.6em;
+}
+
+.up-works-line {
+  display: flex;
+}
+
+.down-works-line {
+  display: flex;
+  margin-top: 3.8em;
+}
+
+.small-work-card {
+  width: 16.417rem;
+  height: 18.75rem;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.medium-work-card {
+  width: 26.5rem;
+  height: 18.75rem;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.big-work-card {
+  width: 36.333rem;
+  height: 18.75rem;
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+}
+
+.kislorod-work-card {
+  margin-left: 6.7em;
+  background-image: url(../img/works-img/kislorod-card-bg.png);
+}
+
+.brig-work-card {
+  margin-left: 3.7em;
+  background-image: url(../img/works-img/brig-card-bg.png);
+}
+
+.taggsm-work-card {
+  margin-left: 3.5em;
+  background-image: url(../img/works-img/taggsm-card-bg.png);
+}
+
+.epsilon-work-card {
+  margin-left: 6.7em;
+  background-image: url(../img/works-img/tagepsilon-card-bg.png);
+}
+
+.td-work-card {
+  margin-left: 3.75em;
+  background-image: url(../img/works-img/td-card-bg.png);
+}
+
+
+/* Ссылка на все работы */
+
+.all-cases-wrapper {
+  width: 4.1rem;
+  margin: auto;
+  margin-top: 4.2em;
+  padding-left: 0.8em;
+  padding-bottom: 5em;
+}
+
+.all-cases-link {
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  font-size: 0.833rem;
+  font-weight: 400;
+  line-height: 1.155rem;
+  padding-bottom: 0.7em;
+  border-bottom: 1.5px solid #f54068;
 }
