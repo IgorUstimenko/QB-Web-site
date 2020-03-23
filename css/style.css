@@ -35,11 +35,10 @@ body {
 .main-nav {
   display: flex;
   justify-content: space-between;
-  margin-left: 3.33em;
-  margin-right: 2.7em;
+  margin-left: 3.4em;
+  margin-right: 2.5em;
   padding-top: 2.85em;
   align-items: center;
-  position: fixed;
 }
 
 .mask-nav {
@@ -69,7 +68,7 @@ body {
   margin-top: 0.2em;
 }
 
-.logo + .logo {
+.logo+.logo {
   padding-left: 2.25em;
 }
 
@@ -78,7 +77,7 @@ body {
   margin-left: 0em;
 }
 
-.links-li + .links-li {
+.links-li+.links-li {
   padding-left: 2.95em;
 }
 
@@ -123,8 +122,8 @@ body {
 }
 
 .creative {
-  margin-top: 22em;
-  margin-left: 7.15em;
+  margin-top: 15.9em;
+  margin-left: 7.3em;
 }
 
 .creative-tech {
@@ -140,13 +139,13 @@ body {
 }
 
 .soc {
-  margin-right: 1.3em;
-  margin-top: 15.1em;
+  margin-right: 1.25em;
+  margin-top: 12.05em;
   text-align: center;
   margin-bottom: 1.7em;
 }
 
-.soc-li + .soc-li {
+.soc-li+.soc-li {
   margin-top: 1.625em;
 }
 
@@ -154,11 +153,14 @@ body {
 
 .second-part-page {
   background-color: #2d4cd1;
+}
+
+.second-part-page-wrapper {
   display: flex;
 }
 
 .cont-part {
-  margin-top: 13.9em;
+  margin-top: 7.8em;
   margin-left: 6.708em;
 }
 
@@ -166,7 +168,7 @@ body {
   color: #ffffff;
   font-family: "Open Sans";
   font-size: 1.167rem;
-  font-weight: 800;
+  font-weight: 700;
   max-width: 27.5rem;
   line-height: 138%;
   margin-bottom: 3.25em;
@@ -190,8 +192,8 @@ body {
   background-color: #ffffff;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin-top: 10.85em;
-  margin-left: 6.5em;
+  margin-top: 3.2em;
+  margin-left: 6.8em;
 }
 
 .partner-box {
@@ -280,6 +282,8 @@ body {
 
 .works-grid {
   margin-top: 2.6em;
+  margin-left: 0.08em;
+  padding-bottom: 4.6em;
 }
 
 .up-works-line {
@@ -469,22 +473,99 @@ body {
   background-color: #0007cc;
 }
 
-/* Ссылка на все работы */
+/* Четвертая страница, блоссом-агество */
 
-.all-cases-wrapper {
-  width: 4.1rem;
-  margin: auto;
-  margin-top: 4.2em;
-  padding-left: 0.8em;
-  padding-bottom: 5em;
+.fourth-part-page {
+  height: 100vh;
+  background-color: #ffffff;
+  background-image: url(../img/red-circle-bg.svg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 26.5rem 26.5rem;
 }
 
-.all-cases-link {
-  font-family: "Open Sans", sans-serif;
-  color: #ffffff;
+.fourth-part-page-wrapper {
+  display: flex;
+}
+
+.black-nav-links {
+  color: #242424;
+}
+
+.black-tell-btn {
+  color: #242424;
+}
+
+.blue-nav-active {
+  color: #2d4cd1;
+}
+
+.all-agancy-profile {
+  margin-left: 6.9em;
+  margin-top: 6.3em;
+}
+
+.name-of-agancy {
+  font-family: raleway, sans-serif;
+  font-weight: 800;
+  font-size: 3.292rem;
+  color: #f54068;
+  line-height: 4.287rem;
+}
+
+.agancy-feature {
+  font-family: raleway, sans-serif;
+  font-weight: 800;
+  font-size: 3.292rem;
+  line-height: 4.287rem;
+  color: #242424;
+}
+
+.agancy-descr {
+  max-width: 21.4rem;
+  opacity: 0.8;
+  color: #242424;
+  font-family: "Open Sans";
   font-size: 0.833rem;
   font-weight: 400;
-  line-height: 1.155rem;
-  padding-bottom: 0.7em;
-  border-bottom: 1.5px solid #f54068;
+  line-height: 1.25rem;
+  margin-top: 3.1em;
+  letter-spacing: 0.0rem;
+}
+
+.other-color-word {
+  color: #f54068;
+}
+
+.agancy-img {
+  margin-left: 9.33em;
+  margin-top: 1.7em;
+  width: 7.958rem;
+  height: 26.833rem;
+}
+
+/* Пятая страница, квантум */
+
+.fifth-part-page {
+  height: 100vh;
+  background-color: #ffffff;
+  background-image: url(../img/blue-circle-bg.svg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 26.5rem 26.5rem;
+}
+
+.blue-name-of-agancy {
+  color: #2D4CD1;
+}
+
+.other-color-word-blue {
+  color: #2d4cd1;
+}
+
+.agancy-img-qtech {
+  margin-left: 5.1em;
+  margin-top: 2.3em;
+  width: 17rem;
+  height: 25.5rem;
 }
