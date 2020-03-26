@@ -68,7 +68,7 @@ body {
   margin-top: 0.2em;
 }
 
-.logo+.logo {
+.logo + .logo {
   padding-left: 2.25em;
 }
 
@@ -77,7 +77,7 @@ body {
   margin-left: 0em;
 }
 
-.links-li+.links-li {
+.links-li + .links-li {
   padding-left: 2.95em;
 }
 
@@ -145,7 +145,7 @@ body {
   margin-bottom: 1.7em;
 }
 
-.soc-li+.soc-li {
+.soc-li + .soc-li {
   margin-top: 1.625em;
 }
 
@@ -530,7 +530,7 @@ body {
   font-weight: 400;
   line-height: 1.25rem;
   margin-top: 3.1em;
-  letter-spacing: 0.0rem;
+  letter-spacing: 0rem;
 }
 
 .other-color-word {
@@ -556,7 +556,7 @@ body {
 }
 
 .blue-name-of-agancy {
-  color: #2D4CD1;
+  color: #2d4cd1;
 }
 
 .other-color-word-blue {
@@ -568,4 +568,124 @@ body {
   margin-top: 2.3em;
   width: 17rem;
   height: 25.5rem;
+}
+
+/* Страница рассылки */
+
+.sixth-part-page {
+  height: 100vh;
+  background-color: #2d4cd1;
+}
+
+.sending-box {
+  max-width: 66.583rem;
+  height: 26.042rem;
+  background-color: #ffffff;
+  margin-left: 6.9em;
+  margin-top: 3.45em;
+}
+
+.sending-features {
+  display: flex;
+  padding-top: 4.75em;
+  padding-left: 10em;
+}
+
+.sending-req {
+  display: flex;
+}
+
+.agree-info {
+  text-align: center;
+  opacity: 0.25;
+  color: #000;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.833rem;
+  font-weight: 400;
+  line-height: 1.22rem;
+  margin-top: 5.7em;
+  text-align: center;
+  max-width: 31rem;
+  margin-left: 21.5em;
+}
+
+.features-descr {
+  color: #242424;
+  font-family: "Open Sans";
+  font-size: 0.833rem;
+  font-weight: 400;
+  line-height: 1.237rem;
+  padding-top: 0.2em;
+}
+
+.sub-on-sending {
+  color: #242424;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.167rem;
+  font-weight: 700;
+  line-height: 1.55rem;
+  padding-right: 0.98em;
+}
+
+.feature-img-and-descr {
+  padding-left: 3.333rem;
+}
+
+.feature-img {
+  margin-top: -0.05em;
+}
+
+/* Поля инпутов рассылки */
+
+.sending-request {
+  margin-left: 6.5em;
+  display: flex;
+}
+
+.input {
+  border: 0px;
+  color: #000;
+  font-family: "Open Sans";
+  font-size: 0.833rem;
+  font-weight: 700;
+  line-height: 1.155rem;
+  border-bottom: 2px solid #000;
+  padding-bottom: 0.75em;
+  margin-left: 4.2em;
+  width: 11.7rem;
+  padding-left: 1.55em;
+}
+
+.input-block {
+  margin-top: 5.5em;
+}
+
+.send-input-block {
+  margin-top: 5.33em;
+}
+
+.input-block + .input-block {
+  margin-left: 0.3em;
+}
+
+.send-btn {
+  font-family: "Open Sans";
+  font-size: 0.833rem;
+  font-weight: 700;
+  line-height: 1.155rem;
+  background-color: transparent;
+  border: 0px;
+  color: #f54068;
+  border-bottom: 2px solid #f54068;
+  padding-left: 0.15em;
+  width: 12.9rem;
+  margin-left: 4.2em;
+  padding-bottom: 1em;
+}
+
+.send-input::-webkit-input-placeholder {
+  color: #f54068;
+}
+.send-input::-moz-placeholder {
+  color: #f54068;
 }
