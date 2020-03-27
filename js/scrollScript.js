@@ -14,5 +14,4 @@
 //         maskNavStyle.opacity = 0;
 //     }
 
-
 // };
