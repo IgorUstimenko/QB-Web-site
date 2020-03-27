@@ -1,0 +1,128 @@
+.block-form {
+    width: 66.583rem;
+    height: 37.5rem;
+    background: #FFF;
+    margin-left: 6.85em;
+    margin-top: 3.45em;
+}
+
+.block-form .callback-form .top-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.block-form .callback-form .top-row .left-side {
+    margin-top: 4.95em;
+    margin-left: 3.35em;
+}
+
+.block-form .callback-form .top-row .left-side .form-header {
+    width: 7.708rem;
+    height: 1.583rem;
+    color: #242424;
+    font-family: "Open Sans";
+    font-size: 1.167rem;
+    font-weight: 700;
+
+}
+
+.block-form .callback-form .top-row .left-side .form-text {
+    color: #000000;
+    font-family: "Open Sans";
+    font-size: 0.833rem;
+    font-weight: 400;
+    line-height: 1.237rem;
+    color: rgba(0, 0, 0, 0.6);
+    max-width: 22em;
+    margin-top: 1.5em;
+    letter-spacing: -0.005em;
+    margin-bottom: 1.5em;
+}
+
+.block-form .callback-form .top-row .left-side .form-tel a {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.833rem;
+    color: #F54068;
+}
+
+.block-form .callback-form .top-row .right-side {
+    margin-right: 6.9em;
+    margin-top: 5.15em;
+}
+
+.block-form .callback-form .top-row .right-side .form-field {
+
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.block-form .callback-form .top-row .right-side .form-field .form-input {
+    display: block;
+    width: 56.7em;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.583rem;
+    line-height: 140%;
+    color: #242424;
+    border: none;
+    padding-bottom: 1em;
+    border-bottom: 2px solid #242424;
+    padding-left: 0em;
+}
+
+.block-form .callback-form .top-row .right-side .form-field .form-input:focus~.form-field-label {
+    top: -1rem;
+    font-size: 0.5rem;
+}
+
+.block-form .callback-form .top-row .right-side .form-field .form-field-label {
+    top: 0;
+    left: 1rem;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.583rem;
+    line-height: 140%;
+    color: #242424;
+    position: absolute;
+    pointer-events: none;
+    transition: all .3s;
+}
+
+.form-btn {
+    display: block;
+    background: transparent;
+    cursor: pointer;
+    border: none;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.82rem;
+    line-height: 140%;
+    padding-bottom: 0.94em;
+    padding-left: 0.1em;
+    width: 16.3em;
+}
+
+.block-form .callback-form .right-side .form-btn.submit-btn {
+    color: #F54068;
+    border-bottom: 2px solid #F54068;
+    margin: 3.5rem 0;
+}
+
+.block-form .callback-form .bottom-row {
+    margin-left: 31.5em;
+    line-height: 1.2em;
+    opacity: 0.25;
+    color: #242424;
+    font-family: "Open Sans";
+    font-size: 0.583rem;
+    font-weight: 400;
+    text-align: center;
+    color: #242424;
+    opacity: 0.25;
+    max-width: 30rem;
+}
