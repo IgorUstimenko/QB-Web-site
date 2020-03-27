@@ -1,0 +1,691 @@
+:root {
+  font-size: calc(100vw / 80);
+  /* 24px */
+  height: 100vh;
+}
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif; */
+/* font-family: raleway, sans-serif; */
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "raleway";
+  src: url("../fonts/Raleway-ExtraBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 800;
+}
+
+/* Стили первого основоного экрана */
+.main-part-page {
+  background-image: url(../img/main_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+/* nav */
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 3.4em;
+  margin-right: 2.5em;
+  padding-top: 2.85em;
+  align-items: center;
+}
+
+.mask-nav {
+  position: static;
+  justify-content: space-between;
+  opacity: 1;
+  align-items: center;
+  padding-top: 2.8em;
+  background-color: #2d4cd1;
+  margin-left: 0em;
+  margin-right: 0em;
+  padding-left: 3.33em;
+  padding-right: 2.7em;
+  position: static;
+  display: flex;
+  opacity: 0;
+}
+
+.logos-ul,
+.links-ul {
+  display: flex;
+}
+
+.logos-ul {
+  justify-content: space-between;
+  margin-right: 5.79em;
+  margin-top: 0.2em;
+}
+
+.logo + .logo {
+  padding-left: 2.25em;
+}
+
+.links-ul {
+  margin-top: 0.05em;
+  margin-left: 0em;
+}
+
+.links-li + .links-li {
+  padding-left: 2.95em;
+}
+
+.user-icon {
+  margin-top: 0.1em;
+  margin-left: 2.25em;
+  margin-right: 2.2em;
+}
+
+.link-li-a {
+  opacity: 0.8;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.833rem;
+  font-weight: 400;
+  line-height: 1.155rem;
+}
+
+.active {
+  opacity: 1;
+  font-weight: 700;
+}
+
+.tell-btn {
+  width: 23.4em;
+  padding-top: 1.2em;
+  padding-bottom: 1em;
+  text-align: center;
+  border: 0.125rem solid #f54068;
+  border-radius: 0.667rem;
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 0.833rem;
+  font-weight: 700;
+  line-height: 1.155rem;
+}
+
+/* Основная часть главной страницы */
+.creative-and-soc {
+  display: flex;
+  justify-content: space-between;
+}
+
+.creative {
+  margin-top: 15.9em;
+  margin-left: 7.3em;
+}
+
+.creative-tech {
+  font-family: raleway, sans-serif;
+  color: #ffffff;
+  font-size: 3.292rem;
+  font-weight: 800;
+  line-height: 4.287rem;
+}
+
+.down-arrow {
+  margin-top: 1.8em;
+}
+
+.soc {
+  margin-right: 1.25em;
+  margin-top: 12.05em;
+  text-align: center;
+  margin-bottom: 1.7em;
+}
+
+.soc-li + .soc-li {
+  margin-top: 1.625em;
+}
+
+/* Второй экран */
+
+.second-part-page {
+  background-color: #2d4cd1;
+}
+
+.second-part-page-wrapper {
+  display: flex;
+}
+
+.cont-part {
+  margin-top: 7.8em;
+  margin-left: 6.708em;
+}
+
+.we-cont {
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 1.167rem;
+  font-weight: 700;
+  max-width: 27.5rem;
+  line-height: 138%;
+  margin-bottom: 3.25em;
+}
+
+.get-to-know {
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 0.833rem;
+  font-weight: 400;
+  line-height: 1.155rem;
+  padding-bottom: 0.7em;
+  border-bottom: 1.5px solid #f54068;
+}
+
+/* Сетка работ */
+
+.partners-grid {
+  width: 39.75rem;
+  height: 31.167rem;
+  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 3.2em;
+  margin-left: 6.8em;
+}
+
+.partner-box {
+  text-align: center;
+  line-height: 10.3rem;
+}
+
+.partner-logo-img {
+  vertical-align: middle;
+}
+
+/* Расположение логотипов компаний-парнеров относительно центра блока */
+.sber_partner {
+  width: 2.292rem;
+  height: 2.25rem;
+  margin-left: 0.2em;
+}
+
+.lamoda_partner {
+  width: 2.417rem;
+  height: 2.208rem;
+  margin-left: 0.8em;
+}
+
+.kislorod_partner {
+  margin-left: 1.3em;
+  width: 1.708rem;
+  height: 2.208rem;
+}
+
+.brig_partner {
+  width: 5.1rem;
+  height: 1.665rem;
+  margin-top: 0.5em;
+  margin-left: 0.3em;
+}
+
+.taggsm_partner {
+  margin-top: -0.1em;
+  margin-left: 0.7em;
+  width: 6.333rem;
+  height: 0.958rem;
+}
+
+.te_partner {
+  margin-left: 1.1em;
+  margin-top: -0.2em;
+  width: 2.708rem;
+  height: 1.542rem;
+}
+
+.dr_partner {
+  width: 2.25rem;
+  height: 2.083rem;
+  margin-left: 0.2em;
+}
+
+.td_partner {
+  width: 8.5rem;
+  height: 1.55rem;
+}
+
+.btn-right {
+  margin-left: 1.1em;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+/* Третий экран */
+
+.third-part-page {
+  background-color: #2d4cd1;
+  display: block;
+}
+
+.our-works {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.333rem;
+  font-weight: 700;
+  padding-top: 1.6em;
+  margin-left: 2.87em;
+}
+
+/* Стили для сетки работ */
+
+.works-grid {
+  margin-top: 2.6em;
+  margin-left: 0.08em;
+  padding-bottom: 4.6em;
+}
+
+.up-works-line {
+  display: flex;
+}
+
+.down-works-line {
+  display: flex;
+  margin-top: 3.8em;
+}
+
+.small-work-card {
+  width: 16.417rem;
+  height: 18.75rem;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.medium-work-card {
+  width: 26.5rem;
+  height: 18.75rem;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.big-work-card {
+  width: 36.333rem;
+  height: 18.75rem;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.kislorod-work-card {
+  margin-left: 6.7em;
+  background-image: url(../img/works-img/kislorod-card-bg.png);
+}
+
+.brig-work-card {
+  margin-left: 3.7em;
+  background-image: url(../img/works-img/brig-card-bg.png);
+}
+
+.taggsm-work-card {
+  margin-left: 3.5em;
+  background-image: url(../img/works-img/taggsm-card-bg.png);
+}
+
+.epsilon-work-card {
+  margin-left: 6.7em;
+  background-image: url(../img/works-img/tagepsilon-card-bg.png);
+}
+
+.td-work-card {
+  margin-left: 3.75em;
+  background-image: url(../img/works-img/td-card-bg.png);
+}
+
+/* Внутренности карточек кейсов (кислород), самые маленькие карточки*/
+
+.case-descr-part {
+  display: flex;
+}
+
+.descr-and-name {
+  margin-top: 2.35em;
+  margin-left: 1.75em;
+}
+
+.descr-of-case {
+  font-family: "Open Sans";
+  opacity: 0.5;
+  color: #ffffff;
+  font-size: 0.833rem;
+  font-weight: 400;
+  line-height: 1.155rem;
+  margin-bottom: 1.4em;
+}
+
+.name-of-case {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 1.667rem;
+  font-weight: 800;
+  line-height: 2rem;
+  white-space: nowrap;
+}
+
+.date {
+  transform: rotate(-90deg);
+  opacity: 0.3;
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 0.833rem;
+  font-weight: 700;
+  line-height: 1.155rem;
+  margin-left: 6.2em;
+  margin-top: -1.6em;
+}
+
+/* Кнопка посмотреть */
+
+.work-card-btn {
+  width: 9.95rem;
+  height: 4.24rem;
+  background-color: #00a99c;
+  clip-path: polygon(16.3% 26%, 100% 10%, 100% 100%, 8% 100%);
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 0.833rem;
+  font-weight: 700;
+  line-height: 1.155rem;
+  text-align: center;
+  margin-top: 7.03em;
+  float: right;
+}
+
+.work-card-btn:hover {
+  clip-path: polygon(15% 1%, 100% 10%, 100% 100%, 8% 100%);
+  transition: 340ms;
+}
+
+.watch {
+  padding-top: 2.5em;
+  padding-left: 2em;
+}
+
+/* Внутренности taggsm карточки */
+.taggsm-date {
+  margin-left: 12.6em;
+  margin-top: -3.95em;
+}
+
+.taggsm-watch-btn {
+  margin-left: 7.77em;
+  margin-top: 4.64em;
+  background-color: #ed471c;
+}
+
+/* 
+Средние карточки (бриг)*/
+
+.med-descr-and-name {
+  margin-left: 3em;
+}
+
+.med-data {
+  margin-top: 3.5em;
+  padding-left: 5em;
+}
+
+.med-card-btn {
+  float: right;
+  background-color: #ffb73a;
+}
+
+/* 
+Средняя карточка (эпсилон) */
+
+.epsilon-descr-and-name {
+  margin-left: 3.1em;
+  margin-top: 2.25em;
+  margin-bottom: 0.12em;
+}
+
+.epsilon-card-btn {
+  background-color: #242424;
+}
+
+.epsilon-data {
+  padding-left: 6.3em;
+  margin-top: 4.5em;
+}
+
+/* Самая большая карточка (Твой дом) */
+
+.big-descr-and-name {
+  margin-left: 3em;
+  margin-top: 2.2em;
+  margin-bottom: 0.17em;
+}
+
+.big-date {
+  margin-left: 18em;
+}
+
+.big-card-btn {
+  background-color: #0007cc;
+}
+
+/* Четвертая страница, блоссом-агество */
+
+.fourth-part-page {
+  height: 100vh;
+  background-color: #ffffff;
+  background-image: url(../img/red-circle-bg.svg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 26.5rem 26.5rem;
+}
+
+.fourth-part-page-wrapper {
+  display: flex;
+}
+
+.black-nav-links {
+  color: #242424;
+}
+
+.black-tell-btn {
+  color: #242424;
+}
+
+.blue-nav-active {
+  color: #2d4cd1;
+}
+
+.all-agancy-profile {
+  margin-left: 6.9em;
+  margin-top: 6.3em;
+}
+
+.name-of-agancy {
+  font-family: raleway, sans-serif;
+  font-weight: 800;
+  font-size: 3.292rem;
+  color: #f54068;
+  line-height: 4.287rem;
+}
+
+.agancy-feature {
+  font-family: raleway, sans-serif;
+  font-weight: 800;
+  font-size: 3.292rem;
+  line-height: 4.287rem;
+  color: #242424;
+}
+
+.agancy-descr {
+  max-width: 21.4rem;
+  opacity: 0.8;
+  color: #242424;
+  font-family: "Open Sans";
+  font-size: 0.833rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  margin-top: 3.1em;
+  letter-spacing: 0rem;
+}
+
+.other-color-word {
+  color: #f54068;
+}
+
+.agancy-img {
+  margin-left: 9.33em;
+  margin-top: 1.7em;
+  width: 7.958rem;
+  height: 26.833rem;
+}
+
+/* Пятая страница, квантум */
+
+.fifth-part-page {
+  height: 100vh;
+  background-color: #ffffff;
+  background-image: url(../img/blue-circle-bg.svg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 26.5rem 26.5rem;
+}
+
+.blue-name-of-agancy {
+  color: #2d4cd1;
+}
+
+.other-color-word-blue {
+  color: #2d4cd1;
+}
+
+.agancy-img-qtech {
+  margin-left: 5.1em;
+  margin-top: 2.3em;
+  width: 17rem;
+  height: 25.5rem;
+}
+
+/* Страница рассылки */
+
+.sixth-part-page {
+  height: 100vh;
+  background-color: #2d4cd1;
+}
+
+.sending-box {
+  max-width: 66.583rem;
+  height: 26.042rem;
+  background-color: #ffffff;
+  margin-left: 6.9em;
+  margin-top: 3.45em;
+}
+
+.sending-features {
+  display: flex;
+  padding-top: 4.75em;
+  padding-left: 10em;
+}
+
+.sending-req {
+  display: flex;
+}
+
+.agree-info {
+  text-align: center;
+  opacity: 0.25;
+  color: #000;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.833rem;
+  font-weight: 400;
+  line-height: 1.22rem;
+  margin-top: 5.7em;
+  text-align: center;
+  max-width: 31rem;
+  margin-left: 21.5em;
+}
+
+.features-descr {
+  color: #242424;
+  font-family: "Open Sans";
+  font-size: 0.833rem;
+  font-weight: 400;
+  line-height: 1.237rem;
+  padding-top: 0.2em;
+}
+
+.sub-on-sending {
+  color: #242424;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.167rem;
+  font-weight: 700;
+  line-height: 1.55rem;
+  padding-right: 0.98em;
+}
+
+.feature-img-and-descr {
+  padding-left: 3.333rem;
+}
+
+.feature-img {
+  margin-top: -0.05em;
+}
+
+/* Поля инпутов рассылки */
+
+.sending-request {
+  margin-left: 6.5em;
+  display: flex;
+}
+
+.input {
+  border: 0px;
+  color: #000;
+  font-family: "Open Sans";
+  font-size: 0.833rem;
+  font-weight: 700;
+  line-height: 1.155rem;
+  border-bottom: 2px solid #000;
+  padding-bottom: 0.75em;
+  margin-left: 4.2em;
+  width: 11.7rem;
+  padding-left: 1.55em;
+}
+
+.input-block {
+  margin-top: 5.5em;
+}
+
+.send-input-block {
+  margin-top: 5.33em;
+}
+
+.input-block + .input-block {
+  margin-left: 0.3em;
+}
+
+.send-btn {
+  font-family: "Open Sans";
+  font-size: 0.833rem;
+  font-weight: 700;
+  line-height: 1.155rem;
+  background-color: transparent;
+  border: 0px;
+  color: #f54068;
+  border-bottom: 2px solid #f54068;
+  padding-left: 0.15em;
+  width: 12.9rem;
+  margin-left: 4.2em;
+  padding-bottom: 1em;
+}
+
+.send-input::-webkit-input-placeholder {
+  color: #f54068;
+}
+.send-input::-moz-placeholder {
+  color: #f54068;
+}
