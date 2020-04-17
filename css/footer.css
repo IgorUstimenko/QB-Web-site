@@ -1,0 +1,134 @@
+.case-footer {
+    display: flex;
+    background: url('../img/cases/footer-bg.png') no-repeat;
+    background-size: cover;
+    color: #FFF;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-right: 17.7rem;
+    height: 12.541rem;
+}
+
+.case-footer .column .column-sub-heading {
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 0.417rem;
+    font-weight: 700;
+    margin-bottom: 0.625rem;
+
+}
+
+.case-footer .column .column-heading {
+    margin-bottom: 2.8rem;
+}
+
+.case-footer .column .column-heading a {
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 0.833rem;
+    font-weight: 700;
+    line-height: 1.155rem;
+}
+
+.case-footer .column .column-footer a {
+    opacity: 0.5;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 0.417rem;
+    font-weight: 700;
+    max-width: 10em;
+}
+
+.case-footer .column .column-footer .socials {
+    width: 92%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.case-footer .column .column-footer .socials a {
+    opacity: 1;
+}
+
+.column {
+    margin-left: 6.85em;
+    margin-top: 2.98em;
+}
+
+/* Мобильный футер */
+@media (max-device-width: 480px) {
+    .mobile-footer {
+        height: 100vh;
+        background-image: url(../img/mobile-img/mobile-footer-bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .mobile-contacts-wrapper {
+        margin-left: 1em;
+        margin-top: 3.2em;
+    }
+
+    .mobile-contacts-text {
+        color: #ffffff;
+        font-family: "Montserrat", sans-serif;
+        font-size: 1.083rem;
+        font-weight: 600;
+        margin-bottom: 2.5em;
+    }
+
+    .mobile-contact-point-wrapper {
+        margin-bottom: 2.6em;
+    }
+
+    .mobile-contact-point-name {
+        opacity: 0.8;
+        color: #ffffff;
+        font-family: "Open Sans";
+        font-size: 0.417rem;
+        font-weight: 700;
+        margin-bottom: 1.4em;
+    }
+
+    .mobile-contact-point-descr {
+        color: #ffffff;
+        font-family: "Open Sans";
+        font-size: 0.833rem;
+        font-weight: 700;
+        line-height: 1.155rem;
+    }
+
+    .mobile-soc-line-wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 4.1em;
+        margin-right: 1em;
+        align-items: center;
+    }
+
+    .mobile-police-link {
+        opacity: 0.5;
+        color: #ffffff;
+        font-family: "Open Sans";
+        font-size: 0.417rem;
+        font-weight: 700;
+        max-width: 10rem;
+        margin-top: 5.9em;
+    }
+
+
+
+    .mobile-presentation-in-pdf {
+        opacity: 0.5;
+        color: #ffffff;
+        font-family: "Open Sans";
+        font-size: 0.417rem;
+        font-weight: 700;
+        margin-left: 17.5em;
+        margin-top: 3.5em;
+    }
+
+
+
+
+}
