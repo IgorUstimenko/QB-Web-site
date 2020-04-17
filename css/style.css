@@ -78,7 +78,7 @@ body {
 }
 
 .links-li+.links-li {
-  padding-left: 2.95em;
+  padding-left: 2.9em;
 }
 
 .user-icon {
@@ -153,6 +153,10 @@ body {
 
 .second-part-page {
   background-color: #2d4cd1;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .second-part-page-wrapper {
@@ -160,8 +164,18 @@ body {
 }
 
 .cont-part {
-  margin-top: 7.8em;
-  margin-left: 6.708em;
+  margin-bottom: 2em;
+  margin-left: 6.9em;
+}
+
+.idea {
+  text-shadow: 0.125rem 0.125rem 0 #f54068;
+  color: #ffffff;
+  font-family: raleway, sans-serif;
+  font-size: 3.292rem;
+  font-weight: 800;
+  line-height: 4.287rem;
+  margin-bottom: 0.75em;
 }
 
 .we-cont {
@@ -192,8 +206,7 @@ body {
   background-color: #ffffff;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin-top: 3.2em;
-  margin-left: 6.8em;
+  margin-left: 6.6em;
 }
 
 .partner-box {
@@ -262,215 +275,83 @@ body {
   height: 3.5rem;
 }
 
-/* Третий экран */
+/* Страницы кейсов */
 
-.third-part-page {
-  background-color: #2d4cd1;
-  display: block;
-}
-
-.our-works {
-  color: #ffffff;
-  font-family: "Montserrat", sans-serif;
-  font-size: 2.333rem;
-  font-weight: 700;
-  padding-top: 1.6em;
-  margin-left: 2.87em;
-}
-
-/* Стили для сетки работ */
-
-.works-grid {
-  margin-top: 2.6em;
-  margin-left: 0.08em;
-  padding-bottom: 4.6em;
-}
-
-.up-works-line {
-  display: flex;
-}
-
-.down-works-line {
-  display: flex;
-  margin-top: 3.8em;
-}
-
-.small-work-card {
-  width: 16.417rem;
-  height: 18.75rem;
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
-
-.medium-work-card {
-  width: 26.5rem;
-  height: 18.75rem;
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
-
-.big-work-card {
-  width: 36.333rem;
-  height: 18.75rem;
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
-
-.kislorod-work-card {
-  margin-left: 6.7em;
-  background-image: url(../img/works-img/kislorod-card-bg.png);
-}
-
-.brig-work-card {
-  margin-left: 3.7em;
+.case-page {
+  height: 100vh;
+  background-color: #242424;
   background-image: url(../img/works-img/brig-card-bg.png);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: 39.75rem 21.458rem;
 }
 
-.taggsm-work-card {
-  margin-left: 3.5em;
-  background-image: url(../img/works-img/taggsm-card-bg.png);
-}
-
-.epsilon-work-card {
-  margin-left: 6.7em;
-  background-image: url(../img/works-img/tagepsilon-card-bg.png);
-}
-
-.td-work-card {
-  margin-left: 3.75em;
-  background-image: url(../img/works-img/td-card-bg.png);
-}
-
-/* Внутренности карточек кейсов (кислород), самые маленькие карточки*/
-
-.case-descr-part {
+.case-page-content {
   display: flex;
 }
 
-.descr-and-name {
-  margin-top: 2.35em;
-  margin-left: 1.75em;
-}
-
-.descr-of-case {
-  font-family: "Open Sans";
-  opacity: 0.5;
-  color: #ffffff;
-  font-size: 0.833rem;
-  font-weight: 400;
-  line-height: 1.155rem;
-  margin-bottom: 1.4em;
+.left-side-case-page {
+  margin-top: 5.7em;
+  margin-left: 6.9em;
 }
 
 .name-of-case {
-  font-family: "Montserrat", sans-serif;
+  text-shadow: 0.125rem 0.125rem 0 #e59200;
   color: #ffffff;
-  font-size: 1.667rem;
+  font-family: raleway, sans-serif;
+  font-size: 3.292rem;
   font-weight: 800;
-  line-height: 2rem;
-  white-space: nowrap;
+  line-height: 4.287rem;
 }
 
-.date {
-  transform: rotate(-90deg);
-  opacity: 0.3;
+.case-descr {
+  opacity: 0.8;
   color: #ffffff;
   font-family: "Open Sans";
   font-size: 0.833rem;
-  font-weight: 700;
-  line-height: 1.155rem;
-  margin-left: 6.2em;
-  margin-top: -1.6em;
-}
-
-/* Кнопка посмотреть */
-
-.work-card-btn {
-  width: 9.95rem;
-  height: 4.24rem;
-  background-color: #00a99c;
-  clip-path: polygon(16.3% 26%, 100% 10%, 100% 100%, 8% 100%);
-  color: #ffffff;
-  font-family: "Open Sans";
-  font-size: 0.833rem;
-  font-weight: 700;
-  line-height: 1.155rem;
-  text-align: center;
-  margin-top: 7.03em;
-  float: right;
-}
-
-.work-card-btn:hover {
-  clip-path: polygon(15% 1%, 100% 10%, 100% 100%, 8% 100%);
-  transition: 340ms;
-}
-
-.watch {
-  padding-top: 2.5em;
-  padding-left: 2em;
-}
-
-/* Внутренности taggsm карточки */
-.taggsm-date {
-  margin-left: 12.6em;
-  margin-top: -3.95em;
-}
-
-.taggsm-watch-btn {
-  margin-left: 7.77em;
-  margin-top: 4.64em;
-  background-color: #ed471c;
-}
-
-/* 
-Средние карточки (бриг)*/
-
-.med-descr-and-name {
-  margin-left: 3em;
-}
-
-.med-data {
+  font-weight: 400;
+  line-height: 1.26rem;
+  letter-spacing: -0.005em;
   margin-top: 3.5em;
-  padding-left: 5em;
+  margin-bottom: 6.65em;
 }
 
-.med-card-btn {
-  float: right;
-  background-color: #ffb73a;
+.right-side-case-page {
+  margin-left: 2em;
 }
 
-/* 
-Средняя карточка (эпсилон) */
-
-.epsilon-descr-and-name {
-  margin-left: 3.1em;
-  margin-top: 2.25em;
-  margin-bottom: 0.12em;
+.case-feature {
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 0.833rem;
+  font-weight: 400;
+  line-height: 1.237rem;
+  margin-top: 7.5em;
+  margin-left: 13.2em;
 }
 
-.epsilon-card-btn {
-  background-color: #242424;
+.kislorod-name-of-case {
+  text-shadow: 0.125rem 0.125rem 0 #00a99c;
 }
 
-.epsilon-data {
-  padding-left: 6.3em;
-  margin-top: 4.5em;
+.kislorod-page {
+  background-image: url(../img/works-img/kislorod-card-bg.png);
 }
 
-/* Самая большая карточка (Твой дом) */
-
-.big-descr-and-name {
-  margin-left: 3em;
-  margin-top: 2.2em;
-  margin-bottom: 0.17em;
+.tageps-name-of-case {
+  text-shadow: 0.125rem 0.125rem 0 #f54068;
 }
 
-.big-date {
-  margin-left: 18em;
+.tageps-case-page {
+  background-image: url(../img/works-img/tagepsilon-card-bg.png);
 }
 
-.big-card-btn {
-  background-color: #0007cc;
+.td-name-of-case {
+  text-shadow: 0.125rem 0.125rem 0 #0009ff;
+}
+
+.td-case-page {
+  background-image: url(../img/works-img/td-card-bg.png);
 }
 
 /* Четвертая страница, блоссом-агество */
@@ -583,6 +464,7 @@ body {
   background-color: #ffffff;
   margin-left: 6.9em;
   margin-top: 3.45em;
+  box-shadow: 0.833rem 0.833rem 0 #f54068;
 }
 
 .sending-features {
@@ -694,9 +576,64 @@ body {
 /* seven-part-page страница формы*/
 .seven-part-page {
   background-color: #2d4cd1;
-  margin-top: -1.6em;
-  padding-bottom: 4.3em;
+  height: 100vh;
 }
+
+.form-page-wrapper {
+  display: flex;
+}
+
+.left-side-form-page {
+  margin-top: 3.8em;
+  margin-left: 6.9em;
+}
+
+.do-you-need-a-site {
+  font-family: raleway, sans-serif;
+  text-shadow: 0.125rem 0.125rem 0 #f54068;
+  color: #ffffff;
+  font-size: 3.292rem;
+  font-weight: 800;
+  line-height: 4.287rem;
+}
+
+.you-can-give-request {
+  font-family: "Open Sans";
+  font-size: 0.833rem;
+  font-weight: 400;
+  line-height: 1.237rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 2.35em;
+  margin-bottom: 1.5em;
+  letter-spacing: -0.007em;
+}
+
+.phone-number {
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 0.833rem;
+  font-weight: 700;
+  line-height: 1.155rem;
+
+}
+
+.privacy-policy {
+  opacity: 0.5;
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 0.583rem;
+  font-weight: 400;
+  margin-top: 22.5em;
+  line-height: 0.8rem;
+}
+
+
+
+
+
+
+
+
 
 .mobile-version {
   display: none;
@@ -1119,5 +1056,4 @@ body {
   .mobile-you-agree {
     margin-left: -4em;
   }
-
 }
