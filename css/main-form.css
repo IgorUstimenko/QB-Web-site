@@ -1,3 +1,4 @@
+
 .block-form {
     width: 66.583rem;
     height: 37.5rem;
@@ -73,7 +74,32 @@
     padding-left: 0em;
 }
 
-.block-form .callback-form .top-row .right-side .form-field .form-input:focus~.form-field-label {
+.block-form .callback-form .top-row .right-side .form-field.from-about-field .form-input~.form-field-label {
+    opacity: .3;
+}
+
+.block-form .callback-form .top-row .right-side .form-field .form-input::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.block-form .callback-form .top-row .right-side .form-field .form-input::-moz-placeholder {
+    color: transparent;
+}
+
+.block-form .callback-form .top-row .right-side .form-field .form-input:-ms-input-placeholder {
+    color: transparent;
+}
+
+.block-form .callback-form .top-row .right-side .form-field .form-input:-moz-placeholder {
+    color: transparent;
+}
+
+.block-form .callback-form .top-row .right-side .form-field .form-input::placeholder {
+    color: transparent;
+}
+
+.block-form .callback-form .top-row .right-side .form-field .form-input:focus~.form-field-label,
+.block-form .callback-form .top-row .right-side .form-field .form-input:not(:placeholder-shown)~.form-field-label {
     top: -1rem;
     font-size: 0.5rem;
 }
@@ -125,4 +151,5 @@
     color: #242424;
     opacity: 0.25;
     max-width: 30rem;
+
 }
