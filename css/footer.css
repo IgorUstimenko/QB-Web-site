@@ -1,3 +1,4 @@
+
 .case-footer {
     display: flex;
     background: url('../img/cases/footer-bg.png') no-repeat;
@@ -130,5 +131,49 @@
 
 
 
+.case-footer .column .column-sub-heading {
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 0.417rem;
+    font-weight: 700;
+    margin-bottom: 0.625rem;
 
 }
+
+.case-footer .column .column-heading {
+    margin-bottom: 2.8rem;
+}
+
+.case-footer .column .column-heading a {
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 0.833rem;
+    font-weight: 700;
+    line-height: 1.155rem;
+}
+
+.case-footer .column .column-footer a {
+    opacity: 0.5;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 0.417rem;
+    font-weight: 700;
+    max-width: 10em;
+}
+
+.case-footer .column .column-footer .socials {
+    width: 92%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.case-footer .column .column-footer .socials a {
+    opacity: 1;
+}
+
+.column {
+    margin-left: 6.85em;
+    margin-top: 2.98em;
+}
+

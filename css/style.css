@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 :root {
   font-size: calc(100vw / 80);
   /* 24px */
@@ -1058,6 +1059,9 @@ body {
     margin-left: -4em;
   }
 =======
+=======
+
+>>>>>>> parent of 4bf31aa... Revert "Merge branch 'pr/2'"
 :root {
   font-size: calc(100vw / 80);
   /* 24px */
@@ -2116,5 +2120,9 @@ body {
   .mobile-you-agree {
     margin-left: -4em;
   }
+<<<<<<< HEAD
 >>>>>>> parent of 5e64908... Merge branch 'master' of https://github.com/BL4DCP/QB-Web-site
+=======
+
+>>>>>>> parent of 4bf31aa... Revert "Merge branch 'pr/2'"
 }
