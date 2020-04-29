@@ -1,4 +1,3 @@
-
 :root {
   font-size: calc(100vw / 80);
   /* 24px */
@@ -1057,5 +1056,4 @@ body {
   .mobile-you-agree {
     margin-left: -4em;
   }
-
 }
