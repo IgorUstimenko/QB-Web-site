@@ -144,6 +144,7 @@ a:focus {
 input,
 textarea {
   outline: none;
+  border-radius: 0px;
 }
 
 input:active,

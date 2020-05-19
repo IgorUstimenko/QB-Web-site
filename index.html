@@ -8,6 +8,7 @@
 
     <!-- Подключение стилей -->
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/main-form.css">
@@ -51,14 +52,79 @@
                             style="width: 2.666em; height: 2.666em;" />
                     </div>
                     <!-- /.user-icon -->
-                    <a href="!#">
+                    <a href="#ex1" rel="modal:open">
                         <div class="tell-btn">
                             Рассказать о проекте
                         </div>
                     </a>
                     <!-- /.tell-btn -->
                 </nav>
+                <!-- Modal -->
+                <div id="ex1" class="modal">
+                    <div class="form-page-wrapper modal-form-wrapper">
+                        <div class="left-side-form-page modal-left-side-form-page">
+                            <h3 class="do-you-need-a-site modal-do-you-need-a-site">
+                                Нужен сайт?
+                            </h3>
+                            <!-- /.do-you-need-a-site -->
+                            <p class="you-can-give-request modal-you-can-give-request">
+                                Можно оставить заявку, а можно позвонить<br>
+                                нам, и мы заполним ее сами :)
+                            </p>
+                            <!-- /.you-can-give-request -->
+                            <a href="tel:8(918)5421333" class="phone-number modal-phone-number">
+                                8 (918) 542-13-33
+                            </a>
+                            <!-- /.phone-number -->
+                        </div>
+                        <!-- /.left-side-form-page -->
+                        <div class="right-side-form-page modal-right-side-form-page">
+                            <form action="" class="main-form">
 
+                                <div class="main-form-input-block">
+                                    <input type="text" placeholder="Ваше имя *"
+                                        class="main-form-input modal-main-form-input" />
+                                </div>
+
+                                <div class="main-form-input-block">
+                                    <input type="text" placeholder="Ваш email *"
+                                        class="main-form-input modal-main-form-input " />
+                                </div>
+
+                                <div class="main-form-input-block">
+                                    <input type="text" placeholder="Ваш телефон*"
+                                        class="main-form-input modal-main-form-input" />
+                                </div>
+
+
+                                <div class="main-form-input-block">
+                                    <input type="text" placeholder="Описание проекта"
+                                        class="main-form-input modal-main-form-input" />
+                                </div>
+
+                                <div class="main-form-input-block">
+                                    <input type="text" placeholder="Откуда узнали о нас?"
+                                        class="main-form-input modal-main-form-input" />
+                                </div>
+
+                                <div class="main-form-input-block">
+                                    <button class="main-input-send-btn modal-main-input-send-btn">Отправить</button>
+                                </div>
+
+                            </form>
+                            <!-- Место под форму -->
+                            <div class="privacy-policy modal-privacy-policy">
+                                Нажимая на кнопку, вы даете согласие на обработку
+                                персональных данных и соглашаетесь с политикой<br>
+                                конфиденциальности
+                            </div>
+                            <!-- /.privacy-policy -->
+                        </div>
+                        <!-- /.right-side-form-page -->
+                    </div>
+                    <!-- /.form-page-wrapper -->
+                </div>
+                <!-- /Modal -->
                 <div class="creative-and-soc">
                     <div class="creative">
                         <h1 class="creative-tech">
@@ -75,15 +141,15 @@
                     <div class="soc">
                         <ul class="soc">
                             <li class="soc-li">
-                                <a href="!#"><img src="./img/icn_vk_def.svg" alt="Vk"
+                                <a href="https://vk.com/blossomquantum"><img src="./img/icn_vk_def.svg" alt="Vk"
                                         style="width: 1.416em; height: 0.833em;" /></a>
                             </li>
                             <li class="soc-li">
-                                <a href="!#"><img src="./img/icn_tg_def.svg" alt="Tg"
+                                <a href="https://t.me/blossomquantum"><img src="./img/icn_tg_def.svg" alt="Tg"
                                         style="width: 1.166em; height: 1em; margin-left: 0.2em;" /></a>
                             </li>
                             <li class="soc-li">
-                                <a href="!#"><img src="./img/icn_fb_def.svg" alt="Fb"
+                                <a href="#" onclick="return false;"><img src="./img/icn_fb_def.svg" alt="Fb"
                                         style="width: 0.666em; height: 1.208em; margin-left: 0.75em;" /></a>
                             </li>
                         </ul>
@@ -119,7 +185,7 @@
                             style="width: 2.666em; height: 2.666em;" />
                     </div>
                     <!-- /.user-icon -->
-                    <a href="!#">
+                    <a href="#ex1" rel="modal:open">
                         <div class="tell-btn">
                             Рассказать о проекте
                         </div>
@@ -194,8 +260,8 @@
 
                         <!-- /.work-box -->
                         <div class="partner-box">
-                            <img class="partner-logo-img btn-right" src="./img/partners-logos/btn_right.svg"
-                                alt="Partner logo" />
+                            <div class="btn-right">
+                            </div>
                         </div>
 
                         <!-- /.work-box -->
@@ -232,7 +298,7 @@
                             style="width: 2.666em; height: 2.666em;" />
                     </div>
                     <!-- /.user-icon -->
-                    <a href="!#">
+                    <a href="#ex1" rel="modal:open">
                         <div class="tell-btn">
                             Рассказать о проекте
                         </div>
@@ -251,7 +317,7 @@
                             серьезность намерений.
                         </p>
                         <!-- /.case-descr -->
-                        <a href="!#" class="get-to-know">
+                        <a href="case-brig.html" class="get-to-know">
                             Прочитать и влюбиться
                         </a>
                     </div>
@@ -299,7 +365,7 @@
                             style="width: 2.666em; height: 2.666em;" />
                     </div>
                     <!-- /.user-icon -->
-                    <a href="!#">
+                    <a href="#ex1" rel="modal:open">
                         <div class="tell-btn">
                             Рассказать о проекте
                         </div>
@@ -318,7 +384,7 @@
                             серьезность намерений.
                         </p>
                         <!-- /.case-descr -->
-                        <a href="!#" class="get-to-know">
+                        <a href="case-kislorod.html" class="get-to-know">
                             Прочитать и влюбиться
                         </a>
                     </div>
@@ -366,7 +432,7 @@
                             style="width: 2.666em; height: 2.666em;" />
                     </div>
                     <!-- /.user-icon -->
-                    <a href="!#">
+                    <a href="#ex1" rel="modal:open">
                         <div class="tell-btn">
                             Рассказать о проекте
                         </div>
@@ -385,7 +451,7 @@
                             серьезность намерений.
                         </p>
                         <!-- /.case-descr -->
-                        <a href="!#" class="get-to-know">
+                        <a href="case-tageps.html" class="get-to-know">
                             Прочитать и влюбиться
                         </a>
                     </div>
@@ -433,7 +499,7 @@
                             style="width: 2.666em; height: 2.666em;" />
                     </div>
                     <!-- /.user-icon -->
-                    <a href="!#">
+                    <a href="#ex1" rel="modal:open">
                         <div class="tell-btn">
                             Рассказать о проекте
                         </div>
@@ -452,7 +518,7 @@
                             серьезность намерений.
                         </p>
                         <!-- /.case-descr -->
-                        <a href="!#" class="get-to-know">
+                        <a href="case-td.html" class="get-to-know">
                             Прочитать и влюбиться
                         </a>
                     </div>
@@ -503,7 +569,7 @@
                             style="width: 2.666em; height: 2.666em;" />
                     </div>
                     <!-- /.user-icon -->
-                    <a href="!#">
+                    <a href="#ex1" rel="modal:open">
                         <div class="tell-btn black-tell-btn">
                             Рассказать о проекте
                         </div>
@@ -568,7 +634,7 @@
                             style="width: 2.666em; height: 2.666em;" />
                     </div>
                     <!-- /.user-icon -->
-                    <a href="!#">
+                    <a href="#ex1" rel="modal:open">
                         <div class="tell-btn black-tell-btn">
                             Рассказать о проекте
                         </div>
@@ -629,7 +695,7 @@
                             style="width: 2.666em; height: 2.666em;" />
                     </div>
                     <!-- /.user-icon -->
-                    <a href="!#">
+                    <a href="#ex1" rel="modal:open">
                         <div class="tell-btn">
                             Рассказать о проекте
                         </div>
@@ -748,7 +814,7 @@
                             style="width: 2.666em; height: 2.666em;" />
                     </div>
                     <!-- /.user-icon -->
-                    <a href="!#">
+                    <a href="#ex1" rel="modal:open">
                         <div class="tell-btn">
                             Рассказать о проекте
                         </div>
@@ -824,12 +890,24 @@
                             </div>
                             <div class="column-footer">
                                 <div class="socials">
-                                    <a href=""><img src="./img/cases/socials/inst-icon.svg" alt="" /></a><a href=""><img
-                                            src="./img/cases/socials/yt-icon.svg" alt="" /></a><a href=""><img
-                                            src="./img/cases/socials/fb-icon.svg" alt="" /></a><a href=""><img
-                                            src="./img/cases/socials/telegram-icon.svg" alt="" /></a><a href=""><img
-                                            src="./img/cases/socials/vk-icon.svg" alt="" /></a><a href=""><img
-                                            src="./img/cases/socials/behance-icon.svg" alt="" /></a>
+                                    <a href="https://www.instagram.com/blossomquantumagency/">
+                                        <img src="./img/cases/socials/inst-icon.svg" alt="Inst Icon" />
+                                    </a>
+                                    <a href="#" onclick="return false;">
+                                        <img src="./img/cases/socials/yt-icon.svg" alt="Yt Icon" />
+                                    </a>
+                                    <a href="#" onclick="return false;">
+                                        <img src="./img/cases/socials/fb-icon.svg" alt="Fb Icon" />
+                                    </a>
+                                    <a href="https://t.me/blossomquantum">
+                                        <img src="./img/cases/socials/telegram-icon.svg" alt="Tg Icon" />
+                                    </a>
+                                    <a href="https://vk.com/blossomquantum">
+                                        <img src="./img/cases/socials/vk-icon.svg" alt="Vk Icon" />
+                                    </a>
+                                    <a href="https://www.behance.net/blossomit">
+                                        <img src="./img/cases/socials/behance-icon.svg" alt="Be Icon" />
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -838,8 +916,8 @@
                             <div class="column-heading">
                                 <a href="mailto:hey@blossom-quantum.ru">hey@blossom-quantum.ru</a>
                             </div>
-                            <div class="column-footer">
-                                <a href="#">Презентация компании в pdf</a>
+                            <div class="column-footer footer-presentation">
+                                <a href="./img/PresentationBQ.pdf" download="">Презентация компании в pdf</a>
                             </div>
                         </div>
                         <div class="column third-column">
@@ -1137,23 +1215,6 @@
         </div>
         <!-- /.do-you-need-a-site-page -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         <div class="do-you-need-a-site-page">
             <div class="mobile-nav">
                 <div class="mobile-bq-logo"><img src="./img/mobile-img/bq-logo.svg" alt="bq-logo"></div>
@@ -1281,9 +1342,11 @@
                     </div>
                 </a>
                 <!-- /.mobile-police-link -->
-                <div class="mobile-presentation-in-pdf">
-                    Презентация компании в pdf
-                </div>
+                <a href="./img/PresentationBQ.pdf" download="">
+                    <div class="mobile-presentation-in-pdf">
+                        Презентация компании в pdf
+                    </div>
+                </a>
                 <!-- /.mobile-presentation-in-pdf -->
             </div>
             <!-- /.mobile-contacts-wrapper -->
@@ -1300,6 +1363,11 @@
             var myFullpage = new fullpage('#fullpage', {});
         </script>
 
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+        <!-- jQuery Modal -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 
 </body>
 

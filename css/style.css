@@ -52,7 +52,7 @@ body {
   margin-top: 0.2em;
 }
 
-.logo+.logo {
+.logo + .logo {
   padding-left: 2.25em;
 }
 
@@ -61,7 +61,7 @@ body {
   margin-left: 0em;
 }
 
-.links-li+.links-li {
+.links-li + .links-li {
   padding-left: 2.9em;
 }
 
@@ -129,7 +129,7 @@ body {
   margin-bottom: 1.7em;
 }
 
-.soc-li+.soc-li {
+.soc-li + .soc-li {
   margin-top: 1.625em;
 }
 
@@ -194,13 +194,13 @@ body {
   display: grid;
   grid-template-columns: 13.25rem 13.25rem 13.25rem;
   margin-left: 6.6em;
-  margin-top: 6.7em;
+  margin-top: 18vh;
 }
 
 .partner-box {
   text-align: center;
-  padding-top: 3.4em;
-  padding-bottom: 3.4em;
+  padding-top: 3.2em;
+  padding-bottom: 3.2em;
 }
 
 .partner-logo-img {
@@ -556,7 +556,7 @@ body {
   margin-top: 5.33em;
 }
 
-.input-block+.input-block {
+.input-block + .input-block {
   margin-left: 0.3em;
 }
 
@@ -672,7 +672,7 @@ body {
   margin-top: 0.8em;
 }
 
-.main-form-input-block+.main-form-input-block {
+.main-form-input-block + .main-form-input-block {
   margin-top: 2.78em;
 }
 
@@ -682,6 +682,70 @@ body {
 
 .main-form-input::-moz-placeholder {
   color: #ffffff;
+}
+
+/* Модальное окно */
+.modal {
+  padding-left: 33.3em;
+  padding-right: 33.3em;
+  border-radius: 0px;
+}
+
+.modal-form-wrapper {
+  margin-left: -33em;
+}
+
+.modal-left-side-form-page {
+  margin-left: 3em;
+  margin-top: 1em;
+}
+
+.modal-do-you-need-a-site {
+  color: #242424;
+  font-family: "Open Sans";
+  font-size: 1.167rem;
+  font-weight: 700;
+  text-shadow: 0rem 0rem 0;
+}
+
+.modal-you-can-give-request {
+  color: rgba(0, 0, 0, 0.6);
+  width: 19rem;
+  margin-top: 0.2em;
+}
+
+.modal-phone-number {
+  color: #242424;
+}
+
+.modal-privacy-policy {
+  color: #242424;
+  opacity: 0.4;
+  margin-top: 4.3em;
+  margin-left: -4.6em;
+  width: 31.208rem;
+  text-align: center;
+  padding-bottom: 3em;
+}
+.modal-right-side-form-page {
+  margin-left: -1.77em;
+  margin-top: -2em;
+}
+.modal-main-form-input {
+  border-bottom: 0.083rem solid #242424;
+  color: #242424;
+}
+
+.modal-main-form-input::-webkit-input-placeholder {
+  color: #242424;
+}
+
+.modal-main-form-input::-moz-placeholder {
+  color: #242424;
+}
+
+.modal-main-input-send-btn {
+  color: #f54068;
 }
 
 .mobile-version {
