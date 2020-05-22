@@ -27,6 +27,7 @@ body {
 .main-part-page {
   background-image: url(../img/main_bg.png);
   background-repeat: no-repeat;
+  background-color: #2D4CD1;
   background-size: cover;
   height: 100vh;
 }
@@ -52,7 +53,7 @@ body {
   margin-top: 0.2em;
 }
 
-.logo + .logo {
+.logo+.logo {
   padding-left: 2.25em;
 }
 
@@ -61,7 +62,7 @@ body {
   margin-left: 0em;
 }
 
-.links-li + .links-li {
+.links-li+.links-li {
   padding-left: 2.9em;
 }
 
@@ -129,7 +130,7 @@ body {
   margin-bottom: 1.7em;
 }
 
-.soc-li + .soc-li {
+.soc-li+.soc-li {
   margin-top: 1.625em;
 }
 
@@ -556,7 +557,7 @@ body {
   margin-top: 5.33em;
 }
 
-.input-block + .input-block {
+.input-block+.input-block {
   margin-left: 0.3em;
 }
 
@@ -672,7 +673,7 @@ body {
   margin-top: 0.8em;
 }
 
-.main-form-input-block + .main-form-input-block {
+.main-form-input-block+.main-form-input-block {
   margin-top: 2.78em;
 }
 
@@ -727,10 +728,12 @@ body {
   text-align: center;
   padding-bottom: 3em;
 }
+
 .modal-right-side-form-page {
   margin-left: -1.77em;
   margin-top: -2em;
 }
+
 .modal-main-form-input {
   border-bottom: 0.083rem solid #242424;
   color: #242424;

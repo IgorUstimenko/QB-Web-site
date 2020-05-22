@@ -414,4 +414,86 @@
     .mobile-you-agree {
         margin-left: -4em;
     }
+
+
+    /* Бургер-меню */
+    .modal {
+        padding-left: 0em;
+        padding-right: 0em;
+        width: 100%;
+        height: 100%;
+        padding: 0px;
+
+    }
+
+    .modal-header {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 1.05em;
+        margin-right: 1.1em;
+        margin-top: 1.6em;
+        margin-bottom: 3.6em;
+
+    }
+
+    .burger-modal {
+        padding: 0px;
+    }
+
+    .burger-modal-list {
+        margin-left: 1.7em;
+    }
+
+    .modal-buerger-list-point {
+        display: flex;
+        align-items: center;
+        margin-bottom: 3.6em;
+    }
+
+    .modal-buerger-list-point:hover .modal-buerger-list-point-descr {
+        color: #2d4cd1;
+        font-weight: 800;
+        opacity: 1;
+    }
+
+
+    .modal-buerger-list-point-img {
+        margin-right: 0.57em;
+        width: 1.083rem;
+        height: 1.083rem;
+    }
+
+    .modal-buerger-list-point-descr {
+        opacity: 0.6;
+        color: #242424;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 0.833rem;
+        font-weight: 600;
+        line-height: 1.083rem;
+    }
+
+    .suggest-a-project-point {
+        color: #f54068;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 0.833rem;
+        font-weight: 800;
+        line-height: 1.083rem;
+        opacity: 1;
+    }
+
+    .blocker {
+        padding: 0em !important;
+    }
+
+    .modal a.close-modal {
+        display: none !important;
+    }
+
+
+
+
+
+
+
+
 }
