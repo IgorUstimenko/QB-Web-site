@@ -1,0 +1,1428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+
+    <!-- Подключение стилей -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/main-form.css">
+    <link rel="stylesheet" href="./css/style-mobile.css">
+
+    <!-- Подключение стилей -->
+    <link rel="stylesheet" href="./css/fullpage.css">
+    <!-- Подключение шрифтов -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Montserrat:600,700|Open+Sans:400,700,800|Raleway:800&display=swap"
+        rel="stylesheet" />
+    <!-- Подключение шрифтов -->
+</head>
+
+<body>
+    <div id="fullpage">
+        <div class="desctop-version">
+            <div class="main-part-page section">
+                <nav class="main-nav">
+                    <ul class="logos-ul">
+                        <li class="logo">
+                            <img src="./img/logo_blossom.svg" alt="Blossom logo"
+                                style="width: 7.833em; height: 1.625em;" />
+                        </li>
+
+                        <li class="logo">
+                            <img src="./img/logo_qt.svg" alt="Qt logo" style="width: 10.08em; height: 1.625em;" />
+                        </li>
+                    </ul>
+                    <!-- /.links-ul-->
+                    <ul class="links-ul">
+                        <li class="links-li">
+                            <a href="!#" class="link-li-a active">О Союзе</a>
+                        </li>
+                        <li class="links-li"><a href="!#" class="link-li-a">Портфолио</a></li>
+                        <li class="links-li"><a href="!#" class="link-li-a">Блог</a></li>
+                    </ul>
+                    <!-- links-ul -->
+                    <div class="user-icon">
+                        <img src="./img/user-logo.png" alt="User logo" class="user-icon"
+                            style="width: 2.666em; height: 2.666em;" />
+                    </div>
+                    <!-- /.user-icon -->
+                    <a href="#ex1" rel="modal:open">
+                        <div class="tell-btn">
+                            Рассказать о проекте
+                        </div>
+                    </a>
+                    <!-- /.tell-btn -->
+                </nav>
+                <!-- Modal -->
+                <div id="ex1" class="modal">
+                    <div class="form-page-wrapper modal-form-wrapper">
+                        <div class="left-side-form-page modal-left-side-form-page">
+                            <h3 class="do-you-need-a-site modal-do-you-need-a-site">
+                                Нужен сайт?
+                            </h3>
+                            <!-- /.do-you-need-a-site -->
+                            <p class="you-can-give-request modal-you-can-give-request">
+                                Можно оставить заявку, а можно позвонить<br>
+                                нам, и мы заполним ее сами :)
+                            </p>
+                            <!-- /.you-can-give-request -->
+                            <a href="tel:8(918)5421333" class="phone-number modal-phone-number">
+                                8 (918) 542-13-33
+                            </a>
+                            <!-- /.phone-number -->
+                        </div>
+                        <!-- /.left-side-form-page -->
+                        <div class="right-side-form-page modal-right-side-form-page">
+                            <form class="main-form">
+                                <input type="hidden" name="project_name" value="BQAgency">
+                                <input type="hidden" name="admin_email" value="zhernokleew2004@gmail.com">
+                                <input type="hidden" name="form_subject" value="Заявка с модального окна">
+
+                                <div class="main-form-input-block">
+                                    <input type="text" placeholder="Ваше имя *"
+                                        class="main-form-input modal-main-form-input" name="Имя пользователя"
+                                        required />
+                                </div>
+
+                                <div class="main-form-input-block">
+                                    <input type="email" placeholder="Ваш email *"
+                                        class="main-form-input modal-main-form-input " name="Email пользователя"
+                                        required pattern="\S+@[a-z]+.[a-z]+" />
+                                </div>
+
+                                <div class="main-form-input-block">
+                                    <input type="tel" placeholder="Ваш телефон*"
+                                        class="main-form-input modal-main-form-input" name="Телефон пользователя"
+                                        required pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" />
+                                </div>
+
+
+                                <div class="main-form-input-block">
+                                    <input type="text" placeholder="Описание проекта"
+                                        class="main-form-input modal-main-form-input" name="Описание проекта"
+                                        required />
+                                </div>
+
+                                <div class="main-form-input-block">
+                                    <input type="text" placeholder="Откуда узнали о нас?"
+                                        class="main-form-input modal-main-form-input" name="Откуда узнали" required />
+                                </div>
+
+                                <div class="main-form-input-block">
+                                    <button class="main-input-send-btn modal-main-input-send-btn">Отправить</button>
+                                </div>
+
+                            </form>
+                            <!-- Место под форму -->
+                            <div class="privacy-policy modal-privacy-policy">
+                                Нажимая на кнопку, вы даете согласие на обработку
+                                персональных данных и соглашаетесь с политикой<br>
+                                конфиденциальности
+                            </div>
+                            <!-- /.privacy-policy -->
+                        </div>
+                        <!-- /.right-side-form-page -->
+                    </div>
+                    <!-- /.form-page-wrapper -->
+                </div>
+                <!-- /Modal -->
+                <div class="creative-and-soc">
+                    <div class="creative">
+                        <h1 class="creative-tech">
+                            Уместный креатив <br />
+                            & Сильные технологии
+                        </h1>
+                        <div class="down-arrow">
+                            <a href="!#"><img src="./img/btn_scroll_def.svg" alt="Down arrow"
+                                    style="width: 3.5em; height: 3.5em;" /></a>
+                        </div>
+                        <!-- /.down-arrow -->
+                    </div>
+                    <!-- /.creative -->
+
+                    <div class="soc">
+                        <ul class="soc">
+                            <li class="soc-li">
+                                <a href="https://vk.com/blossomquantum" target="_blank"><img src="./img/icn_vk_def.svg"
+                                        alt="Vk" style="width: 1.416em; height: 0.833em;" /></a>
+                            </li>
+                            <li class="soc-li">
+                                <a href="https://t.me/blossomquantum" target="_blank"><img src="./img/icn_tg_def.svg"
+                                        alt="Tg" style="width: 1.166em; height: 1em; margin-left: 0.2em;" /></a>
+                            </li>
+                            <li class="soc-li">
+                                <a href="#" onclick="return false;" target="_blank"><img src="./img/icn_fb_def.svg"
+                                        alt="Fb" style="width: 0.666em; height: 1.208em; margin-left: 0.75em;" /></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /.creative-and-soc -->
+
+                <div id="thanks-modal" class="modal thanks-modal">
+                    <div class="thanks-modal-wrapper">
+                        <div class="thanks-modal-left-side">
+                            <img src="./img/success.png" alt="bottle" class="bottle-img">
+                        </div>
+                        <!-- /.thanks-modal-left-side -->
+                        <div class="thanks-modal-right-side">
+                            <h3 class="application-submitted">
+                                Заявка отправлена. <br>
+                                <span class="red-color">Это успех!</span>
+                            </h3>
+                            <!-- /.application-submitted -->
+                            <p class="we-will-cont thanks-modal-p">
+                                Мы совсем скоро свяжемся с вами и решим все проблемы.<br>
+                                Только подождите немного
+                            </p>
+                            <!-- /.we-will-cont -->
+                            <p class="application-time thanks-modal-p">
+                                Обрабатываем заявки с 9:00 до 21:00 (GMT+3) с понедельника<br>
+                                по субботу.
+                            </p>
+                            <!-- /.application-time -->
+                        </div>
+                        <!-- /.thanks-modal-right-side -->
+
+                    </div>
+                    <!-- /.thanks-modal-wrapper -->
+                </div>
+                <!-- thanks-modal -->
+            </div>
+            <!-- /.main-part-page -->
+
+
+
+            <div class="second-part-page section">
+                <nav class="main-nav idea-nav">
+                    <ul class="logos-ul">
+                        <li class="logo">
+                            <img src="./img/logo_blossom.svg" alt="Blossom logo"
+                                style="width: 7.833em; height: 1.625em;" />
+                        </li>
+
+                        <li class="logo">
+                            <img src="./img/logo_qt.svg" alt="Qt logo" style="width: 10.08em; height: 1.625em;" />
+                        </li>
+                    </ul>
+                    <!-- /.links-ul-->
+                    <ul class="links-ul">
+                        <li class="links-li">
+                            <a href="!#" class="link-li-a active">О Союзе</a>
+                        </li>
+                        <li class="links-li"><a href="!#" class="link-li-a">Портфолио</a></li>
+                        <li class="links-li"><a href="!#" class="link-li-a">Блог</a></li>
+                    </ul>
+                    <!-- links-ul -->
+                    <div class="user-icon">
+                        <img src="./img/user-logo.png" alt="User logo" class="user-icon"
+                            style="width: 2.666em; height: 2.666em;" />
+                    </div>
+                    <!-- /.user-icon -->
+                    <a href="#ex1" rel="modal:open">
+                        <div class="tell-btn">
+                            Рассказать о проекте
+                        </div>
+                    </a>
+                    <!-- /.tell-btn -->
+                </nav>
+                <div class="second-part-page-wrapper">
+                    <div class="cont-part">
+                        <h1 class="idea">
+                            идея
+                        </h1>
+                        <!-- /.idea -->
+                        <h2 class="we-cont">
+                            Мы продолжаем прокачивать свои направления и не растекаемся по
+                            сферам — все благодаря совместной работе.<br>
+                            Мы вообще достаточно разные, но все любим качественный продукт.
+                        </h2>
+                        <!-- /.wecont -->
+                        <a href="!#" class="get-to-know">
+                            Познакомиться поближе
+                        </a>
+                        <!-- /.get-to-know -->
+                    </div>
+                    <!-- /.cont-part -->
+                    <div class="partners-grid">
+                        <div class="partner-box">
+                            <img class="partner-logo-img sber_partner" src="./img/partners-logos/partners_Sber.svg"
+                                alt="Partner logo" />
+                        </div>
+
+                        <!-- /.work-box -->
+                        <div class="partner-box">
+                            <img class="partner-logo-img lamoda_partner" src="./img/partners-logos/partners_Lamoda.svg"
+                                alt="Partner logo" />
+                        </div>
+
+                        <!-- /.work-box -->
+                        <div class="partner-box">
+                            <img class="partner-logo-img kislorod_partner"
+                                src="./img/partners-logos/partners_Kislorod.svg" alt="Partner logo" />
+                        </div>
+
+                        <!-- /.work-box -->
+                        <div class="partner-box">
+                            <img class="partner-logo-img brig_partner" src="./img/partners-logos/partners_Brig.svg"
+                                alt="Partner logo" />
+                        </div>
+
+                        <!-- /.work-box -->
+                        <div class="partner-box">
+                            <img class="partner-logo-img taggsm_partner" src="./img/partners-logos/partners_TagGSM.svg"
+                                alt="Partner logo" />
+                        </div>
+
+                        <!-- /.work-box -->
+                        <div class="partner-box">
+                            <img class="partner-logo-img te_partner" src="./img/partners-logos/partners_TE.svg"
+                                alt="Partner logo" />
+                        </div>
+
+                        <!-- /.work-box -->
+                        <div class="partner-box">
+                            <img class="partner-logo-img dr_partner" src="./img/partners-logos/partners_DR.svg"
+                                alt="Partner logo" />
+                        </div>
+
+                        <!-- /.work-box -->
+                        <div class="partner-box">
+                            <img class="partner-logo-img td_partner" src="./img/partners-logos/partners_TD.svg"
+                                alt="Partner logo" />
+                        </div>
+
+                        <!-- /.work-box -->
+                        <div class="partner-box">
+                            <div class="btn-right">
+                            </div>
+                        </div>
+
+                        <!-- /.work-box -->
+                    </div>
+                    <!-- /.works-grid -->
+                </div>
+                <!-- /.second-part-page-wrapper -->
+            </div>
+            <!-- /.second-part-page-->
+
+            <div class="case-page section">
+                <nav class="main-nav nav-margin">
+                    <ul class="logos-ul">
+                        <li class="logo">
+                            <img src="./img/logo_blossom.svg" alt="Blossom logo"
+                                style="width: 7.833em; height: 1.625em;" />
+                        </li>
+
+                        <li class="logo">
+                            <img src="./img/logo_qt.svg" alt="Qt logo" style="width: 10.08em; height: 1.625em;" />
+                        </li>
+                    </ul>
+                    <!-- /.links-ul-->
+                    <ul class="links-ul">
+                        <li class="links-li">
+                            <a href="!#" class="link-li-a active">О Союзе</a>
+                        </li>
+                        <li class="links-li"><a href="!#" class="link-li-a">Портфолио</a></li>
+                        <li class="links-li"><a href="!#" class="link-li-a">Блог</a></li>
+                    </ul>
+                    <!-- links-ul -->
+                    <div class="user-icon">
+                        <img src="./img/user-logo.png" alt="User logo" class="user-icon"
+                            style="width: 2.666em; height: 2.666em;" />
+                    </div>
+                    <!-- /.user-icon -->
+                    <a href="#ex1" rel="modal:open">
+                        <div class="tell-btn">
+                            Рассказать о проекте
+                        </div>
+                    </a>
+                    <!-- /.tell-btn -->
+                </nav>
+                <div class="case-page-content">
+                    <div class="left-side-case-page">
+                        <h1 class="name-of-case">
+                            бриг
+                        </h1>
+                        <!-- /.name-of-case -->
+                        <p class="case-descr">
+                            Разработали корпоративный сайт транспортной<br>
+                            компании — подчеркнули надежность и<br>
+                            серьезность намерений.
+                        </p>
+                        <!-- /.case-descr -->
+                        <a href="case-brig.html" class="get-to-know">
+                            Прочитать и влюбиться
+                        </a>
+                    </div>
+                    <!-- /.left-side-case-page -->
+                    <div class="right-side-case-page">
+                        <div class="case-features">
+                            <p class="case-feature">
+                                UI, UX, motion-design, frontend,<br>
+                                backend, design support, tech<br>
+                                support
+                            </p>
+                            <!-- /.case-feature -->
+                        </div>
+                        <!-- /.case-features -->
+                    </div>
+                    <!-- /.right-side-case-page -->
+                </div>
+                <!-- /.case-page-content -->
+            </div>
+            <!-- /.case-page -->
+
+            <div class="case-page kislorod-page section">
+                <nav class="main-nav nav-margin">
+                    <ul class="logos-ul">
+                        <li class="logo">
+                            <img src="./img/logo_blossom.svg" alt="Blossom logo"
+                                style="width: 7.833em; height: 1.625em;" />
+                        </li>
+
+                        <li class="logo">
+                            <img src="./img/logo_qt.svg" alt="Qt logo" style="width: 10.08em; height: 1.625em;" />
+                        </li>
+                    </ul>
+                    <!-- /.links-ul-->
+                    <ul class="links-ul">
+                        <li class="links-li">
+                            <a href="!#" class="link-li-a active">О Союзе</a>
+                        </li>
+                        <li class="links-li"><a href="!#" class="link-li-a">Портфолио</a></li>
+                        <li class="links-li"><a href="!#" class="link-li-a">Блог</a></li>
+                    </ul>
+                    <!-- links-ul -->
+                    <div class="user-icon">
+                        <img src="./img/user-logo.png" alt="User logo" class="user-icon"
+                            style="width: 2.666em; height: 2.666em;" />
+                    </div>
+                    <!-- /.user-icon -->
+                    <a href="#ex1" rel="modal:open">
+                        <div class="tell-btn">
+                            Рассказать о проекте
+                        </div>
+                    </a>
+                    <!-- /.tell-btn -->
+                </nav>
+                <div class="case-page-content">
+                    <div class="left-side-case-page">
+                        <h1 class="name-of-case kislorod-name-of-case">
+                            кислород
+                        </h1>
+                        <!-- /.name-of-case -->
+                        <p class="case-descr">
+                            Разработали корпоративный сайт транспортной<br>
+                            компании — подчеркнули надежность и<br>
+                            серьезность намерений.
+                        </p>
+                        <!-- /.case-descr -->
+                        <a href="case-kislorod.html" class="get-to-know">
+                            Прочитать и влюбиться
+                        </a>
+                    </div>
+                    <!-- /.left-side-case-page -->
+                    <div class="right-side-case-page">
+                        <div class="case-features">
+                            <p class="case-feature">
+                                UI, UX, motion-design, frontend,<br>
+                                backend, design support, tech<br>
+                                support
+                            </p>
+                            <!-- /.case-feature -->
+                        </div>
+                        <!-- /.case-features -->
+                    </div>
+                    <!-- /.right-side-case-page -->
+                </div>
+                <!-- /.case-page-content -->
+            </div>
+            <!-- /.kislorod-page-->
+
+            <div class="case-page tageps-case-page section">
+                <nav class="main-nav nav-margin">
+                    <ul class="logos-ul">
+                        <li class="logo">
+                            <img src="./img/logo_blossom.svg" alt="Blossom logo"
+                                style="width: 7.833em; height: 1.625em;" />
+                        </li>
+
+                        <li class="logo">
+                            <img src="./img/logo_qt.svg" alt="Qt logo" style="width: 10.08em; height: 1.625em;" />
+                        </li>
+                    </ul>
+                    <!-- /.links-ul-->
+                    <ul class="links-ul">
+                        <li class="links-li">
+                            <a href="!#" class="link-li-a active">О Союзе</a>
+                        </li>
+                        <li class="links-li"><a href="!#" class="link-li-a">Портфолио</a></li>
+                        <li class="links-li"><a href="!#" class="link-li-a">Блог</a></li>
+                    </ul>
+                    <!-- links-ul -->
+                    <div class="user-icon">
+                        <img src="./img/user-logo.png" alt="User logo" class="user-icon"
+                            style="width: 2.666em; height: 2.666em;" />
+                    </div>
+                    <!-- /.user-icon -->
+                    <a href="#ex1" rel="modal:open">
+                        <div class="tell-btn">
+                            Рассказать о проекте
+                        </div>
+                    </a>
+                    <!-- /.tell-btn -->
+                </nav>
+                <div class="case-page-content">
+                    <div class="left-side-case-page">
+                        <h1 class="name-of-case tageps-name-of-case">
+                            tageps
+                        </h1>
+                        <!-- /.name-of-case -->
+                        <p class="case-descr">
+                            Разработали корпоративный сайт транспортной<br>
+                            компании — подчеркнули надежность и<br>
+                            серьезность намерений.
+                        </p>
+                        <!-- /.case-descr -->
+                        <a href="case-tageps.html" class="get-to-know">
+                            Прочитать и влюбиться
+                        </a>
+                    </div>
+                    <!-- /.left-side-case-page -->
+                    <div class="right-side-case-page">
+                        <div class="case-features">
+                            <p class="case-feature">
+                                UI, UX, motion-design, frontend,<br>
+                                backend, design support, tech<br>
+                                support
+                            </p>
+                            <!-- /.case-feature -->
+                        </div>
+                        <!-- /.case-features -->
+                    </div>
+                    <!-- /.right-side-case-page -->
+                </div>
+                <!-- /.case-page-content -->
+            </div>
+            <!-- /.tageps-case-page -->
+
+            <div class="case-page td-case-page section">
+                <nav class="main-nav nav-margin">
+                    <ul class="logos-ul">
+                        <li class="logo">
+                            <img src="./img/logo_blossom.svg" alt="Blossom logo"
+                                style="width: 7.833em; height: 1.625em;" />
+                        </li>
+
+                        <li class="logo">
+                            <img src="./img/logo_qt.svg" alt="Qt logo" style="width: 10.08em; height: 1.625em;" />
+                        </li>
+                    </ul>
+                    <!-- /.links-ul-->
+                    <ul class="links-ul">
+                        <li class="links-li">
+                            <a href="!#" class="link-li-a active">О Союзе</a>
+                        </li>
+                        <li class="links-li"><a href="!#" class="link-li-a">Портфолио</a></li>
+                        <li class="links-li"><a href="!#" class="link-li-a">Блог</a></li>
+                    </ul>
+                    <!-- links-ul -->
+                    <div class="user-icon">
+                        <img src="./img/user-logo.png" alt="User logo" class="user-icon"
+                            style="width: 2.666em; height: 2.666em;" />
+                    </div>
+                    <!-- /.user-icon -->
+                    <a href="#ex1" rel="modal:open">
+                        <div class="tell-btn">
+                            Рассказать о проекте
+                        </div>
+                    </a>
+                    <!-- /.tell-btn -->
+                </nav>
+                <div class="case-page-content">
+                    <div class="left-side-case-page">
+                        <h1 class="name-of-case td-name-of-case">
+                            твой дом
+                        </h1>
+                        <!-- /.name-of-case -->
+                        <p class="case-descr">
+                            Разработали корпоративный сайт транспортной<br>
+                            компании — подчеркнули надежность и<br>
+                            серьезность намерений.
+                        </p>
+                        <!-- /.case-descr -->
+                        <a href="case-td.html" class="get-to-know">
+                            Прочитать и влюбиться
+                        </a>
+                    </div>
+                    <!-- /.left-side-case-page -->
+                    <div class="right-side-case-page">
+                        <div class="case-features">
+                            <p class="case-feature">
+                                UI, UX, motion-design, frontend,<br>
+                                backend, design support, tech<br>
+                                support
+                            </p>
+                            <!-- /.case-feature -->
+                        </div>
+                        <!-- /.case-features -->
+                    </div>
+                    <!-- /.right-side-case-page -->
+                </div>
+                <!-- /.case-page-content -->
+            </div>
+            <!-- /.td-case-page -->
+            <div class="blossom-agancy-page fourth-part-page  section">
+                <nav class="main-nav blossom-nav-margin">
+                    <ul class="logos-ul">
+                        <li class="logo">
+                            <img src="./img/black-logo_bit.svg" alt="Blossom logo"
+                                style="width: 7.833em; height: 1.625em;" />
+                        </li>
+
+                        <li class="logo">
+                            <img src="./img/black-logo_qt.svg" alt="Qt logo" style="width: 10.08em; height: 1.625em;" />
+                        </li>
+                    </ul>
+                    <!-- /.links-ul-->
+                    <ul class="links-ul">
+                        <li class="links-li">
+                            <a href="!#" class="link-li-a active blue-nav-active ">О Союзе</a>
+                        </li>
+                        <li class="links-li">
+                            <a href="!#" class="link-li-a black-nav-links">Портфолио</a>
+                        </li>
+                        <li class="links-li">
+                            <a href="!#" class="link-li-a black-nav-links">Блог</a>
+                        </li>
+                    </ul>
+                    <!-- links-ul -->
+                    <div class="user-icon">
+                        <img src="./img/user-logo.png" alt="User logo" class="user-icon"
+                            style="width: 2.666em; height: 2.666em;" />
+                    </div>
+                    <!-- /.user-icon -->
+                    <a href="#ex1" rel="modal:open">
+                        <div class="tell-btn black-tell-btn">
+                            Рассказать о проекте
+                        </div>
+                    </a>
+                    <!-- /.tell-btn -->
+                </nav>
+                <div class="fourth-part-page-wrapper ">
+                    <div class="all-agancy-profile">
+                        <h1 class="name-of-agancy">
+                            blossom it
+                        </h1>
+                        <!-- /.name-of-agancy -->
+                        <h2 class="agancy-feature">
+                            — уместный креатив
+                        </h2>
+                        <!-- /.agancy-feature -->
+                        <p class="agancy-descr">
+                            Всю свою историю делали креативные веб-проекты и не планируем
+                            прекращать. <span class="other-color-word">Креативно</span> подходим
+                            к разработке, генерируем идеи и делаем огненный и эффективный
+                            результат.
+                        </p>
+                        <!-- /.agancy-descr -->
+                    </div>
+                    <!-- /.all-agancy-profile -->
+                    <div class="agancy-img">
+                        <img src="./img/blossom-agancy-img.png" alt="Blossom img" class="agancy-img" />
+                    </div>
+                    <!-- /.agancy-img -->
+                </div>
+                <!-- /.fourth-part-page-wrapper -->
+            </div>
+            <!-- /.blossom-part-page -->
+
+            <div class="fifth-part-page section">
+                <nav class="main-nav qtech-nav-margin">
+                    <ul class="logos-ul">
+                        <li class="logo">
+                            <img src="./img/black-logo_bit.svg" alt="Blossom logo"
+                                style="width: 7.833em; height: 1.625em;" />
+                        </li>
+
+                        <li class="logo">
+                            <img src="./img/black-logo_qt.svg" alt="Qt logo" style="width: 10.08em; height: 1.625em;" />
+                        </li>
+                    </ul>
+                    <!-- /.links-ul-->
+                    <ul class="links-ul">
+                        <li class="links-li">
+                            <a href="!#" class="link-li-a active blue-nav-active ">О Союзе</a>
+                        </li>
+                        <li class="links-li">
+                            <a href="!#" class="link-li-a black-nav-links">Портфолио</a>
+                        </li>
+                        <li class="links-li">
+                            <a href="!#" class="link-li-a black-nav-links">Блог</a>
+                        </li>
+                    </ul>
+                    <!-- links-ul -->
+                    <div class="user-icon">
+                        <img src="./img/user-logo.png" alt="User logo" class="user-icon"
+                            style="width: 2.666em; height: 2.666em;" />
+                    </div>
+                    <!-- /.user-icon -->
+                    <a href="#ex1" rel="modal:open">
+                        <div class="tell-btn black-tell-btn">
+                            Рассказать о проекте
+                        </div>
+                    </a>
+                    <!-- /.tell-btn -->
+                </nav>
+                <div class="fourth-part-page-wrapper">
+                    <div class="all-agancy-profile">
+                        <h1 class="name-of-agancy blue-name-of-agancy">
+                            qtech
+                        </h1>
+                        <!-- /.name-of-agancy -->
+                        <h2 class="agancy-feature">
+                            — сильные технологии
+                        </h2>
+                        <!-- /.agancy-feature -->
+                        <p class="agancy-descr">
+                            Всю свою историю делали креативные веб-проекты и не планируем
+                            прекращать.
+                            <span class="other-color-word-blue">Креативно</span> подходим к
+                            разработке, генерируем идеи и делаем огненный и эффективный
+                            результат.
+                        </p>
+                        <!-- /.agancy-descr -->
+                    </div>
+                    <!-- /.all-agancy-profile -->
+                    <div class="agancy-img-qtech">
+                        <img src="./img/qtech-agancy-img.png" alt="qtech-agancy-img" class="agancy-img-qtech" />
+                    </div>
+                    <!-- /.agancy-img -->
+                </div>
+                <!-- /.fourth-part-page-wrapper -->
+            </div>
+            <!-- /.fifth-part-page -->
+            <div class="sixth-part-page section">
+                <nav class="main-nav sending-nav-margin">
+                    <ul class="logos-ul">
+                        <li class="logo">
+                            <img src="./img/logo_blossom.svg" alt="Blossom logo"
+                                style="width: 7.833em; height: 1.625em;" />
+                        </li>
+
+                        <li class="logo">
+                            <img src="./img/logo_qt.svg" alt="Qt logo" style="width: 10.08em; height: 1.625em;" />
+                        </li>
+                    </ul>
+                    <!-- /.links-ul-->
+                    <ul class="links-ul">
+                        <li class="links-li">
+                            <a href="!#" class="link-li-a active">О Союзе</a>
+                        </li>
+                        <li class="links-li"><a href="!#" class="link-li-a">Портфолио</a></li>
+                        <li class="links-li"><a href="!#" class="link-li-a">Блог</a></li>
+                    </ul>
+                    <!-- links-ul -->
+                    <div class="user-icon">
+                        <img src="./img/user-logo.png" alt="User logo" class="user-icon"
+                            style="width: 2.666em; height: 2.666em;" />
+                    </div>
+                    <!-- /.user-icon -->
+                    <a href="#ex1" rel="modal:open">
+                        <div class="tell-btn">
+                            Рассказать о проекте
+                        </div>
+                    </a>
+                    <!-- /.tell-btn -->
+                </nav>
+                <div class="sending-box">
+                    <div class="sending-features">
+                        <div class="sub-on-sending">
+                            <h3 class="sub-on-sending">
+                                Подпишитесь <br />
+                                на нашу рассылку
+                            </h3>
+                        </div>
+                        <!-- /.sub-on-sending -->
+                        <div class="feature-img-and-descr">
+                            <div class="feature-img">
+                                <img src="./img/features-img/newspaper.svg" alt="newspaper-logo" class="feature-img" />
+                            </div>
+                            <!-- /.feature-img -->
+                            <div class="features-descr">
+                                <h4 class="features-descr">Дайджесты</h4>
+                            </div>
+                            <!-- /.features-descr -->
+                        </div>
+                        <!-- /.feature-img-and-descr -->
+                        <div class="feature-img-and-descr">
+                            <div class="feature-img">
+                                <img src="./img/features-img/dart.svg" alt="newspaper-logo" class="feature-img" />
+                            </div>
+                            <!-- /.feature-img -->
+                            <div class="features-descr">
+                                <h4 class="features-descr">Мини-курсы</h4>
+                            </div>
+                            <!-- /.features-descr -->
+                        </div>
+                        <!-- /.feature-img-and-descr -->
+                        <div class="feature-img-and-descr">
+                            <div class="feature-img">
+                                <img src="./img/features-img/fire.svg" alt="newspaper-logo" class="feature-img" />
+                            </div>
+                            <!-- /.feature-img -->
+                            <div class="features-descr">
+                                <h4 class="features-descr">Огненные кейсы</h4>
+                            </div>
+                            <!-- /.features-descr -->
+                        </div>
+                        <!-- /.feature-img-and-descr -->
+                        <div class="feature-img-and-descr">
+                            <div class="feature-img">
+                                <img src="./img/features-img/gun.svg" alt="newspaper-logo" class="feature-img" />
+                            </div>
+                            <!-- /.feature-img -->
+                            <div class="features-descr">
+                                <h4 class="features-descr">и другое</h4>
+                            </div>
+                            <!-- /.features-descr -->
+                        </div>
+                        <!-- /.feature-img-and-descr -->
+                    </div>
+                    <!-- /.sending-features -->
+                    <div class="sending-req">
+                        <form class="sending-request">
+                            <input type="hidden" name="project_name" value="BQAgency">
+                            <input type="hidden" name="admin_email" value="zhernokleew2004@gmail.com">
+                            <input type="hidden" name="form_subject" value="Подписка на рассылку">
+                            <div class="input-block">
+                                <input type="text" name="Имя пользователя" placeholder="Ваше имя"
+                                    class="input your-name-input" required />
+                            </div>
+                            <!-- /.send-input -->
+                            <div class="input-block">
+                                <input type="email" name="Email пользователя" placeholder="Ваш email"
+                                    class="input your-email-input" required pattern="\S+@[a-z]+.[a-z]+" />
+                            </div>
+                            <!-- /.your-email-input -->
+                            <div class="input-block send-input-block">
+                                <button class="send-btn">Отправить</button>
+                            </div>
+                            <!-- /.send-input -->
+                        </form>
+                        <!-- /.sending-request -->
+                    </div>
+                    <!-- /.sending-req -->
+                    <div class="center-block">
+                        <div class="agree-info">
+                            Нажимая на кнопку, вы даете согласие на обработку персональных
+                            данных и соглашаетесь с политикой конфиденциальности
+                        </div>
+                        <!-- /.agree-info -->
+                    </div>
+                    <!-- /.center-block -->
+                </div>
+                <!-- /.sending-box -->
+            </div>
+            <!-- /.sending-page -->
+
+            <div class="seven-part-page section">
+                <nav class="main-nav form-nav-margin">
+                    <ul class="logos-ul">
+                        <li class="logo">
+                            <img src="./img/logo_blossom.svg" alt="Blossom logo"
+                                style="width: 7.833em; height: 1.625em;" />
+                        </li>
+
+                        <li class="logo">
+                            <img src="./img/logo_qt.svg" alt="Qt logo" style="width: 10.08em; height: 1.625em;" />
+                        </li>
+                    </ul>
+                    <!-- /.links-ul-->
+                    <ul class="links-ul">
+                        <li class="links-li">
+                            <a href="!#" class="link-li-a active">О Союзе</a>
+                        </li>
+                        <li class="links-li"><a href="!#" class="link-li-a">Портфолио</a></li>
+                        <li class="links-li"><a href="!#" class="link-li-a">Блог</a></li>
+                    </ul>
+                    <!-- links-ul -->
+                    <div class="user-icon">
+                        <img src="./img/user-logo.png" alt="User logo" class="user-icon"
+                            style="width: 2.666em; height: 2.666em;" />
+                    </div>
+                    <!-- /.user-icon -->
+                    <a href="#ex1" rel="modal:open">
+                        <div class="tell-btn">
+                            Рассказать о проекте
+                        </div>
+                    </a>
+                    <!-- /.tell-btn -->
+                </nav>
+                <div class="form-page-wrapper">
+                    <div class="left-side-form-page">
+                        <h3 class="do-you-need-a-site">
+                            нужен сайт?
+                        </h3>
+                        <!-- /.do-you-need-a-site -->
+                        <p class="you-can-give-request">
+                            Можно оставить заявку, а можно позвонить<br>
+                            нам, и мы заполним ее сами :)
+                        </p>
+                        <!-- /.you-can-give-request -->
+                        <a href="tel:8(918)5421333" class="phone-number">
+                            8 (918) 542-13-33
+                        </a>
+                        <!-- /.phone-number -->
+                        <div class="privacy-policy">
+                            Нажимая на кнопку, вы даете согласие на обработку<br>
+                            персональных данных и соглашаетесь с политикой<br>
+                            конфиденциальности
+                        </div>
+                        <!-- /.privacy-policy -->
+                    </div>
+                    <!-- /.left-side-form-page -->
+                    <div class="right-side-form-page">
+                        <form class="main-form">
+                            <input type="hidden" name="project_name" value="BQAgency">
+                            <input type="hidden" name="admin_email" value="zhernokleew2004@gmail.com">
+                            <input type="hidden" name="form_subject" value="Заяка с главной формы">
+
+                            <div class="main-form-input-block">
+                                <input type="text" placeholder="Ваше имя *" name="user_name" class="main-form-input"
+                                    required />
+                            </div>
+
+                            <div class="main-form-input-block">
+                                <input type="email" placeholder="Ваш email *" name="user_email" class="main-form-input"
+                                    required pattern="\S+@[a-z]+.[a-z]+" />
+                            </div>
+
+                            <div class="main-form-input-block">
+                                <input type="tel" placeholder="Ваш телефон*" name="user_phone" class="main-form-input"
+                                    required pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" />
+                            </div>
+
+
+                            <div class="main-form-input-block">
+                                <input type="text" placeholder="Описание проекта" name="user_descr"
+                                    class="main-form-input" required />
+                            </div>
+
+                            <div class="main-form-input-block">
+                                <input type="text" placeholder="Откуда узнали о нас?" name="user_from"
+                                    class="main-form-input" required />
+                            </div>
+
+                            <div class="main-form-input-block">
+                                <button class="main-input-send-btn">Отправить</button>
+                            </div>
+
+                        </form>
+                        <!-- Место под форму -->
+                    </div>
+                    <!-- /.right-side-form-page -->
+                </div>
+                <!-- /.form-page-wrapper -->
+            </div>
+            <!-- /.form-page -->
+            <div class="section fp-auto-height">
+                <footer class="case-footer section fp-auto-height">
+                    <div class="flex-wrapper">
+                        <div class="column first-column">
+                            <div class="column-sub-heading">для соискателей</div>
+                            <div class="column-heading">
+                                <a href="mailto:hr@blossom-quantum.ru">hr@blossom-quantum.ru</a>
+                            </div>
+                            <div class="column-footer">
+                                <div class="socials">
+                                    <a href="https://www.instagram.com/blossomquantumagency/" target="_blank">
+                                        <img src="./img/cases/socials/inst-icon.svg" alt="Inst Icon"
+                                            style="width: 0.667rem;height: 0.667rem;" />
+                                    </a>
+                                    <a href="#" onclick="return false;" target="_blank">
+                                        <img src="./img/cases/socials/yt-icon.svg" alt="Yt Icon"
+                                            style="width: 0.792rem;height: 0.625rem;" />
+                                    </a>
+                                    <a href="#" onclick="return false;" target="_blank">
+                                        <img src="./img/cases/socials/fb-icon.svg" alt="Fb Icon"
+                                            style="width: 0.375rem;height: 0.667rem;" />
+                                    </a>
+                                    <a href="https://t.me/blossomquantum" target="_blank">
+                                        <img src="./img/cases/socials/telegram-icon.svg" alt="Tg Icon"
+                                            style="width: 0.667rem;height: 0.583rem;" />
+                                    </a>
+                                    <a href="https://vk.com/blossomquantum" target="_blank">
+                                        <img src="./img/cases/socials/vk-icon.svg" alt="Vk Icon"
+                                            style="width: 0.875rem;height: 0.5rem;" />
+                                    </a>
+                                    <a href="https://www.behance.net/blossomit" target="_blank">
+                                        <img src="./img/cases/socials/behance-icon.svg" alt="Be Icon"
+                                            style="width: 0.75rem;height: 0.5rem;" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column second-column">
+                            <div class="column-sub-heading">для проектов</div>
+                            <div class="column-heading">
+                                <a href="mailto:hey@blossom-quantum.ru">hey@blossom-quantum.ru</a>
+                            </div>
+                            <div class="column-footer footer-presentation">
+                                <a href="./img/PresentationBQ.pdf" download="">Презентация компании в pdf</a>
+                            </div>
+                        </div>
+                        <div class="column third-column">
+                            <div class="column-sub-heading">обсудить смысл жизни</div>
+                            <div class="column-heading">
+                                <a href="tel:79185421333">+7 (918) 542-13-33</a>
+                            </div>
+                            <div class="column-footer">
+                                <a href="#">Политика в отношении обработки <br />персональных данных</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.flex-wrapper -->
+                </footer>
+            </div>
+            <!-- /.footer -->
+
+        </div>
+        <!-- /.desctop-version -->
+    </div>
+    <!--fullpage-->
+    <div class="mobile-version">
+
+        <div id="mobile-success-modal" class="modal">
+            <div class="thanks-modal-wrapper">
+                <div class="thanks-modal-right-side">
+                    <h3 class="application-submitted">
+                        Заявка отправлена. <br>
+                        <span class="red-color">Это успех!</span>
+                    </h3>
+                    <!-- /.application-submitted -->
+                    <p class="we-will-cont thanks-modal-p">
+                        Мы совсем скоро свяжемся с вами<br>
+                        и решим все проблемы. Только <br>
+                        подождите немного
+                    </p>
+                    <!-- /.we-will-cont -->
+                    <p class="application-time thanks-modal-p">
+                        Обрабатываем заявки с 9:00<br>
+                        до 21:00 (GMT+3) с понедельника<br>
+                        по субботу.
+                    </p>
+                    <!-- /.application-time -->
+                </div>
+                <!-- /.thanks-modal-right-side -->
+            </div>
+            <!-- /.thanks-modal-wrapper -->
+            <button class="mobile-send-request-on-sending-button main-mobile-form-btn back-btn-line"><a href="#"
+                    rel="modal:close" class="back-btn">Назад</a></button>
+            <div class="success-img-mobile">
+                <img src="./img/mobile-img/success-mobile.png" alt="success-mobile-img" class="success-img-mobile">
+            </div>
+            <!-- /.success-img-mobile -->
+        </div>
+
+
+        <div class="mobile-preview-page">
+            <div class="mobile-nav">
+                <div class="mobile-bq-logo"><img src="./img/mobile-img/bq-logo.svg" alt="bq-logo"></div>
+                <!-- /.bq-logo -->
+            </div>
+            <!-- /.mobile-nav -->
+            <div class="mobile-main-feature">
+                <h2 class="mobile-creative-and-techs">
+                    Уместный креатив<br>
+                    & Сильные технологии
+                </h2>
+
+                <div class="mobile-down-arrow" id="mobile-down-arrow">
+                    <img src="./img/btn_scroll_def.svg" alt="Click to get down" class="mobile-down-arrow">
+                </div>
+                <!-- /.mobile-down-arrow -->
+            </div>
+            <!-- /.mobile-main-feature -->
+        </div>
+        <!-- /.mobile-preview-page -->
+        <div class="mobile-we-continue-page">
+            <div class="mobile-nav">
+                <div class="mobile-bq-logo"><img src="./img/mobile-img/bq-logo.svg" alt="bq-logo"></div>
+                <!-- /.bq-logo -->
+            </div>
+            <!-- /.mobile-nav -->
+            <div class="mobile-we-cont-develop">
+                <h2 class="mobile-we-cont-h2">
+                    Мы продолжаем прокачивать свои <br>
+                    направления и не растекаемся по сферам <br>
+                    — все благодаря совместной работе. <br>
+                    Мы вообще достаточно разные, но все <br>
+                    любим качественный продукт.
+                </h2>
+                <!-- /.mobile-we-cont-h1 -->
+                <div id="get-to-know-block">
+                    <a class="get-to-know">
+                        Познакомиться поближе
+                        <div class="under-line"></div>
+                    </a>
+                    <!-- /.get-to-know -->
+                </div>
+                <!-- /.get-to-know-block -->
+
+
+            </div>
+            <!-- /.mobile-we-cont-develop -->
+            <div class="mobile-partners-line multiple-items">
+                <div class="mobile-partner-cell"> <img class="mobile-sber-parnter-cell mobile-partner-logo-img"
+                        src="./img/partners-logos/partners_Sber.svg" alt="Partner logo" /></div>
+                <!-- /.mobile-partner-cell -->
+                <div class="mobile-partner-cell "> <img class="mobile-lamoda-parnter-cell mobile-partner-logo-img"
+                        src="./img/partners-logos/partners_Lamoda.svg" alt="Partner logo" /></div>
+                <!-- /.mobile-partner-cell -->
+                <div class="mobile-partner-cell"> <img class="mobile-kislorod-parnter-cell mobile-partner-logo-img"
+                        src="./img/partners-logos/partners_Kislorod.svg" alt="Partner logo" /></div>
+                <!-- /.mobile-partner-cell -->
+                <div class="mobile-partner-cell"> <img class="mobile-brig-parnter-cell mobile-partner-logo-img"
+                        src="./img/partners-logos/partners_Brig.svg" alt="Partner logo" /></div>
+                <!-- /.mobile-partner-cell -->
+                <div class="mobile-partner-cell"> <img class="mobile-te-parnter-cell mobile-partner-logo-img"
+                        src="./img/partners-logos/partners_TE.svg" alt="Partner logo" /></div>
+                <!-- /.mobile-partner-cell -->
+                <div class="mobile-partner-cell"> <img class="mobile-taggsm-parnter-cell mobile-partner-logo-img"
+                        src="./img/partners-logos/partners_TagGSM.svg" alt="Partner logo" /></div>
+                <!-- /.mobile-partner-cell -->
+                <div class="mobile-partner-cell"> <img class="mobile-dr-parnter-cell mobile-partner-logo-img"
+                        src="./img/partners-logos/partners_DR.svg" alt="Partner logo" /></div>
+                <!-- /.mobile-partner-cell -->
+                <div class="mobile-partner-cell"> <img class="mobile-td-parnter-cell mobile-partner-logo-img"
+                        src="./img/partners-logos/partners_TD.svg" alt="Partner logo" /></div>
+                <!-- /.mobile-partner-cell -->
+            </div>
+        </div>
+        <!-- /.mobile-we-continue-page -->
+        <div class="mobile-our-works-page" id="mobile-our-works-page">
+            <div class="mobile-nav">
+                <div class="mobile-bq-logo"><img src="./img/mobile-img/bq-logo.svg" alt="bq-logo"></div>
+                <!-- /.bq-logo -->
+            </div>
+            <!-- /.mobile-nav -->
+            <div class="mobile-our-works-headerline">
+                Наши работы
+            </div>
+
+            <div class="case-block">
+                <img class="mobile-case-bg" src="./img/mobile-img/mobile-cases-img/kislorod-bg.png" alt="Imge of case">
+                <h3 class="mobile-case-name">Кислород</h3>
+                <h4 class="mobile-case-desc">Разработали интернет-магазин <br>
+                    по продаже медтехники.</h4>
+            </div>
+            <!-- /.case-block -->
+            <div class="case-block">
+                <img class="mobile-case-bg" src="./img/mobile-img/mobile-cases-img/brig-bg.png" alt="Imge of case">
+                <h3 class="mobile-case-name">Бриг</h3>
+                <h4 class="mobile-case-desc">Сделали корпоративный сайт <br>
+                    для траспортной компании.</h4>
+            </div>
+            <!-- /.case-block -->
+            <div class="case-block">
+                <img class="mobile-case-bg" src="./img/mobile-img/mobile-cases-img/taggsm-bg.png" alt="Imge of case">
+                <h3 class="mobile-case-name">TagGSM</h3>
+                <h4 class="mobile-case-desc">Разработали мобильное приложение<br> и
+                    интернет-магазин для магазина<br>техники и аксессуаров.</h4>
+            </div>
+            <!-- /.case-block -->
+            <div class="case-block">
+                <img class="mobile-case-bg" src="./img/mobile-img/mobile-cases-img/tageps-bg.png" alt="Imge of case">
+                <h3 class="mobile-case-name">TagEps</h3>
+                <h4 class="mobile-case-desc">Разработали сайт для компании<br>
+                    с несколькими сферами работы.</h4>
+            </div>
+            <!-- /.case-block -->
+            <div class="case-block">
+                <img class="mobile-case-bg" src="./img/mobile-img/mobile-cases-img/td-bg.png" alt="Imge of case">
+                <h3 class="mobile-case-name">Твой Дом</h3>
+                <h4 class="mobile-case-desc">Сделали корпоративную CRM<br>
+                    для управляющей компании.</h4>
+            </div>
+            <!-- /.case-block -->
+        </div>
+        <!-- /.mobile-our-works-page -->
+        <div class="mobile-blossom-agansy-page" id="mobile-blossom-agansy-page">
+            <div class="mobile-nav">
+                <div class="mobile-bq-logo"><img src="./img/mobile-img/blue-bq-logo.svg" alt="bq-logo"></div>
+                <!-- /.bq-logo -->
+            </div>
+            <!-- /.mobile-nav -->
+            <div class="mobile-all-agancy-profile">
+                <h1 class="mobile-name-of-agancy">
+                    Blossom IT
+                </h1>
+                <!-- /.name-of-agancy -->
+                <h2 class="mobile-agancy-feature">
+                    — уместный креатив
+                </h2>
+                <!-- /.agancy-feature -->
+                <p class="mobile-agancy-descr">
+                    Всю свою историю делали креативные <br>веб-проекты и не планируем
+                    прекращать.<br> <span class="other-color-word">Креативно</span> подходим
+                    к разработке,<br> генерируем идеи и делаем огненный<br> и эффективный
+                    результат.
+                </p>
+                <!-- /.agancy-descr -->
+            </div>
+            <!-- /.all-agancy-profile -->
+
+        </div>
+        <!-- /.mobile-blossom-agansy-page -->
+        <div class="mobile-blossom-agansy-page mobile-qtech-agansy-page">
+            <div class="mobile-nav">
+                <div class="mobile-bq-logo"><img src="./img/mobile-img/blue-bq-logo.svg" alt="bq-logo"></div>
+                <!-- /.bq-logo -->
+            </div>
+            <!-- /.mobile-nav -->
+            <div class="mobile-all-agancy-profile">
+                <h1 class="mobile-name-of-agancy mobile-QTech-name-of-agansy">
+                    QTech
+                </h1>
+                <!-- /.name-of-agancy -->
+                <h2 class="mobile-agancy-feature">
+                    — сильные технологии
+                </h2>
+                <!-- /.agancy-feature -->
+                <p class="mobile-agancy-descr">
+                    Всю свою историю делали креативные <br>веб-проекты и не планируем
+                    прекращать.<br> <span class="other-color-word-blue">Креативно</span> подходим
+                    к разработке,<br> генерируем идеи и делаем огненный<br> и эффективный
+                    результат.
+                </p>
+                <!-- /.agancy-descr -->
+            </div>
+            <!-- /.all-agancy-profile -->
+        </div>
+        <!-- /.mobile-Qtech-agansy-page -->
+        <div class="do-you-need-a-site-page">
+            <div class="mobile-nav">
+                <div class="mobile-bq-logo"><img src="./img/mobile-img/bq-logo.svg" alt="bq-logo"></div>
+                <!-- /.bq-logo -->
+            </div>
+            <!-- /.mobile-nav -->
+            <div class="mobile-form-box">
+                <div class="mobile-form-content-wrapper mobile-sending-content-wrapper">
+                    <h2 class="mobile-sub-h2">
+                        Подпишитесь<br>
+                        на <span class="other-color-word-blue">нашу рассылку</span>
+                    </h2>
+                    <div class="mobile-features-grid">
+                        <div class="mobile-feature-block">
+                            <img src="./img/features-img/newspaper.svg" alt="NewsPaper" class="mobile-feature-img">
+                            <h4 class="mobile-feature-descr">Дайджесты</h4>
+                            <!-- /.mobile-feature-descr -->
+                        </div>
+                        <!-- /.mobile-feature-block -->
+                        <div class="mobile-feature-block">
+                            <img src="./img/features-img/dart.svg" alt="Dart" class="mobile-feature-img">
+                            <h4 class="mobile-feature-descr">Мини-курсы</h4>
+                            <!-- /.mobile-feature-descr -->
+                        </div>
+                        <!-- /.mobile-feature-block -->
+                        <div class="mobile-feature-block">
+                            <img src="./img/features-img/fire.svg" alt="Fire" class="mobile-feature-img">
+                            <h4 class="mobile-feature-descr">Кейсы</h4>
+                            <!-- /.mobile-feature-descr -->
+                        </div>
+                        <!-- /.mobile-feature-block -->
+                        <div class="mobile-feature-block">
+                            <img src="./img/features-img/gun.svg" alt="Gun" class="mobile-feature-img">
+                            <h4 class="mobile-feature-descr">и другое</h4>
+                            <!-- /.mobile-feature-descr -->
+                        </div>
+                        <!-- /.mobile-feature-block -->
+
+                    </div>
+                    <!-- /.mobile-features-grid -->
+                    <form class="mobile-sub-on-our-sending-form">
+                        <input type="hidden" name="project_name" value="BQAgency">
+                        <input type="hidden" name="admin_email" value="zhernokleew2004@gmail.com">
+                        <input type="hidden" name="form_subject" value="Подписка на рассылку с мобильной версии">
+
+                        <input type="text" name="Имя пользователя" placeholder="Ваше имя" class="mobile-sending-input"
+                            required>
+                        <input type="email" name="Email пользователя" placeholder="Ваш email"
+                            class="mobile-sending-input" pattern="\S+@[a-z]+.[a-z]+" required>
+                        <button class="mobile-send-request-on-sending-button">Отправить</button>
+                    </form>
+                    <!-- /.mobile-sub-on-our-sending-form -->
+                    <div class="mobile-you-agree">
+                        Нажимая на кнопку, вы даете согласие на обработку<br> персональных данных и соглашаетесь с
+                        политикой<br>
+                        конфиденциальности
+                    </div>
+                    <!-- /.mobile-you-agree -->
+                </div>
+                <!-- /.mobile-form-content-wrapper -->
+            </div>
+            <!-- /.mobile-form-box -->
+        </div>
+        <!-- /.do-you-need-a-site-page -->
+
+        <div class="do-you-need-a-site-page">
+            <div class="mobile-nav">
+                <div class="mobile-bq-logo"><img src="./img/mobile-img/bq-logo.svg" alt="bq-logo"></div>
+                <!-- /.bq-logo -->
+            </div>
+            <!-- /.mobile-nav -->
+            <div class="mobile-form-box">
+                <div class="mobile-form-content-wrapper">
+                    <h2 class="mobile-do-you-need-a-site-h2">
+                        Нужен <span class="other-color-word-blue">сайт?</span>
+                    </h2>
+                    <!-- /.mobile-do-you-need-a-site-h2 -->
+                    <p class="mobile-do-you-nedd-a-site-descr">
+                        Можно оставить заявку, а можно <br>позвонить нам, и мы заполним ее <br>за вас :)
+                    </p>
+                    <!-- /.mobile-do-you-nedd-a-site-descr -->
+                    <h4 class="mobile-phone-number">
+                        8 (918) 542-13-33
+                    </h4>
+                    <!-- /.mobile-phone-number -->
+                    <form class="main-mobile-form">
+                        <input type="hidden" name="project_name" value="BQAgency">
+                        <input type="hidden" name="admin_email" value="zhernokleew2004@gmail.com">
+                        <input type="hidden" name="form_subject" value="Заявка с мобильной версии">
+
+                        <input type="text" name="Имя пользователя" placeholder="Ваше имя *" class="mobile-sending-input"
+                            required>
+                        <input type="email" name="Email пользователя" placeholder="Ваш email *"
+                            class="mobile-sending-input" pattern="\S+@[a-z]+.[a-z]+" required>
+                        <input type="tel" name="Телефон пользователя" placeholder="Ваш телефон *"
+                            class="mobile-sending-input" required
+                            pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
+                        <input type="text" name="Описание проекта" placeholder="Описание проекта"
+                            class="mobile-sending-input" required>
+                        <button class="mobile-send-request-on-sending-button main-mobile-form-btn">Отправить</button>
+                    </form>
+                    <!-- /.main-mobile-form -->
+                    <div class="mobile-you-agree mobile-you-agree-main">
+                        Нажимая на кнопку, вы даете согласие на обработку<br> персональных данных и соглашаетесь с
+                        политикой<br>
+                        конфиденциальности
+                    </div>
+                    <!-- /.mobile-you-agree -->
+                </div>
+                <!-- /.mobile-form-content-wrapper -->
+            </div>
+            <!-- /.mobile-form-box -->
+        </div>
+        <!-- /.do-you-need-a-site-page -->
+        <footer class="mobile-footer">
+            <div class="mobile-nav">
+                <div class="mobile-bq-logo"><img src="./img/mobile-img/bq-logo.svg" alt="bq-logo"></div>
+                <!-- /.bq-logo -->
+            </div>
+            <!-- /.mobile-nav -->
+            <div class="mobile-contacts-wrapper">
+                <h2 class="mobile-contacts-text">
+                    Контакты
+                </h2>
+                <!-- /.mobile-contacts-text -->
+                <div class="mobile-contact-point-wrapper">
+                    <div class="mobile-contact-point-name">
+                        для проектов
+                    </div>
+                    <!-- /.mobile-contact-point-name -->
+                    <div class="mobile-contact-point-descr">
+                        hey@blossom-quantum.ru
+                    </div>
+                    <!-- /.mobile-contact-point-descr -->
+                </div>
+                <!-- /.mobile-contact-point-wrapper -->
+                <div class="mobile-contact-point-wrapper">
+                    <div class="mobile-contact-point-name">
+                        обсудить смысл жизни
+                    </div>
+                    <!-- /.mobile-contact-point-name -->
+                    <div class="mobile-contact-point-descr">
+                        +7 (918) 542-13-33
+                    </div>
+                    <!-- /.mobile-contact-point-descr -->
+                </div>
+                <!-- /.mobile-contact-point-wrapper -->
+                <div class="mobile-contact-point-wrapper">
+                    <div class="mobile-contact-point-name">
+                        для соискателей
+                    </div>
+                    <!-- /.mobile-contact-point-name -->
+                    <div class="mobile-contact-point-descr">
+                        hr@blossom-quantum.ru
+                    </div>
+                    <!-- /.mobile-contact-point-descr -->
+                </div>
+                <!-- /.mobile-contact-point-wrapper -->
+                <div class="mobile-soc-line-wrapper">
+                    <a href="!#">
+                        <img src="./img/mobile-img/mobile-soc-icons/inst.svg" alt="Icon of soc" class="mobile-soc-icon">
+                    </a>
+                    <a href="!#">
+                        <img src="./img/mobile-img/mobile-soc-icons/yt.svg" alt="Icon of soc" class="mobile-soc-icon">
+                    </a>
+                    <a href="!#">
+                        <img src="./img/mobile-img/mobile-soc-icons/fb.svg" alt="Icon of soc" class="mobile-soc-icon">
+                    </a>
+                    <a href="!#">
+                        <img src="./img/mobile-img/mobile-soc-icons/tl.svg" alt="Icon of soc" class="mobile-soc-icon">
+                    </a>
+                    <a href="!#">
+                        <img src="./img/mobile-img/mobile-soc-icons/vk.svg" alt="Icon of soc" class="mobile-soc-icon">
+                    </a>
+                    <a href="!#">
+                        <img src="./img/mobile-img/mobile-soc-icons/be.svg" alt="Icon of soc" class="mobile-soc-icon">
+                    </a>
+                </div>
+                <!-- /.mobile-soc-line-wrapper -->
+                <a class=" mobile-police-link-wrapper" href="1#">
+                    <div class="mobile-police-link">
+                        Политика в отношении обработки персональных данных
+                    </div>
+                </a>
+                <!-- /.mobile-police-link -->
+                <a href="./img/PresentationBQ.pdf" download="">
+                    <div class="mobile-presentation-in-pdf">
+                        Презентация компании в pdf
+                    </div>
+                </a>
+                <!-- /.mobile-presentation-in-pdf -->
+
+            </div>
+            <!-- /.mobile-contacts-wrapper -->
+
+        </footer>
+        <!-- /.mobile-footer -->
+        <script type="text/javascript">
+            {
+                if (screen.width > 480) document.write('<script type="text/javascript" src="./js/fullpage.js" ></sc' +
+                    'ript>');
+            }
+        </script>
+        <script type="text/javascript">
+            var myFullpage = new fullpage('#fullpage', {});
+        </script>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+        <!-- jQuery Modal -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+        <!-- Отправка формы -->
+        <script src="script.js"></script>
+
+</body>
+
+</html>
