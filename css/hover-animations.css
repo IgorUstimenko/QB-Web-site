@@ -1,0 +1,16 @@
+.main-nav .tell-btn {
+  transition: all .3s;
+}
+
+.main-nav .tell-btn:hover {
+  background: #F54068;
+}
+
+.btn-hover {
+  transition: all .3s;
+}
+
+.btn-hover:hover {
+
+  text-align: left;
+}
