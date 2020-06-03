@@ -17,8 +17,8 @@
     font-family: "Open Sans";
     font-size: 0.417rem;
     font-weight: 700;
-    margin-bottom: 0.5rem;
-    margin-top: 0.3em;
+    margin-bottom: 0.625rem;
+
 }
 
 .case-footer .column .column-heading {
@@ -42,10 +42,6 @@
     max-width: 10em;
 }
 
-.footer-presentation {
-    margin-top: -0.3em;
-}
-
 .case-footer .column .column-footer .socials {
     width: 92%;
     display: flex;
@@ -57,26 +53,15 @@
     opacity: 1;
 }
 
-
 .column {
     margin-left: 6.85em;
     margin-top: 2.98em;
 }
 
-.second-column {
-    margin-left: 7.2em;
-}
-
-.third-column {
-    margin-right: 0.7em;
-}
-
-
-
 /* Мобильный футер */
 @media (max-device-width: 480px) {
     .mobile-footer {
-        height: 130vh;
+        height: 100vh;
         background-image: url(../img/mobile-img/mobile-footer-bg.png);
         background-repeat: no-repeat;
         background-size: cover;
@@ -119,7 +104,7 @@
     .mobile-soc-line-wrapper {
         display: flex;
         justify-content: space-between;
-        margin-top: 2em;
+        margin-top: 4.1em;
         margin-right: 1em;
         align-items: center;
     }
@@ -135,6 +120,7 @@
     }
 
 
+
     .mobile-presentation-in-pdf {
         opacity: 0.5;
         color: #ffffff;
@@ -143,8 +129,8 @@
         font-weight: 700;
         margin-left: 17.5em;
         margin-top: 3.5em;
-        padding-bottom: 5em;
     }
+
 
 
     .case-footer .column .column-sub-heading {
