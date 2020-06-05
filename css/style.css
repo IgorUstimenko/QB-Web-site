@@ -25,9 +25,8 @@ body {
 
 /* Стили первого основоного экрана */
 .main-part-page {
-    background-image: url(../img/main_bg.webp), url(../img/main_bg.png);
+    background-image: url(../img/main_bg.png);
     background-repeat: no-repeat;
-    background-color: #2d4cd1;
     background-size: cover;
     height: 100vh;
 }
@@ -59,7 +58,7 @@ body {
     align-items: center;
 }
 
-.logo+.logo {
+.logo + .logo {
     padding-left: 2.25em;
 }
 
@@ -68,7 +67,7 @@ body {
     margin-left: 0em;
 }
 
-.links-li+.links-li {
+.links-li + .links-li {
     padding-left: 2.9em;
 }
 
@@ -136,7 +135,7 @@ body {
     margin-bottom: 1.7em;
 }
 
-.soc-li+.soc-li {
+.soc-li + .soc-li {
     margin-top: 1.625em;
 }
 
@@ -202,13 +201,13 @@ body {
     display: grid;
     grid-template-columns: 13.25rem 13.25rem 13.25rem;
     margin-left: 6.6em;
-    margin-top: 18vh;
+    margin-top: 6.7em;
 }
 
 .partner-box {
     text-align: center;
-    padding-top: 3.2em;
-    padding-bottom: 3.2em;
+    padding-top: 3.4em;
+    padding-bottom: 3.4em;
 }
 
 .partner-logo-img {
@@ -533,8 +532,6 @@ body {
 
 .feature-img {
     margin-top: -0.05em;
-    width: 1.666rem;
-    height: 2.791rem;
 }
 
 /* Поля инпутов рассылки */
@@ -551,7 +548,7 @@ body {
     font-size: 0.833rem;
     font-weight: 700;
     line-height: 1.155rem;
-    border-bottom: 0.083rem solid #000;
+    border-bottom: 2px solid #000;
     padding-bottom: 0.75em;
     margin-left: 4.2em;
     width: 11.7rem;
@@ -566,7 +563,7 @@ body {
     margin-top: 5.33em;
 }
 
-.input-block+.input-block {
+.input-block + .input-block {
     margin-left: 0.3em;
 }
 
@@ -578,7 +575,7 @@ body {
     background-color: transparent;
     border: 0px;
     color: #f54068;
-    border-bottom: 0.083rem solid #f54068;
+    border-bottom: 2px solid #f54068;
     padding-left: 0.15em;
     width: 12.9rem;
     margin-left: 4.2em;
@@ -675,14 +672,14 @@ body {
     line-height: 1.155rem;
     background-color: transparent;
     border: 0px;
-    border-bottom: 0.083rem solid #f54068;
+    border-bottom: 2px solid #f54068;
     padding-left: 0.15em;
     width: 12.9rem;
     padding-bottom: 1em;
     margin-top: 0.8em;
 }
 
-.main-form-input-block+.main-form-input-block {
+.main-form-input-block + .main-form-input-block {
     margin-top: 2.78em;
 }
 
@@ -737,12 +734,10 @@ body {
     text-align: center;
     padding-bottom: 3em;
 }
-
 .modal-right-side-form-page {
     margin-left: -1.77em;
     margin-top: -2em;
 }
-
 .modal-main-form-input {
     border-bottom: 0.083rem solid #242424;
     color: #242424;
@@ -762,75 +757,6 @@ body {
 
 .mobile-version {
     display: none;
-}
-
-/* 
-Thanks-modal-window */
-
-.thanks-modal {
-    padding-top: 5em;
-    padding-bottom: 5em;
-}
-
-.thanks-modal-wrapper {
-    display: flex;
-}
-
-.bottle-img {
-    width: 18.25rem;
-    height: 22.958rem;
-    padding-right: 3em;
-}
-
-.thanks-modal-left-side {
-    margin-left: -26em;
-}
-
-.application-submitted {
-    line-height: 68px;
-    font-size: 2.333rem;
-    font-style: normal;
-    font-weight: 600;
-    color: #242424;
-    font-family: "Montserrat", sans-serif;
-    white-space: nowrap;
-    margin-top: 1.35em;
-    margin-bottom: 0.85em;
-}
-
-.thanks-modal-right-side {
-    margin-left: 1.65em;
-}
-
-.thanks-modal-p {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 0.824rem;
-    line-height: 150%;
-    color: rgba(0, 0, 0, 0.6);
-    font-family: "Open Sans", sans-serif;
-}
-
-.application-time {
-    margin-top: 1.5em;
-}
-
-.red-color {
-    color: #f54068;
-}
-
-.modal a.close-modal {
-    position: absolute;
-    top: 70px;
-    right: 76px;
-    display: block;
-    width: 27px;
-    height: 27px;
-    text-indent: -9999px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-image: url(../img/btn_close.svg);
 }
 
 .from-about-field.main-form-input-block {
