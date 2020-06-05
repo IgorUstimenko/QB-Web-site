@@ -48,16 +48,16 @@
                     </ul>
                     <!-- links-ul -->
                     <div class="header-right">
-                    <div class="user-icon">
-                        <img src="./img/user-logo.png" alt="User logo" class="user-icon"
-                            style="width: 2.666em; height: 2.666em;" />
-                    </div>
-                    <!-- /.user-icon -->
-                    <a href="#ex1" rel="modal:open">
-                        <div class="tell-btn">
-                            Рассказать о проекте
+                        <div class="user-icon">
+                            <img src="./img/user-logo.png" alt="User logo" class="user-icon"
+                                style="width: 2.666em; height: 2.666em;" />
                         </div>
-                    </a>
+                        <!-- /.user-icon -->
+                        <a href="#ex1" rel="modal:open">
+                            <div class="tell-btn">
+                                Рассказать о проекте
+                            </div>
+                        </a>
                     </div>
                     <!-- /.tell-btn -->
                 </nav>
@@ -81,32 +81,39 @@
                         </div>
                         <!-- /.left-side-form-page -->
                         <div class="right-side-form-page modal-right-side-form-page">
-                            <form action="" class="main-form">
+                            <form class="main-form">
+                                <input type="hidden" name="project_name" value="BQAgency">
+                                <input type="hidden" name="admin_email" value="zhernokleew2004@gmail.com">
+                                <input type="hidden" name="form_subject" value="Заявка с модального окна">
 
                                 <div class="main-form-input-block">
                                     <input type="text" placeholder="Ваше имя *"
-                                        class="main-form-input modal-main-form-input" />
+                                        class="main-form-input modal-main-form-input" name="Имя пользователя"
+                                        required />
                                 </div>
 
                                 <div class="main-form-input-block">
-                                    <input type="text" placeholder="Ваш email *"
-                                        class="main-form-input modal-main-form-input " />
+                                    <input type="email" placeholder="Ваш email *"
+                                        class="main-form-input modal-main-form-input " name="Email пользователя"
+                                        required pattern="\S+@[a-z]+.[a-z]+" />
                                 </div>
 
                                 <div class="main-form-input-block">
-                                    <input type="text" placeholder="Ваш телефон*"
-                                        class="main-form-input modal-main-form-input" />
+                                    <input type="tel" placeholder="Ваш телефон*"
+                                        class="main-form-input modal-main-form-input" name="Телефон пользователя"
+                                        required pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" />
                                 </div>
 
 
                                 <div class="main-form-input-block">
                                     <input type="text" placeholder="Описание проекта"
-                                        class="main-form-input modal-main-form-input" />
+                                        class="main-form-input modal-main-form-input" name="Описание проекта"
+                                        required />
                                 </div>
 
                                 <div class="main-form-input-block">
                                     <input type="text" placeholder="Откуда узнали о нас?"
-                                        class="main-form-input modal-main-form-input" />
+                                        class="main-form-input modal-main-form-input" name="Откуда узнали" required />
                                 </div>
 
                                 <div class="main-form-input-block">
@@ -143,16 +150,16 @@
                     <div class="soc">
                         <ul class="soc">
                             <li class="soc-li">
-                                <a href="!#"><img src="./img/icn_vk_def.svg" alt="Vk"
-                                        style="width: 1.416em; height: 0.833em;" /></a>
+                                <a href="https://vk.com/blossomquantum" target="_blank"><img src="./img/icn_vk_def.svg"
+                                        alt="Vk" style="width: 1.416em; height: 0.833em;" /></a>
                             </li>
                             <li class="soc-li">
-                                <a href="!#"><img src="./img/icn_tg_def.svg" alt="Tg"
-                                        style="width: 1.166em; height: 1em; margin-left: 0.2em;" /></a>
+                                <a href="https://t.me/blossomquantum" target="_blank"><img src="./img/icn_tg_def.svg"
+                                        alt="Tg" style="width: 1.166em; height: 1em; margin-left: 0.2em;" /></a>
                             </li>
                             <li class="soc-li">
-                                <a href="!#"><img src="./img/icn_fb_def.svg" alt="Fb"
-                                        style="width: 0.666em; height: 1.208em; margin-left: 0.75em;" /></a>
+                                <a href="#" onclick="return false;" target="_blank"><img src="./img/icn_fb_def.svg"
+                                        alt="Fb" style="width: 0.666em; height: 1.208em; margin-left: 0.75em;" /></a>
                             </li>
                         </ul>
                     </div>
@@ -867,46 +874,27 @@
                             </div>
 
                             <div class="from-about-field main-form-input-block">
-                                        <div class="input-wrapper">
-                                            <input
-                                                type="text"
-                                                class="form-input"
-                                                placeholder="Откуда узнали о нас?"
-                                            />
-                                        </div>
-                                        <div class="btn-set">
-                                            <button
-                                                type="button"
-                                                class="from-about-btn"
-                                            >
-                                                Рекомендации
-                                            </button>
-                                            <button
-                                                type="button"
-                                                class="from-about-btn"
-                                            >
-                                                Реклама
-                                            </button>
-                                            <button
-                                                type="button"
-                                                class="from-about-btn"
-                                            >
-                                                СМИ
-                                            </button>
-                                            <button
-                                                type="button"
-                                                class="from-about-btn"
-                                            >
-                                                Соцсети
-                                            </button>
-                                            <button
-                                                type="button"
-                                                class="from-about-btn"
-                                            >
-                                                Выступления
-                                            </button>
-                                        </div>
-                                    </div>
+                                <div class="input-wrapper">
+                                    <input type="text" class="form-input" placeholder="Откуда узнали о нас?" />
+                                </div>
+                                <div class="btn-set">
+                                    <button type="button" class="from-about-btn">
+                                        Рекомендации
+                                    </button>
+                                    <button type="button" class="from-about-btn">
+                                        Реклама
+                                    </button>
+                                    <button type="button" class="from-about-btn">
+                                        СМИ
+                                    </button>
+                                    <button type="button" class="from-about-btn">
+                                        Соцсети
+                                    </button>
+                                    <button type="button" class="from-about-btn">
+                                        Выступления
+                                    </button>
+                                </div>
+                            </div>
 
                             <div class="main-form-input-block">
                                 <button class="main-input-send-btn">Отправить</button>
