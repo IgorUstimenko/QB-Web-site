@@ -26,7 +26,7 @@
 <body>
     <div id="fullpage">
         <div class="desctop-version">
-            <div class="main-part-page section">
+            <div class="main-part-page section" data-anchor="first-section">
                 <nav class="main-nav">
                     <ul class="logos-ul">
                         <li class="logo">
@@ -41,22 +41,24 @@
                     <!-- /.links-ul-->
                     <ul class="links-ul">
                         <li class="links-li">
-                            <a href="!#" class="link-li-a active">О Союзе</a>
+                            <a href="#first-section" class="link-li-a active">О Союзе</a>
                         </li>
-                        <li class="links-li"><a href="!#" class="link-li-a">Портфолио</a></li>
+                        <li class="links-li"><a href="#portfolio" class="link-li-a">Портфолио</a></li>
                         <li class="links-li"><a href="!#" class="link-li-a">Блог</a></li>
                     </ul>
                     <!-- links-ul -->
-                    <div class="user-icon">
-                        <img src="./img/user-logo.png" alt="User logo" class="user-icon"
-                            style="width: 2.666em; height: 2.666em;" />
-                    </div>
-                    <!-- /.user-icon -->
-                    <a href="#ex1" rel="modal:open">
-                        <div class="tell-btn">
-                            Рассказать о проекте
+                    <div class="header-right">
+                        <div class="user-icon">
+                            <img src="./img/user-logo.png" alt="User logo" class="user-icon"
+                                style="width: 2.666em; height: 2.666em;" />
                         </div>
-                    </a>
+                        <!-- /.user-icon -->
+                        <a href="#ex1" rel="modal:open">
+                            <div class="tell-btn">
+                                Рассказать о проекте
+                            </div>
+                        </a>
+                    </div>
                     <!-- /.tell-btn -->
                 </nav>
                 <!-- Modal -->
@@ -145,7 +147,6 @@
                         <!-- /.down-arrow -->
                     </div>
                     <!-- /.creative -->
-
                     <div class="soc">
                         <ul class="soc">
                             <li class="soc-li">
@@ -164,7 +165,6 @@
                     </div>
                 </div>
                 <!-- /.creative-and-soc -->
-
                 <div id="thanks-modal" class="modal thanks-modal">
                     <div class="thanks-modal-wrapper">
                         <div class="thanks-modal-left-side">
@@ -194,12 +194,11 @@
                     <!-- /.thanks-modal-wrapper -->
                 </div>
                 <!-- thanks-modal -->
+
             </div>
             <!-- /.main-part-page -->
 
-
-
-            <div class="second-part-page section">
+            <div class="second-part-page section" data-anchor="second-section">
                 <nav class="main-nav idea-nav">
                     <ul class="logos-ul">
                         <li class="logo">
@@ -252,8 +251,6 @@
                     <!-- /.cont-part -->
                     <div class="partners-grid">
                         <div class="partner-box">
-                            <img class="partner-logo-img sber_partner" src="./img/partners-logos/partners_Sber.svg"
-                                alt="Partner logo" />
                         </div>
 
                         <!-- /.work-box -->
@@ -300,8 +297,8 @@
 
                         <!-- /.work-box -->
                         <div class="partner-box">
-                            <div class="btn-right">
-                            </div>
+                            <img class="partner-logo-img btn-right" src="./img/partners-logos/btn_right.svg"
+                                alt="Partner logo" />
                         </div>
 
                         <!-- /.work-box -->
@@ -312,7 +309,7 @@
             </div>
             <!-- /.second-part-page-->
 
-            <div class="case-page section">
+            <div class="case-page brig-case section" data-anchor="portfolio">
                 <nav class="main-nav nav-margin">
                     <ul class="logos-ul">
                         <li class="logo">
@@ -327,9 +324,9 @@
                     <!-- /.links-ul-->
                     <ul class="links-ul">
                         <li class="links-li">
-                            <a href="!#" class="link-li-a active">О Союзе</a>
+                            <a href="#first-section" class="link-li-a">О Союзе</a>
                         </li>
-                        <li class="links-li"><a href="!#" class="link-li-a">Портфолио</a></li>
+                        <li class="links-li"><a href="!#" class="link-li-a active">Портфолио</a></li>
                         <li class="links-li"><a href="!#" class="link-li-a">Блог</a></li>
                     </ul>
                     <!-- links-ul -->
@@ -644,7 +641,7 @@
             </div>
             <!-- /.blossom-part-page -->
 
-            <div class="fifth-part-page section">
+            <div class="qt-agency-page fifth-part-page section">
                 <nav class="main-nav qtech-nav-margin">
                     <ul class="logos-ul">
                         <li class="logo">
@@ -833,7 +830,7 @@
             </div>
             <!-- /.sending-page -->
 
-            <div class="seven-part-page section">
+            <div class="seven-part-page section" data-anchor="form">
                 <nav class="main-nav form-nav-margin">
                     <ul class="logos-ul">
                         <li class="logo">
@@ -916,9 +913,27 @@
                                     class="main-form-input" required />
                             </div>
 
-                            <div class="main-form-input-block">
-                                <input type="text" placeholder="Откуда узнали о нас?" name="user_from"
-                                    class="main-form-input" required />
+                            <div class="from-about-field main-form-input-block">
+                                <div class="input-wrapper">
+                                    <input type="text" class="form-input" placeholder="Откуда узнали о нас?" required />
+                                </div>
+                                <div class="btn-set">
+                                    <button type="button" class="from-about-btn">
+                                        Рекомендации
+                                    </button>
+                                    <button type="button" class="from-about-btn">
+                                        Реклама
+                                    </button>
+                                    <button type="button" class="from-about-btn">
+                                        СМИ
+                                    </button>
+                                    <button type="button" class="from-about-btn">
+                                        Соцсети
+                                    </button>
+                                    <button type="button" class="from-about-btn">
+                                        Выступления
+                                    </button>
+                                </div>
                             </div>
 
                             <div class="main-form-input-block">
@@ -999,7 +1014,6 @@
     </div>
     <!--fullpage-->
     <div class="mobile-version">
-
         <div id="mobile-success-modal" class="modal">
             <div class="thanks-modal-wrapper">
                 <div class="thanks-modal-right-side">
@@ -1405,19 +1419,30 @@
 
         </footer>
         <!-- /.mobile-footer -->
+
+
         <script type="text/javascript">
             {
                 if (screen.width > 480) document.write('<script type="text/javascript" src="./js/fullpage.js" ></sc' +
                     'ript>');
             }
         </script>
+
         <script type="text/javascript">
             var myFullpage = new fullpage('#fullpage', {});
         </script>
 
 
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 
+        <script src="./js/anime.min.js"></script>
+        <script src="./js/animation.js"></script>
+        <script src="./js/onScrollAnimations.js"></script>
+        <script src="./js/main-form.js"></script>
+
+        <!-- jQuery Modal -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
         <!-- jQuery Modal -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
         <!-- Отправка формы -->
