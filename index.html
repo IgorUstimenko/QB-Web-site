@@ -165,6 +165,36 @@
                     </div>
                 </div>
                 <!-- /.creative-and-soc -->
+                <div id="thanks-modal" class="modal thanks-modal">
+                    <div class="thanks-modal-wrapper">
+                        <div class="thanks-modal-left-side">
+                            <img src="./img/success.png" alt="bottle" class="bottle-img">
+                        </div>
+                        <!-- /.thanks-modal-left-side -->
+                        <div class="thanks-modal-right-side">
+                            <h3 class="application-submitted">
+                                Заявка отправлена. <br>
+                                <span class="red-color">Это успех!</span>
+                            </h3>
+                            <!-- /.application-submitted -->
+                            <p class="we-will-cont thanks-modal-p">
+                                Мы совсем скоро свяжемся с вами и решим все проблемы.<br>
+                                Только подождите немного
+                            </p>
+                            <!-- /.we-will-cont -->
+                            <p class="application-time thanks-modal-p">
+                                Обрабатываем заявки с 9:00 до 21:00 (GMT+3) с понедельника<br>
+                                по субботу.
+                            </p>
+                            <!-- /.application-time -->
+                        </div>
+                        <!-- /.thanks-modal-right-side -->
+
+                    </div>
+                    <!-- /.thanks-modal-wrapper -->
+                </div>
+                <!-- thanks-modal -->
+
             </div>
             <!-- /.main-part-page -->
 
@@ -221,8 +251,6 @@
                     <!-- /.cont-part -->
                     <div class="partners-grid">
                         <div class="partner-box">
-                            <img class="partner-logo-img sber_partner" src="./img/partners-logos/partners_Sber.svg"
-                                alt="Partner logo" />
                         </div>
 
                         <!-- /.work-box -->
@@ -326,7 +354,7 @@
                             серьезность намерений.
                         </p>
                         <!-- /.case-descr -->
-                        <a href="!#" class="get-to-know">
+                        <a href="case-brig.html" class="get-to-know">
                             Прочитать и влюбиться
                         </a>
                     </div>
@@ -393,7 +421,7 @@
                             серьезность намерений.
                         </p>
                         <!-- /.case-descr -->
-                        <a href="!#" class="get-to-know">
+                        <a href="case-kislorod.html" class="get-to-know">
                             Прочитать и влюбиться
                         </a>
                     </div>
@@ -460,7 +488,7 @@
                             серьезность намерений.
                         </p>
                         <!-- /.case-descr -->
-                        <a href="!#" class="get-to-know">
+                        <a href="case-tageps.html" class="get-to-know">
                             Прочитать и влюбиться
                         </a>
                     </div>
@@ -527,7 +555,7 @@
                             серьезность намерений.
                         </p>
                         <!-- /.case-descr -->
-                        <a href="!#" class="get-to-know">
+                        <a href="case-td.html" class="get-to-know">
                             Прочитать и влюбиться
                         </a>
                     </div>
@@ -767,13 +795,18 @@
                     </div>
                     <!-- /.sending-features -->
                     <div class="sending-req">
-                        <form action="" class="sending-request">
+                        <form class="sending-request">
+                            <input type="hidden" name="project_name" value="BQAgency">
+                            <input type="hidden" name="admin_email" value="zhernokleew2004@gmail.com">
+                            <input type="hidden" name="form_subject" value="Подписка на рассылку">
                             <div class="input-block">
-                                <input type="text" placeholder="Ваше имя" class="input your-name-input" />
+                                <input type="text" name="Имя пользователя" placeholder="Ваше имя"
+                                    class="input your-name-input" required />
                             </div>
                             <!-- /.send-input -->
                             <div class="input-block">
-                                <input type="text" placeholder="Ваш email" class="input your-email-input" />
+                                <input type="email" name="Email пользователя" placeholder="Ваш email"
+                                    class="input your-email-input" required pattern="\S+@[a-z]+.[a-z]+" />
                             </div>
                             <!-- /.your-email-input -->
                             <div class="input-block send-input-block">
@@ -854,28 +887,35 @@
                     </div>
                     <!-- /.left-side-form-page -->
                     <div class="right-side-form-page">
-                        <form action="" class="main-form">
+                        <form class="main-form">
+                            <input type="hidden" name="project_name" value="BQAgency">
+                            <input type="hidden" name="admin_email" value="zhernokleew2004@gmail.com">
+                            <input type="hidden" name="form_subject" value="Заяка с главной формы">
 
                             <div class="main-form-input-block">
-                                <input type="text" placeholder="Ваше имя *" class="main-form-input" />
+                                <input type="text" placeholder="Ваше имя *" name="user_name" class="main-form-input"
+                                    required />
                             </div>
 
                             <div class="main-form-input-block">
-                                <input type="text" placeholder="Ваш email *" class="main-form-input" />
+                                <input type="email" placeholder="Ваш email *" name="user_email" class="main-form-input"
+                                    required pattern="\S+@[a-z]+.[a-z]+" />
                             </div>
 
                             <div class="main-form-input-block">
-                                <input type="text" placeholder="Ваш телефон*" class="main-form-input" />
+                                <input type="tel" placeholder="Ваш телефон*" name="user_phone" class="main-form-input"
+                                    required pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" />
                             </div>
 
 
                             <div class="main-form-input-block">
-                                <input type="text" placeholder="Описание проекта" class="main-form-input" />
+                                <input type="text" placeholder="Описание проекта" name="user_descr"
+                                    class="main-form-input" required />
                             </div>
 
                             <div class="from-about-field main-form-input-block">
                                 <div class="input-wrapper">
-                                    <input type="text" class="form-input" placeholder="Откуда узнали о нас?" />
+                                    <input type="text" class="form-input" placeholder="Откуда узнали о нас?" required />
                                 </div>
                                 <div class="btn-set">
                                     <button type="button" class="from-about-btn">
@@ -918,12 +958,30 @@
                             </div>
                             <div class="column-footer">
                                 <div class="socials">
-                                    <a href=""><img src="./img/cases/socials/inst-icon.svg" alt="" /></a><a href=""><img
-                                            src="./img/cases/socials/yt-icon.svg" alt="" /></a><a href=""><img
-                                            src="./img/cases/socials/fb-icon.svg" alt="" /></a><a href=""><img
-                                            src="./img/cases/socials/telegram-icon.svg" alt="" /></a><a href=""><img
-                                            src="./img/cases/socials/vk-icon.svg" alt="" /></a><a href=""><img
-                                            src="./img/cases/socials/behance-icon.svg" alt="" /></a>
+                                    <a href="https://www.instagram.com/blossomquantumagency/" target="_blank">
+                                        <img src="./img/cases/socials/inst-icon.svg" alt="Inst Icon"
+                                            style="width: 0.667rem;height: 0.667rem;" />
+                                    </a>
+                                    <a href="#" onclick="return false;" target="_blank">
+                                        <img src="./img/cases/socials/yt-icon.svg" alt="Yt Icon"
+                                            style="width: 0.792rem;height: 0.625rem;" />
+                                    </a>
+                                    <a href="#" onclick="return false;" target="_blank">
+                                        <img src="./img/cases/socials/fb-icon.svg" alt="Fb Icon"
+                                            style="width: 0.375rem;height: 0.667rem;" />
+                                    </a>
+                                    <a href="https://t.me/blossomquantum" target="_blank">
+                                        <img src="./img/cases/socials/telegram-icon.svg" alt="Tg Icon"
+                                            style="width: 0.667rem;height: 0.583rem;" />
+                                    </a>
+                                    <a href="https://vk.com/blossomquantum" target="_blank">
+                                        <img src="./img/cases/socials/vk-icon.svg" alt="Vk Icon"
+                                            style="width: 0.875rem;height: 0.5rem;" />
+                                    </a>
+                                    <a href="https://www.behance.net/blossomit" target="_blank">
+                                        <img src="./img/cases/socials/behance-icon.svg" alt="Be Icon"
+                                            style="width: 0.75rem;height: 0.5rem;" />
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -932,8 +990,8 @@
                             <div class="column-heading">
                                 <a href="mailto:hey@blossom-quantum.ru">hey@blossom-quantum.ru</a>
                             </div>
-                            <div class="column-footer">
-                                <a href="#">Презентация компании в pdf</a>
+                            <div class="column-footer footer-presentation">
+                                <a href="./img/PresentationBQ.pdf" download="">Презентация компании в pdf</a>
                             </div>
                         </div>
                         <div class="column third-column">
@@ -956,17 +1014,43 @@
     </div>
     <!--fullpage-->
     <div class="mobile-version">
+        <div id="mobile-success-modal" class="modal">
+            <div class="thanks-modal-wrapper">
+                <div class="thanks-modal-right-side">
+                    <h3 class="application-submitted">
+                        Заявка отправлена. <br>
+                        <span class="red-color">Это успех!</span>
+                    </h3>
+                    <!-- /.application-submitted -->
+                    <p class="we-will-cont thanks-modal-p">
+                        Мы совсем скоро свяжемся с вами<br>
+                        и решим все проблемы. Только <br>
+                        подождите немного
+                    </p>
+                    <!-- /.we-will-cont -->
+                    <p class="application-time thanks-modal-p">
+                        Обрабатываем заявки с 9:00<br>
+                        до 21:00 (GMT+3) с понедельника<br>
+                        по субботу.
+                    </p>
+                    <!-- /.application-time -->
+                </div>
+                <!-- /.thanks-modal-right-side -->
+            </div>
+            <!-- /.thanks-modal-wrapper -->
+            <button class="mobile-send-request-on-sending-button main-mobile-form-btn back-btn-line"><a href="#"
+                    rel="modal:close" class="back-btn">Назад</a></button>
+            <div class="success-img-mobile">
+                <img src="./img/mobile-img/success-mobile.png" alt="success-mobile-img" class="success-img-mobile">
+            </div>
+            <!-- /.success-img-mobile -->
+        </div>
+
+
         <div class="mobile-preview-page">
             <div class="mobile-nav">
                 <div class="mobile-bq-logo"><img src="./img/mobile-img/bq-logo.svg" alt="bq-logo"></div>
                 <!-- /.bq-logo -->
-                <div class="mobile-user-icon"><img src="./img/user-logo.png" alt="user-logo" class="mobile-user-logo">
-                </div>
-                <!-- /.mobile-user-icon -->
-                <div class="mobile-burger-btn"><img src="./img/mobile-img/burher-btn-menu.svg" class="burger-btn-img"
-                        alt="">
-                </div>
-                <!-- /.mobile-burger-btn -->
             </div>
             <!-- /.mobile-nav -->
             <div class="mobile-main-feature">
@@ -974,8 +1058,8 @@
                     Уместный креатив<br>
                     & Сильные технологии
                 </h2>
-                <!-- /.mobile-creative-and-techs -->
-                <div class="mobile-down-arrow">
+
+                <div class="mobile-down-arrow" id="mobile-down-arrow">
                     <img src="./img/btn_scroll_def.svg" alt="Click to get down" class="mobile-down-arrow">
                 </div>
                 <!-- /.mobile-down-arrow -->
@@ -987,13 +1071,6 @@
             <div class="mobile-nav">
                 <div class="mobile-bq-logo"><img src="./img/mobile-img/bq-logo.svg" alt="bq-logo"></div>
                 <!-- /.bq-logo -->
-                <div class="mobile-user-icon"><img src="./img/user-logo.png" alt="user-logo" class="mobile-user-logo">
-                </div>
-                <!-- /.mobile-user-icon -->
-                <div class="mobile-burger-btn"><img src="./img/mobile-img/burher-btn-menu.svg" class="burger-btn-img"
-                        alt="">
-                </div>
-                <!-- /.mobile-burger-btn -->
             </div>
             <!-- /.mobile-nav -->
             <div class="mobile-we-cont-develop">
@@ -1005,11 +1082,15 @@
                     любим качественный продукт.
                 </h2>
                 <!-- /.mobile-we-cont-h1 -->
-                <a href="!#" class="get-to-know">
-                    Познакомиться поближе
-                    <div class="under-line"></div>
-                </a>
-                <!-- /.get-to-know -->
+                <div id="get-to-know-block">
+                    <a class="get-to-know">
+                        Познакомиться поближе
+                        <div class="under-line"></div>
+                    </a>
+                    <!-- /.get-to-know -->
+                </div>
+                <!-- /.get-to-know-block -->
+
 
             </div>
             <!-- /.mobile-we-cont-develop -->
@@ -1041,17 +1122,10 @@
             </div>
         </div>
         <!-- /.mobile-we-continue-page -->
-        <div class="mobile-our-works-page">
+        <div class="mobile-our-works-page" id="mobile-our-works-page">
             <div class="mobile-nav">
                 <div class="mobile-bq-logo"><img src="./img/mobile-img/bq-logo.svg" alt="bq-logo"></div>
                 <!-- /.bq-logo -->
-                <div class="mobile-user-icon"><img src="./img/user-logo.png" alt="user-logo" class="mobile-user-logo">
-                </div>
-                <!-- /.mobile-user-icon -->
-                <div class="mobile-burger-btn"><img src="./img/mobile-img/burher-btn-menu.svg" class="burger-btn-img"
-                        alt="">
-                </div>
-                <!-- /.mobile-burger-btn -->
             </div>
             <!-- /.mobile-nav -->
             <div class="mobile-our-works-headerline">
@@ -1095,17 +1169,10 @@
             <!-- /.case-block -->
         </div>
         <!-- /.mobile-our-works-page -->
-        <div class="mobile-blossom-agansy-page">
+        <div class="mobile-blossom-agansy-page" id="mobile-blossom-agansy-page">
             <div class="mobile-nav">
                 <div class="mobile-bq-logo"><img src="./img/mobile-img/blue-bq-logo.svg" alt="bq-logo"></div>
                 <!-- /.bq-logo -->
-                <div class="mobile-user-icon"><img src="./img/user-logo.png" alt="user-logo" class="mobile-user-logo">
-                </div>
-                <!-- /.mobile-user-icon -->
-                <div class="mobile-burger-btn"><img src="./img/mobile-img/black-burger-btn_menu.svg"
-                        class="burger-btn-img" alt="">
-                </div>
-                <!-- /.mobile-burger-btn -->
             </div>
             <!-- /.mobile-nav -->
             <div class="mobile-all-agancy-profile">
@@ -1127,20 +1194,12 @@
             </div>
             <!-- /.all-agancy-profile -->
 
-
         </div>
         <!-- /.mobile-blossom-agansy-page -->
         <div class="mobile-blossom-agansy-page mobile-qtech-agansy-page">
             <div class="mobile-nav">
                 <div class="mobile-bq-logo"><img src="./img/mobile-img/blue-bq-logo.svg" alt="bq-logo"></div>
                 <!-- /.bq-logo -->
-                <div class="mobile-user-icon"><img src="./img/user-logo.png" alt="user-logo" class="mobile-user-logo">
-                </div>
-                <!-- /.mobile-user-icon -->
-                <div class="mobile-burger-btn"><img src="./img/mobile-img/black-burger-btn_menu.svg"
-                        class="burger-btn-img" alt="">
-                </div>
-                <!-- /.mobile-burger-btn -->
             </div>
             <!-- /.mobile-nav -->
             <div class="mobile-all-agancy-profile">
@@ -1163,19 +1222,10 @@
             <!-- /.all-agancy-profile -->
         </div>
         <!-- /.mobile-Qtech-agansy-page -->
-
-
         <div class="do-you-need-a-site-page">
             <div class="mobile-nav">
                 <div class="mobile-bq-logo"><img src="./img/mobile-img/bq-logo.svg" alt="bq-logo"></div>
                 <!-- /.bq-logo -->
-                <div class="mobile-user-icon"><img src="./img/user-logo.png" alt="user-logo" class="mobile-user-logo">
-                </div>
-                <!-- /.mobile-user-icon -->
-                <div class="mobile-burger-btn"><img src="./img/mobile-img/burher-btn-menu.svg" class="burger-btn-img"
-                        alt="">
-                </div>
-                <!-- /.mobile-burger-btn -->
             </div>
             <!-- /.mobile-nav -->
             <div class="mobile-form-box">
@@ -1212,9 +1262,15 @@
 
                     </div>
                     <!-- /.mobile-features-grid -->
-                    <form action="" class="mobile-sub-on-our-sending-form">
-                        <input type="text" placeholder="Ваше имя" class="mobile-sending-input">
-                        <input type="text" placeholder="Ваш email" class="mobile-sending-input">
+                    <form class="mobile-sub-on-our-sending-form">
+                        <input type="hidden" name="project_name" value="BQAgency">
+                        <input type="hidden" name="admin_email" value="zhernokleew2004@gmail.com">
+                        <input type="hidden" name="form_subject" value="Подписка на рассылку с мобильной версии">
+
+                        <input type="text" name="Имя пользователя" placeholder="Ваше имя" class="mobile-sending-input"
+                            required>
+                        <input type="email" name="Email пользователя" placeholder="Ваш email"
+                            class="mobile-sending-input" pattern="\S+@[a-z]+.[a-z]+" required>
                         <button class="mobile-send-request-on-sending-button">Отправить</button>
                     </form>
                     <!-- /.mobile-sub-on-our-sending-form -->
@@ -1235,13 +1291,6 @@
             <div class="mobile-nav">
                 <div class="mobile-bq-logo"><img src="./img/mobile-img/bq-logo.svg" alt="bq-logo"></div>
                 <!-- /.bq-logo -->
-                <div class="mobile-user-icon"><img src="./img/user-logo.png" alt="user-logo" class="mobile-user-logo">
-                </div>
-                <!-- /.mobile-user-icon -->
-                <div class="mobile-burger-btn"><img src="./img/mobile-img/burher-btn-menu.svg" class="burger-btn-img"
-                        alt="">
-                </div>
-                <!-- /.mobile-burger-btn -->
             </div>
             <!-- /.mobile-nav -->
             <div class="mobile-form-box">
@@ -1258,11 +1307,20 @@
                         8 (918) 542-13-33
                     </h4>
                     <!-- /.mobile-phone-number -->
-                    <form action="" class="main-mobile-form">
-                        <input type="text" placeholder="Ваше имя *" class="mobile-sending-input">
-                        <input type="text" placeholder="Ваш email *" class="mobile-sending-input">
-                        <input type="text" placeholder="Ваш телефон *" class="mobile-sending-input">
-                        <input type="text" placeholder="Описание проекта" class="mobile-sending-input">
+                    <form class="main-mobile-form">
+                        <input type="hidden" name="project_name" value="BQAgency">
+                        <input type="hidden" name="admin_email" value="zhernokleew2004@gmail.com">
+                        <input type="hidden" name="form_subject" value="Заявка с мобильной версии">
+
+                        <input type="text" name="Имя пользователя" placeholder="Ваше имя *" class="mobile-sending-input"
+                            required>
+                        <input type="email" name="Email пользователя" placeholder="Ваш email *"
+                            class="mobile-sending-input" pattern="\S+@[a-z]+.[a-z]+" required>
+                        <input type="tel" name="Телефон пользователя" placeholder="Ваш телефон *"
+                            class="mobile-sending-input" required
+                            pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
+                        <input type="text" name="Описание проекта" placeholder="Описание проекта"
+                            class="mobile-sending-input" required>
                         <button class="mobile-send-request-on-sending-button main-mobile-form-btn">Отправить</button>
                     </form>
                     <!-- /.main-mobile-form -->
@@ -1282,16 +1340,8 @@
             <div class="mobile-nav">
                 <div class="mobile-bq-logo"><img src="./img/mobile-img/bq-logo.svg" alt="bq-logo"></div>
                 <!-- /.bq-logo -->
-                <div class="mobile-user-icon"><img src="./img/user-logo.png" alt="user-logo" class="mobile-user-logo">
-                </div>
-                <!-- /.mobile-user-icon -->
-                <div class="mobile-burger-btn"><img src="./img/mobile-img/burher-btn-menu.svg" class="burger-btn-img"
-                        alt="">
-                </div>
-                <!-- /.mobile-burger-btn -->
             </div>
             <!-- /.mobile-nav -->
-
             <div class="mobile-contacts-wrapper">
                 <h2 class="mobile-contacts-text">
                     Контакты
@@ -1318,7 +1368,6 @@
                     </div>
                     <!-- /.mobile-contact-point-descr -->
                 </div>
-                <!-- /.mobile-contact-point-wrapper -->
                 <!-- /.mobile-contact-point-wrapper -->
                 <div class="mobile-contact-point-wrapper">
                     <div class="mobile-contact-point-name">
@@ -1358,15 +1407,20 @@
                     </div>
                 </a>
                 <!-- /.mobile-police-link -->
-                <div class="mobile-presentation-in-pdf">
-                    Презентация компании в pdf
-                </div>
+                <a href="./img/PresentationBQ.pdf" download="">
+                    <div class="mobile-presentation-in-pdf">
+                        Презентация компании в pdf
+                    </div>
+                </a>
                 <!-- /.mobile-presentation-in-pdf -->
+
             </div>
             <!-- /.mobile-contacts-wrapper -->
 
         </footer>
         <!-- /.mobile-footer -->
+
+
         <script type="text/javascript">
             {
                 if (screen.width > 480) document.write('<script type="text/javascript" src="./js/fullpage.js" ></sc' +
@@ -1374,8 +1428,14 @@
             }
         </script>
 
+        <script type="text/javascript">
+            var myFullpage = new fullpage('#fullpage', {});
+        </script>
+
+
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
         <script src="./js/anime.min.js"></script>
         <script src="./js/animation.js"></script>
         <script src="./js/onScrollAnimations.js"></script>
@@ -1383,6 +1443,10 @@
 
         <!-- jQuery Modal -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+        <!-- jQuery Modal -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+        <!-- Отправка формы -->
+        <script src="script.js"></script>
 
 </body>
 
