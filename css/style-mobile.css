@@ -3,7 +3,6 @@
         font-size: calc(100vw / 15.625);
     }
 
-
     .mobile-version {
         display: block;
     }
@@ -14,7 +13,9 @@
 
     .mobile-preview-page {
         height: 100vh;
-        background-image: url(../img/mobile-img/mobile-main-bg.png);
+        background-image: url(../img/mobile-img/mobile-main-bg.webp),
+            url(../img/mobile-img/mobile-main-bg.png);
+        background-color: #2d4cd1;
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -413,5 +414,66 @@
 
     .mobile-you-agree {
         margin-left: -4em;
+    }
+
+    /* Бургер-меню */
+    .modal {
+        padding-left: 0em;
+        padding-right: 0em;
+        padding-top: 0.5em;
+        padding-bottom: 0em;
+    }
+
+    .thanks-modal-wrapper {
+        display: block;
+    }
+
+    .thanks-modal-right-side {
+        margin-left: 1.5em;
+    }
+
+    .application-submitted {
+        line-height: 130%;
+        font-size: 0.833rem;
+        font-style: normal;
+        font-weight: 800;
+        white-space: nowrap;
+        margin-bottom: 2.2em;
+    }
+
+    .thanks-modal-p {
+        font-size: 0.583rem;
+    }
+
+    .thanks-modal-p+.thanks-modal-p {
+        margin-bottom: 2em;
+    }
+
+    .back-btn {
+        color: #2d4cd1;
+        font-family: "Open Sans", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 13.995px;
+        line-height: 150%;
+        text-align: center;
+    }
+
+    .back-btn-line {
+        border-bottom: 0.083rem solid #2d4cd1;
+    }
+
+    .success-img-mobile {
+        margin-bottom: 0em;
+        text-align: center;
+        margin-top: 1.3em;
+    }
+
+    .blocker {
+        padding: 0em !important;
+    }
+
+    .modal a.close-modal {
+        display: none !important;
     }
 }
