@@ -41,10 +41,10 @@
                     <!-- /.links-ul-->
                     <ul class="links-ul">
                         <li class="links-li">
-                            <a href="#first-section" class="link-li-a active">О Союзе</a>
+                            <a class="link-li-a active" href="" onclick="return false;">О Союзе</a>
                         </li>
                         <li class="links-li"><a href="#portfolio" class="link-li-a">Портфолио</a></li>
-                        <li class="links-li"><a href="!#" class="link-li-a">Блог</a></li>
+                        <li class="links-li"><a class="link-li-a" href="" onclick="return false;">Блог</a></li>
                     </ul>
                     <!-- links-ul -->
                     <div class="header-right">
@@ -140,10 +140,12 @@
                             Уместный креатив <br />
                             & Сильные технологии
                         </h1>
-                        <div class="down-arrow">
-                            <a href="!#"><img src="./img/btn_scroll_def.svg" alt="Down arrow"
-                                    style="width: 3.5em; height: 3.5em;" /></a>
-                        </div>
+                        <a href="#second-section">
+                            <div class="down-arrow" id="main-page-down-arrow">
+                                <img src="./img/btn_scroll_def.svg" alt="Down arrow"
+                                    style="width: 3.5em; height: 3.5em;" />
+                            </div>
+                        </a>
                         <!-- /.down-arrow -->
                     </div>
                     <!-- /.creative -->
@@ -198,7 +200,7 @@
             </div>
             <!-- /.main-part-page -->
 
-            <div class="second-part-page section" data-anchor="second-section">
+            <div class="second-part-page section" data-anchor="second-section" id="SecondPage">
                 <nav class="main-nav idea-nav">
                     <ul class="logos-ul">
                         <li class="logo">
@@ -213,10 +215,10 @@
                     <!-- /.links-ul-->
                     <ul class="links-ul">
                         <li class="links-li">
-                            <a href="!#" class="link-li-a active">О Союзе</a>
+                            <a class="link-li-a active" href="" onclick="return false;">О Союзе</a>
                         </li>
-                        <li class="links-li"><a href="!#" class="link-li-a">Портфолио</a></li>
-                        <li class="links-li"><a href="!#" class="link-li-a">Блог</a></li>
+                        <li class="links-li"><a href="#portfolio" class="link-li-a">Портфолио</a></li>
+                        <li class="links-li"><a class="link-li-a" href="" onclick="return false;">Блог</a></li>
                     </ul>
                     <!-- links-ul -->
                     <div class="user-icon">
@@ -243,16 +245,19 @@
                             Мы вообще достаточно разные, но все любим качественный продукт.
                         </h2>
                         <!-- /.wecont -->
-                        <a href="!#" class="get-to-know">
-                            Познакомиться поближе
+                        <a href="#blossom-page">
+                            <div class="get-to-know" id="GetToKnowBtn">
+                                Познакомиться поближе
+                            </div>
+                            <!-- /.get-to-know -->
                         </a>
-                        <!-- /.get-to-know -->
                     </div>
                     <!-- /.cont-part -->
                     <div class="partners-grid">
                         <div class="partner-box">
+                            <img class="partner-logo-img sber_partner" src="./img/partners-logos/partners_Sber.svg"
+                                alt="Partner logo" />
                         </div>
-
                         <!-- /.work-box -->
                         <div class="partner-box">
                             <img class="partner-logo-img lamoda_partner" src="./img/partners-logos/partners_Lamoda.svg"
@@ -297,8 +302,6 @@
 
                         <!-- /.work-box -->
                         <div class="partner-box">
-                            <img class="partner-logo-img btn-right" src="./img/partners-logos/btn_right.svg"
-                                alt="Partner logo" />
                         </div>
 
                         <!-- /.work-box -->
@@ -326,8 +329,9 @@
                         <li class="links-li">
                             <a href="#first-section" class="link-li-a">О Союзе</a>
                         </li>
-                        <li class="links-li"><a href="!#" class="link-li-a active">Портфолио</a></li>
-                        <li class="links-li"><a href="!#" class="link-li-a">Блог</a></li>
+                        <li class="links-li"><a onclick="return false;" href="" class="link-li-a active">Портфолио</a>
+                        </li>
+                        <li class="links-li"><a class="link-li-a" href="" onclick="return false;">Блог</a></li>
                     </ul>
                     <!-- links-ul -->
                     <div class="user-icon">
@@ -376,7 +380,7 @@
             </div>
             <!-- /.case-page -->
 
-            <div class="case-page kislorod-page section">
+            <div class="case-page kislorod-page section" data-anchor="kislorod-page">
                 <nav class="main-nav nav-margin">
                     <ul class="logos-ul">
                         <li class="logo">
@@ -391,10 +395,11 @@
                     <!-- /.links-ul-->
                     <ul class="links-ul">
                         <li class="links-li">
-                            <a href="!#" class="link-li-a active">О Союзе</a>
+                            <a href="#first-section" class="link-li-a">О Союзе</a>
                         </li>
-                        <li class="links-li"><a href="!#" class="link-li-a">Портфолио</a></li>
-                        <li class="links-li"><a href="!#" class="link-li-a">Блог</a></li>
+                        <li class="links-li"><a href="" onclick="return false;" class="link-li-a active">Портфолио</a>
+                        </li>
+                        <li class="links-li"><a href="" class="link-li-a" onclick="return false;">Блог</a></li>
                     </ul>
                     <!-- links-ul -->
                     <div class="user-icon">
@@ -443,7 +448,7 @@
             </div>
             <!-- /.kislorod-page-->
 
-            <div class="case-page tageps-case-page section">
+            <div class="case-page tageps-case-page section" data-anchor="tageps-page">
                 <nav class="main-nav nav-margin">
                     <ul class="logos-ul">
                         <li class="logo">
@@ -458,10 +463,11 @@
                     <!-- /.links-ul-->
                     <ul class="links-ul">
                         <li class="links-li">
-                            <a href="!#" class="link-li-a active">О Союзе</a>
+                            <a href="#first-section" class="link-li-a">О Союзе</a>
                         </li>
-                        <li class="links-li"><a href="!#" class="link-li-a">Портфолио</a></li>
-                        <li class="links-li"><a href="!#" class="link-li-a">Блог</a></li>
+                        <li class="links-li"><a href="" onclick="return false;" class="link-li-a active">Портфолио</a>
+                        </li>
+                        <li class="links-li"><a href="" class="link-li-a" onclick="return false;">Блог</a></li>
                     </ul>
                     <!-- links-ul -->
                     <div class="user-icon">
@@ -510,7 +516,7 @@
             </div>
             <!-- /.tageps-case-page -->
 
-            <div class="case-page td-case-page section">
+            <div class="case-page td-case-page section" data-anchor="td-page">
                 <nav class="main-nav nav-margin">
                     <ul class="logos-ul">
                         <li class="logo">
@@ -525,10 +531,11 @@
                     <!-- /.links-ul-->
                     <ul class="links-ul">
                         <li class="links-li">
-                            <a href="!#" class="link-li-a active">О Союзе</a>
+                            <a href="#first-section" class="link-li-a">О Союзе</a>
                         </li>
-                        <li class="links-li"><a href="!#" class="link-li-a">Портфолио</a></li>
-                        <li class="links-li"><a href="!#" class="link-li-a">Блог</a></li>
+                        <li class="links-li"><a href="" onclick="return false;" class="link-li-a active">Портфолио</a>
+                        </li>
+                        <li class="links-li"><a href="" class="link-li-a" onclick="return false;">Блог</a></li>
                     </ul>
                     <!-- links-ul -->
                     <div class="user-icon">
@@ -576,7 +583,8 @@
                 <!-- /.case-page-content -->
             </div>
             <!-- /.td-case-page -->
-            <div class="blossom-agancy-page fourth-part-page  section">
+            <div class="blossom-agancy-page fourth-part-page  section" id="blossom-agancy-page"
+                data-anchor="blossom-page">
                 <nav class="main-nav blossom-nav-margin">
                     <ul class="logos-ul">
                         <li class="logo">
@@ -591,13 +599,13 @@
                     <!-- /.links-ul-->
                     <ul class="links-ul">
                         <li class="links-li">
-                            <a href="!#" class="link-li-a active blue-nav-active ">О Союзе</a>
+                            <a href="" class="link-li-a active blue-nav-active" onclick="return false;">О Союзе</a>
                         </li>
                         <li class="links-li">
-                            <a href="!#" class="link-li-a black-nav-links">Портфолио</a>
+                            <a href="#portfolio" class="link-li-a black-nav-links">Портфолио</a>
                         </li>
                         <li class="links-li">
-                            <a href="!#" class="link-li-a black-nav-links">Блог</a>
+                            <a href="" class="link-li-a black-nav-links" onclick="return false;">Блог</a>
                         </li>
                     </ul>
                     <!-- links-ul -->
@@ -641,7 +649,7 @@
             </div>
             <!-- /.blossom-part-page -->
 
-            <div class="qt-agency-page fifth-part-page section">
+            <div class="qt-agency-page fifth-part-page section" data-anchor="qt-agency-page">
                 <nav class="main-nav qtech-nav-margin">
                     <ul class="logos-ul">
                         <li class="logo">
@@ -656,13 +664,13 @@
                     <!-- /.links-ul-->
                     <ul class="links-ul">
                         <li class="links-li">
-                            <a href="!#" class="link-li-a active blue-nav-active ">О Союзе</a>
+                            <a href="" class="link-li-a active blue-nav-active" onclick="return false;">О Союзе</a>
                         </li>
                         <li class="links-li">
-                            <a href="!#" class="link-li-a black-nav-links">Портфолио</a>
+                            <a href="#portfolio" class="link-li-a black-nav-links">Портфолио</a>
                         </li>
                         <li class="links-li">
-                            <a href="!#" class="link-li-a black-nav-links">Блог</a>
+                            <a href="" class="link-li-a black-nav-links" onclick="return false;">Блог</a>
                         </li>
                     </ul>
                     <!-- links-ul -->
@@ -706,7 +714,7 @@
                 <!-- /.fourth-part-page-wrapper -->
             </div>
             <!-- /.fifth-part-page -->
-            <div class="sixth-part-page section">
+            <div class="sixth-part-page section" data-anchor="sending-page">
                 <nav class="main-nav sending-nav-margin">
                     <ul class="logos-ul">
                         <li class="logo">
@@ -721,10 +729,10 @@
                     <!-- /.links-ul-->
                     <ul class="links-ul">
                         <li class="links-li">
-                            <a href="!#" class="link-li-a active">О Союзе</a>
+                            <a href="" class="link-li-a active" onclick="return false;">О Союзе</a>
                         </li>
-                        <li class="links-li"><a href="!#" class="link-li-a">Портфолио</a></li>
-                        <li class="links-li"><a href="!#" class="link-li-a">Блог</a></li>
+                        <li class="links-li"><a href="#portfolio" class="link-li-a">Портфолио</a></li>
+                        <li class="links-li"><a href="" class="link-li-a" onclick="return false;">Блог</a></li>
                     </ul>
                     <!-- links-ul -->
                     <div class="user-icon">
@@ -845,10 +853,10 @@
                     <!-- /.links-ul-->
                     <ul class="links-ul">
                         <li class="links-li">
-                            <a href="!#" class="link-li-a active">О Союзе</a>
+                            <a href="" class="link-li-a active" onclick="return false;">О Союзе</a>
                         </li>
-                        <li class="links-li"><a href="!#" class="link-li-a">Портфолио</a></li>
-                        <li class="links-li"><a href="!#" class="link-li-a">Блог</a></li>
+                        <li class="links-li"><a href="#portfolio" class="link-li-a">Портфолио</a></li>
+                        <li class="links-li"><a href="!#" class="link-li-a" onclick="return false;">Блог</a></li>
                     </ul>
                     <!-- links-ul -->
                     <div class="user-icon">
@@ -915,9 +923,10 @@
 
                             <div class="from-about-field main-form-input-block">
                                 <div class="input-wrapper">
-                                    <input type="text" class="form-input" placeholder="Откуда узнали о нас?" required />
+                                    <input type="text" class="form-input" placeholder="Откуда узнали о нас?" />
                                 </div>
-                                <div class="btn-set">
+                                <!-- Пикер -->
+                                <!-- <div class="btn-set">
                                     <button type="button" class="from-about-btn">
                                         Рекомендации
                                     </button>
@@ -933,7 +942,7 @@
                                     <button type="button" class="from-about-btn">
                                         Выступления
                                     </button>
-                                </div>
+                                </div> -->
                             </div>
 
                             <div class="main-form-input-block">
@@ -948,7 +957,7 @@
                 <!-- /.form-page-wrapper -->
             </div>
             <!-- /.form-page -->
-            <div class="section fp-auto-height">
+            <div class="section fp-auto-height" data-anchor="footer">
                 <footer class="case-footer section fp-auto-height">
                     <div class="flex-wrapper">
                         <div class="column first-column">
@@ -1132,18 +1141,24 @@
                 Наши работы
             </div>
 
+
             <div class="case-block">
-                <img class="mobile-case-bg" src="./img/mobile-img/mobile-cases-img/kislorod-bg.png" alt="Imge of case">
-                <h3 class="mobile-case-name">Кислород</h3>
-                <h4 class="mobile-case-desc">Разработали интернет-магазин <br>
-                    по продаже медтехники.</h4>
+                <a href="case-kislorod.html">
+                    <img class="mobile-case-bg" src="./img/mobile-img/mobile-cases-img/kislorod-bg.png"
+                        alt="Imge of case">
+                    <h3 class="mobile-case-name">Кислород</h3>
+                    <h4 class="mobile-case-desc">Разработали интернет-магазин <br>
+                        по продаже медтехники.</h4>
+                </a>
             </div>
             <!-- /.case-block -->
             <div class="case-block">
-                <img class="mobile-case-bg" src="./img/mobile-img/mobile-cases-img/brig-bg.png" alt="Imge of case">
-                <h3 class="mobile-case-name">Бриг</h3>
-                <h4 class="mobile-case-desc">Сделали корпоративный сайт <br>
-                    для траспортной компании.</h4>
+                <a href="case-brig.html">
+                    <img class="mobile-case-bg" src="./img/mobile-img/mobile-cases-img/brig-bg.png" alt="Imge of case">
+                    <h3 class="mobile-case-name">Бриг</h3>
+                    <h4 class="mobile-case-desc">Сделали корпоративный сайт <br>
+                        для траспортной компании.</h4>
+                </a>
             </div>
             <!-- /.case-block -->
             <div class="case-block">
@@ -1154,17 +1169,22 @@
             </div>
             <!-- /.case-block -->
             <div class="case-block">
-                <img class="mobile-case-bg" src="./img/mobile-img/mobile-cases-img/tageps-bg.png" alt="Imge of case">
-                <h3 class="mobile-case-name">TagEps</h3>
-                <h4 class="mobile-case-desc">Разработали сайт для компании<br>
-                    с несколькими сферами работы.</h4>
+                <a href="case-tageps.html">
+                    <img class="mobile-case-bg" src="./img/mobile-img/mobile-cases-img/tageps-bg.png"
+                        alt="Imge of case">
+                    <h3 class="mobile-case-name">TagEps</h3>
+                    <h4 class="mobile-case-desc">Разработали сайт для компании<br>
+                        с несколькими сферами работы.</h4>
+                </a>
             </div>
             <!-- /.case-block -->
             <div class="case-block">
-                <img class="mobile-case-bg" src="./img/mobile-img/mobile-cases-img/td-bg.png" alt="Imge of case">
-                <h3 class="mobile-case-name">Твой Дом</h3>
-                <h4 class="mobile-case-desc">Сделали корпоративную CRM<br>
-                    для управляющей компании.</h4>
+                <a href="case-td.html">
+                    <img class="mobile-case-bg" src="./img/mobile-img/mobile-cases-img/td-bg.png" alt="Imge of case">
+                    <h3 class="mobile-case-name">Твой Дом</h3>
+                    <h4 class="mobile-case-desc">Сделали корпоративную CRM<br>
+                        для управляющей компании.</h4>
+                </a>
             </div>
             <!-- /.case-block -->
         </div>
@@ -1428,14 +1448,8 @@
             }
         </script>
 
-        <script type="text/javascript">
-            var myFullpage = new fullpage('#fullpage', {});
-        </script>
-
-
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-
         <script src="./js/anime.min.js"></script>
         <script src="./js/animation.js"></script>
         <script src="./js/onScrollAnimations.js"></script>
@@ -1443,8 +1457,7 @@
 
         <!-- jQuery Modal -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
-        <!-- jQuery Modal -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
         <!-- Отправка формы -->
         <script src="script.js"></script>
 

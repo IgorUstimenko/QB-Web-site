@@ -91,3 +91,24 @@ GetToKnow.addEventListener('click', function () {
 		behavior: "smooth"
 	});
 });
+
+
+
+// // Скрол на экран ниже
+// const SecondPage = document.getElementById('SecondPage');
+// let MainPageBtn = document.getElementById('main-page-down-arrow');
+// MainPageBtn.addEventListener('click', function () {
+// 	SecondPage.scrollIntoView({
+// 		behavior: "smooth"
+// 	});
+// });
+
+// // Скролл до BlossomIT
+
+// const BlossomItPage = document.getElementById('blossom-agancy-page');
+// let GetToKnowBtn = document.getElementById('GetToKnowBtn');
+// GetToKnowBtn.addEventListener('click', function () {
+// 	BlossomItPage.scrollIntoView({
+// 		behavior: "smooth"
+// 	});
+// });
