@@ -907,3 +907,23 @@ Thanks-modal-window */
     border-bottom-color: #f54068;
     color: #f54068;
 }
+
+input {
+    outline: none;
+}
+
+.blue-input:-webkit-autofill {
+    -webkit-box-shadow: inset 0 0 0 50px #2d4cd1 !important;
+    /* Цвет фона */
+    -webkit-text-fill-color: #fff !important;
+    /* цвет текста */
+    color: #fff !important;
+    /* цвет текста */
+    padding-right: 15em;
+
+}
+
+
+.white-input:-webkit-autofill {
+    -webkit-box-shadow: inset 0 0 0 50px #fff !important;
+}
