@@ -36,6 +36,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
     fromAboutBtns.forEach((btn) => {
         btn.addEventListener("click", (event) => {
             const isChecked = event.target.classList.contains("active");
+            let inputValue = document.querySelector('.form-input');
+
+
+            inputValue.value = btn.textContent;
 
             fromAboutBtns.forEach((el) => {
                 el.classList.remove("active");
@@ -50,6 +54,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
             event.target.classList.remove("active");
             fromAboutInputWrapper.classList.remove("hidden");
+            inputValue.value = '';
         });
     });
 
