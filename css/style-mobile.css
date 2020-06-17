@@ -192,7 +192,7 @@
     margin-left: 1.7em;
   }
 
-  .case-block + .case-block {
+  .case-block+.case-block {
     margin-top: 3.2em;
   }
 
@@ -445,7 +445,7 @@
     font-size: 0.583rem;
   }
 
-  .thanks-modal-p + .thanks-modal-p {
+  .thanks-modal-p+.thanks-modal-p {
     margin-bottom: 2em;
   }
 
@@ -477,3 +477,6 @@
     display: none !important;
   }
 }
+
+
+/* Кейсы */

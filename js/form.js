@@ -35,6 +35,10 @@ document.addEventListener("DOMContentLoaded", event => {
   fromAboutBtns.forEach(btn => {
     btn.addEventListener("click", event => {
       const isChecked = event.target.classList.contains("active");
+      let formInput = document.querySelector('.whereInput');
+
+      formInput.value = btn.textContent;
+
 
       fromAboutBtns.forEach(el => {
         el.classList.remove("active");
@@ -49,6 +53,9 @@ document.addEventListener("DOMContentLoaded", event => {
 
       event.target.classList.remove("active");
       fromAboutInputWrapper.classList.remove("hidden");
+      formInput.value = '';
+
+
     });
   });
 

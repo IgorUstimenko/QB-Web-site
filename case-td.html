@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Кейсы</title>
     <!-- Подключение стилей -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/aos.css" />
     <link rel="stylesheet" href="./css/style.css" />
@@ -18,7 +19,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container desctop-version">
         <nav class="main-nav">
             <ul class="logos-ul">
                 <li class="logo">
@@ -264,21 +265,17 @@
                             </div>
                             <div class="right-side">
                                 <div class="form-field">
-                                    <input type="text" class="form-input" placeholder="Ваше имя *" /><label
-                                        class="form-field-label">Ваше имя *</label>
+                                    <input type="text" class="form-input" placeholder="Ваше имя *" />
                                 </div>
                                 <div class="form-field">
-                                    <input type="email" class="form-input" placeholder="Ваш email *" /><label
-                                        class="form-field-label">Ваш email *</label>
+                                    <input type="email" class="form-input" placeholder="Ваш email *" />
                                 </div>
                                 <div class="form-field">
-                                    <input type="text" class="form-input tel-input"
-                                        placeholder="Ваше телефон *" /><label class="form-field-label">Ваше телефон
-                                        *</label>
+                                    <input type="text" class="form-input tel-input" placeholder="Ваш телефон *" /><label
+                                        class="form-field-label">
                                 </div>
                                 <div class="form-field">
-                                    <input type="text" class="form-input" placeholder="Описание проекта" /><label
-                                        class="form-field-label">Описание проекта</label>
+                                    <input type="text" class="form-input whereInput" placeholder="Описание проекта" />
                                 </div>
                                 <div class="form-field from-about-field">
                                     <div class="input-wrapper">
@@ -320,7 +317,7 @@
             <div class="column first-column">
                 <div class="column-sub-heading">для соискателей</div>
                 <div class="column-heading">
-                    <a href="mailto:hr@blossom-quantum.ru">hr@blossom-quantum.ru</a>
+                    <a href="mailto:hr@bqagency.ru">hr@bqagency.ru</a>
                 </div>
                 <div class="column-footer">
                     <div class="socials">
@@ -336,7 +333,7 @@
             <div class="column second-column">
                 <div class="column-sub-heading">для проектов</div>
                 <div class="column-heading">
-                    <a href="mailto:hey@blossom-quantum.ru">hey@blossom-quantum.ru</a>
+                    <a href="mailto:hey@bqagency.ru">hey@bqagency.ru</a>
                 </div>
                 <div class="column-footer">
                     <a href="#">Презентация компании в pdf</a>
@@ -354,10 +351,401 @@
             </div>
         </footer>
     </div>
-    <script src="./js/form.js"></script>
-    <script src="./js/aos.js"></script>
-    <script src="./js/tell-btn.js"></script>
-    <script src="./js/main.js"></script>
+
+    <div class="mobile-version">
+        <div id="mobile-success-modal" class="modal">
+            <div class="thanks-modal-wrapper">
+                <div class="thanks-modal-right-side">
+                    <h3 class="application-submitted">
+                        Заявка отправлена. <br>
+                        <span class="red-color">Это успех!</span>
+                    </h3>
+                    <!-- /.application-submitted -->
+                    <p class="we-will-cont thanks-modal-p">
+                        Мы совсем скоро свяжемся с вами<br>
+                        и решим все проблемы. Только <br>
+                        подождите немного
+                    </p>
+                    <!-- /.we-will-cont -->
+                    <p class="application-time thanks-modal-p">
+                        Обрабатываем заявки с 9:00<br>
+                        до 21:00 (GMT+3) с понедельника<br>
+                        по субботу.
+                    </p>
+                    <!-- /.application-time -->
+                </div>
+                <!-- /.thanks-modal-right-side -->
+            </div>
+            <!-- /.thanks-modal-wrapper -->
+
+            <button class="mobile-send-request-on-sending-button main-mobile-form-btn back-btn-line"><a href="#"
+                    rel="modal:close" class="back-btn">Назад</a></button>
+            <div class="success-img-mobile">
+                <img src="./img/mobile-img/success-mobile.png" alt="success-mobile-img" class="success-img-mobile">
+            </div>
+            <!-- /.success-img-mobile -->
+        </div>
+        <div class="container">
+            <div class="main-nav">
+                <img src="./img/mobile-img/blue-bq-logo.svg" alt="Blossom logo"
+                    style="width: 11.833rem; height: 2.625rem;" />
+            </div>
+            <!-- /.main-nav -->
+            <div class="scroll-section"></div>
+            <div class="case oxygen-case">
+                <div class="case-header">
+                    <div class="back-btn">
+                        <a href="index.html">
+                            <div class="btn-text">Назад</div>
+                            <div class="btn-arrow">
+                                <img src="./img/cases/back-arrow.svg" alt="" class="back-arrow" />
+                            </div>
+                        </a>
+                    </div>
+                    <div class="case-header-info">
+                        <div class="info-icon">
+                            <img src="./img/cases/tageps/logo_TE.svg"
+                                style="width: 3.4rem; height: 3.4rem; padding-top: 1.5em;" alt="" />
+                        </div>
+                        <div class="info-text-wrapper">
+                            <div class="info-heading">Твой Дом</div>
+                            <div class="info-text">
+                                Внутренняя CRM <br />
+                                для управляющей компании
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll-section"></div>
+                <div class="case-content">
+                    <div class="case-hero-image" data-aos="fade-left">
+                        <img src="./img/cases/td/td_hero.png" class="case-hero-img" alt="" />
+                    </div>
+                    <div class="case-customer-info">
+                        <div class="row" data-aos="fade-in-up" data-aos-anchor-placement="bottom-bottom">
+                            <div class="customer-info row-left">
+                                Клиент
+                            </div>
+                            <div class="customer-info-right row-right">
+                                Твой Дом — управляющая компания. Решают вопросы
+                                домов <br />
+                                и жильцов.
+                            </div>
+                        </div>
+                        <div class="row" data-aos="fade-in-up" data-aos-anchor-placement="bottom-bottom">
+                            <div class="customer-task row-left">
+                                Задача клиента
+                            </div>
+                            <div class="customer-task-right row-right">
+                                Быстрее реагировать на обращения жильцов.
+                                Оптимизировать работу диспетчеров и работников.
+                                Все должно работать быстро, чтобы все были
+                                довольны.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case-hero-image second-hero-image" data-aos="fade-left"
+                        data-aos-anchor-placement="bottom-bottom">
+                        <img src="./img/cases/td/td_second_img.png" alt="" />
+                    </div>
+                    <div class="case-customer-info">
+                        <div class="row" data-aos="fade-in-up" data-aos-anchor-placement="bottom-bottom">
+                            <div class="customer-info row-left">
+                                Целевая аудитория
+                            </div>
+                            <div class="customer-info-right row-right">
+                                Работники компании: либо диспетчеры, которые
+                                обрабатывают заявки, либо те, кто решают
+                                проблемы.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scroll-section"></div>
+                    <div class="text-with-lines" data-aos="zoom-in-down" data-aos-anchor-placement="bottom-bottom">
+                        <div class="lined-text">Дизайн</div>
+                    </div>
+                    <div class="case-customer-info">
+                        <div class="row" data-aos="fade-in-up" data-aos-anchor-placement="bottom-bottom">
+                            <div class="customer-info row-left">
+                                Проектирование
+                            </div>
+                            <div class="customer-info-right row-right">
+                                Интерфейс должен быть продуман до мелочей.
+                                Ошибка может стоить времени и денег. А иногда и
+                                жизней, если дело серьезное.
+                                <br />
+                                <br />
+
+                                Построили CJM, чтобы лучше понимать
+                                пользователя.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case-hero-image third-hero-image" data-aos="fade-left">
+                        <img src="./img/cases/td/td_third_img.png" alt="" />
+                    </div>
+                    <div class="case-customer-info">
+                        <div class="row" data-aos="fade-in-up" data-aos-anchor-placement="bottom-bottom">
+                            <div class="customer-info row-left">
+                                Дизайн-концепция
+                            </div>
+                            <div class="customer-info-right row-right">
+                                Яркие цвета и минимум элементов интерфейса — все
+                                только по делу. Читабельный текст и удобная
+                                навигация.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case-hero-image fourth-hero-image" style="margin-top: 10.5625rem;" data-aos="fade-left">
+                        <img src="./img/cases/td/td_fourth_img.png" alt="" />
+                    </div>
+                    <div class="case-customer-info">
+                        <div class="row" data-aos="fade-in-up" data-aos-anchor-placement="bottom-bottom">
+                            <div class="customer-info row-left">Профиль</div>
+                            <div class="customer-info-right row-right">
+                                Сотрудник или руководитель может увидеть
+                                статистику работы. Процент закрытых заявок,
+                                скорость исполнения.
+                                <br />
+                                <br />
+                                В профиле сотрудник может увидеть список
+                                открытых обращений, чтобы вовремя
+                                контроллировать.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scroll-section"></div>
+                    <div class="case-hero-image fifth-hero-image" data-aos="fade-left">
+                        <img src="./img/cases/td/td_fifth_img.png" alt="" />
+                    </div>
+                    <div class="case-customer-info" style="margin-top: 9.9375rem;">
+                        <div class="row" data-aos="fade-in-up" data-aos-anchor-placement="bottom-bottom">
+                            <div class="customer-info row-left">
+                                Заполнение обращений
+                            </div>
+                            <div class="customer-info-right row-right">
+                                Интерфейс всеми способами помогает пользователю:
+                                есть кнопка автовыбора даты. Самые частые цели
+                                звонка есть в выпадающем меню. Позже обращение
+                                можно отредактировать.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case-hero-image fifth-hero-image" data-aos="fade-left">
+                        <img src="./img/cases/td/td_sixth_img.png" alt="" />
+                    </div>
+                    <div class="case-customer-info">
+                        <div class="row" data-aos="fade-in-up" data-aos-anchor-placement="bottom-bottom">
+                            <div class="customer-info row-left">Выполнение</div>
+                            <div class="customer-info-right row-right">
+                                Диспетчер может выбрать сотрудника, который
+                                будет выполнять задачу, из списка и
+                                контроллировать его.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case-hero-image fifth-hero-image" data-aos="fade-left">
+                        <img src="./img/cases/td/td_seventh_img.png" alt="" />
+                    </div>
+                    <div class="conclusion-block">
+                        <div class="conclusion-text">
+                            Идеала достичь нереально. <br />
+                            Но идти к нему — цель любого сервиса.
+                        </div>
+                    </div>
+                    <div class="mobile-our-works-page" id="mobile-our-works-page">
+                        <div class="case-block" data-aos="fade-left">
+                            <a href="case-kislorod.html">
+                                <img class="mobile-case-bg" src="./img/mobile-img/mobile-cases-img/kislorod-bg.png"
+                                    alt="Imge of case">
+                                <h3 class="mobile-case-name">Кислород</h3>
+                                <h4 class="mobile-case-desc">Разработали интернет-магазин <br>
+                                    по продаже медтехники.</h4>
+                            </a>
+                        </div>
+                        <!-- /.case-block -->
+                        <div class="case-block" data-aos="fade-left">
+                            <a href="case-brig.html">
+                                <img class="mobile-case-bg" src="./img/mobile-img/mobile-cases-img/brig-bg.png"
+                                    alt="Imge of case">
+
+                                <h3 class="mobile-case-name">Бриг</h3>
+                                <h4 class="mobile-case-desc">Сделали корпоративный сайт <br>
+                                    для траспортной компании.</h4>
+                            </a>
+                        </div>
+                        <!-- /.case-block -->
+                        <div class="case-block" data-aos="fade-left">
+                            <a href="case-tageps.html">
+                                <img class="mobile-case-bg" src="./img/mobile-img/mobile-cases-img/tageps-bg.png"
+                                    alt="Imge of case">
+                                <h3 class="mobile-case-name">TagEps</h3>
+                                <h4 class="mobile-case-desc">Разработали сайт для компании<br>
+                                    с несколькими сферами работы.</h4>
+                            </a>
+                        </div>
+                        <!-- /.case-block -->
+                        <div class="case-block" data-aos="fade-left">
+                            <a href="case-td.html">
+                                <img class="mobile-case-bg" src="./img/mobile-img/mobile-cases-img/td-bg.png"
+                                    alt="Imge of case">
+                                <h3 class="mobile-case-name">Твой Дом</h3>
+                                <h4 class="mobile-case-desc">Сделали корпоративную CRM<br>
+                                    для управляющей компании.</h4>
+                            </a>
+                        </div>
+                        <!-- /.case-block -->
+                    </div>
+                    <!-- /.mobile-our-works-page -->
+                    <div class="do-you-need-a-site-page">
+                        <div class="mobile-form-box">
+                            <div class="mobile-form-content-wrapper">
+                                <h2 class="mobile-do-you-need-a-site-h2">
+                                    Нужен <span class="other-color-word-blue">сайт?</span>
+                                </h2>
+                                <!-- /.mobile-do-you-need-a-site-h2 -->
+                                <p class="mobile-do-you-nedd-a-site-descr">
+                                    Можно оставить заявку, а можно <br>позвонить нам, и мы заполним ее <br>за вас :)
+                                </p>
+                                <!-- /.mobile-do-you-nedd-a-site-descr -->
+                                <h4 class="mobile-phone-number">
+                                    8 (918) 542-13-33
+                                </h4>
+                                <!-- /.mobile-phone-number -->
+                                <form class="main-mobile-form">
+                                    <input type="hidden" name="project_name" value="BQAgency">
+                                    <input type="hidden" name="admin_email" value="zhernokleew2004@gmail.com">
+                                    <input type="hidden" name="form_subject" value="Заявка с мобильной версии">
+
+                                    <input type="text" name="Имя пользователя" placeholder="Ваше имя *"
+                                        class="mobile-sending-input" required>
+                                    <input type="email" name="Email пользователя" placeholder="Ваш email *"
+                                        class="mobile-sending-input" pattern="\S+@[a-z]+.[a-z]+" required>
+                                    <input type="tel" name="Телефон пользователя" placeholder="Ваш телефон *"
+                                        class="mobile-sending-input" required
+                                        pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
+                                    <input type="text" name="Описание проекта" placeholder="Описание проекта"
+                                        class="mobile-sending-input" required>
+                                    <input type="text" name="Описание проекта" placeholder="Откуда узнали о нас?"
+                                        class="mobile-sending-input">
+                                    <button
+                                        class="mobile-send-request-on-sending-button main-mobile-form-btn">Отправить</button>
+                                </form>
+                                <!-- /.main-mobile-form -->
+                                <div class="mobile-you-agree mobile-you-agree-main">
+                                    Нажимая на кнопку, вы даете согласие на обработку<br> персональных данных и
+                                    соглашаетесь с
+                                    политикой<br>
+                                    конфиденциальности
+                                </div>
+                                <!-- /.mobile-you-agree -->
+                            </div>
+                            <!-- /.mobile-form-content-wrapper -->
+                        </div>
+                        <!-- /.mobile-form-box -->
+                    </div>
+                    <!-- /.do-you-need-a-site-page -->
+                </div>
+                <footer class="mobile-footer">
+                    <div class="mobile-contacts-wrapper">
+                        <h2 class="mobile-contacts-text">
+                            Контакты
+                        </h2>
+                        <!-- /.mobile-contacts-text -->
+                        <div class="mobile-contact-point-wrapper">
+                            <div class="mobile-contact-point-name">
+                                для проектов
+                            </div>
+                            <!-- /.mobile-contact-point-name -->
+                            <div class="mobile-contact-point-descr">
+                                hey@bqagency.ru
+                            </div>
+                            <!-- /.mobile-contact-point-descr -->
+                        </div>
+                        <!-- /.mobile-contact-point-wrapper -->
+                        <div class="mobile-contact-point-wrapper">
+                            <div class="mobile-contact-point-name">
+                                обсудить смысл жизни
+                            </div>
+                            <!-- /.mobile-contact-point-name -->
+                            <div class="mobile-contact-point-descr">
+                                +7 (918) 542-13-33
+                            </div>
+                            <!-- /.mobile-contact-point-descr -->
+                        </div>
+                        <!-- /.mobile-contact-point-wrapper -->
+                        <div class="mobile-contact-point-wrapper">
+                            <div class="mobile-contact-point-name">
+                                для соискателей
+                            </div>
+                            <!-- /.mobile-contact-point-name -->
+                            <div class="mobile-contact-point-descr">
+                                hr@bqagency.ru
+                            </div>
+                            <!-- /.mobile-contact-point-descr -->
+                        </div>
+                        <!-- /.mobile-contact-point-wrapper -->
+                        <div class="mobile-soc-line-wrapper">
+                            <a href="!#">
+                                <img src="./img/mobile-img/mobile-soc-icons/inst.svg" alt="Icon of soc"
+                                    class="mobile-soc-icon">
+                            </a>
+                            <a href="!#">
+                                <img src="./img/mobile-img/mobile-soc-icons/yt.svg" alt="Icon of soc"
+                                    class="mobile-soc-icon">
+                            </a>
+                            <a href="!#">
+                                <img src="./img/mobile-img/mobile-soc-icons/fb.svg" alt="Icon of soc"
+                                    class="mobile-soc-icon">
+                            </a>
+                            <a href="!#">
+                                <img src="./img/mobile-img/mobile-soc-icons/tl.svg" alt="Icon of soc"
+                                    class="mobile-soc-icon">
+                            </a>
+                            <a href="!#">
+                                <img src="./img/mobile-img/mobile-soc-icons/vk.svg" alt="Icon of soc"
+                                    class="mobile-soc-icon">
+                            </a>
+                            <a href="!#">
+                                <img src="./img/mobile-img/mobile-soc-icons/be.svg" alt="Icon of soc"
+                                    class="mobile-soc-icon">
+                            </a>
+                        </div>
+                        <!-- /.mobile-soc-line-wrapper -->
+                        <a class=" mobile-police-link-wrapper" href="1#">
+                            <div class="mobile-police-link">
+                                Политика в отношении обработки персональных данных
+                            </div>
+                        </a>
+                        <!-- /.mobile-police-link -->
+                        <a href="./img/PresentationBQ.pdf" download="">
+                            <div class="mobile-presentation-in-pdf">
+                                Презентация компании в pdf
+                            </div>
+                        </a>
+                        <!-- /.mobile-presentation-in-pdf -->
+
+                    </div>
+                    <!-- /.mobile-contacts-wrapper -->
+
+                </footer>
+                <!-- /.mobile-footer -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.mobile-version -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+        <script src="./js/form.js"></script>
+        <script src="./js/aos.js"></script>
+        <script src="./js/tell-btn.js"></script>
+        <script src="./js/main.js"></script>
+
+
+        <!-- jQuery Modal -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
+        <!-- Отправка формы -->
+        <script src="script.js"></script>
 </body>
 
 </html>
