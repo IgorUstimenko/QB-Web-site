@@ -1045,10 +1045,12 @@ body {
 
   .thanks-modal-wrapper {
     display: block;
+    width: 28rem;
+    margin: auto;
   }
 
   .thanks-modal-right-side {
-    margin-left: 6.09em;
+    margin-left: 0em;
   }
 
   .application-submitted {
@@ -1057,8 +1059,8 @@ body {
     font-style: normal;
     font-weight: 800;
     white-space: nowrap;
-    margin-bottom: 3em;
-    margin-top: 3.5em;
+    margin-bottom: 1.5em;
+    margin-top: 2em;
   }
 
   .thanks-modal-p {
@@ -1066,7 +1068,7 @@ body {
   }
 
   .thanks-modal-p+.thanks-modal-p {
-    margin-bottom: 5.454em;
+    margin-bottom: 2.7em;
   }
 
   .back-btn {
@@ -1086,13 +1088,11 @@ body {
     width: 25rem;
     text-align: center;
     padding-left: 6em;
-    margin-left: 3em;
   }
 
   .success-img-mobile {
     margin-bottom: -0.1em;
     text-align: center;
-    margin-top: 3.545em;
   }
 
   .blocker {

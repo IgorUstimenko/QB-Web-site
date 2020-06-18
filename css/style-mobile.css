@@ -3,6 +3,10 @@
     font-size: calc(100vw / 15.625);
   }
 
+  body {
+    overflow-x: hidden;
+  }
+
   .mobile-version {
     display: block;
   }
