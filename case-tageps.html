@@ -47,10 +47,120 @@
                 <img src="./img/user-logo.png" alt="User logo" class="user-icon"
                     style="width: 3.666em; height: 3.666em;" />
             </div>
-            <!-- /.user-icon --><a class="tell-link" href="!#">
+            <!-- /.user-icon --><a class="tell-link" href="#ex1" rel="modal:open">
                 <div class="tell-btn">Рассказать о проекте</div>
             </a><!-- /.tell-btn -->
         </nav>
+        <!-- Modal -->
+        <div id="ex1" class="modal">
+            <div class="form-page-wrapper modal-form-wrapper">
+                <div class="block-form modal-block-form-wrapper">
+                    <form class="callback-form">
+                        <input type="hidden" name="project_name" value="BQAgency">
+                        <input type="hidden" name="admin_email" value="zhernokleew2004@gmail.com">
+                        <input type="hidden" name="form_subject" value="Заявка с модального окна страницы кейсов">
+                        <div class="top-row top-row top-row-modal">
+                            <div class="left-side modal-form-left-side">
+                                <h3 class="form-header">
+                                    Нужен
+                                    <span style="color: #2d4cd1;">сайт?</span>
+                                </h3>
+                                <div class="form-text">
+                                    Можно оставить заявку, а можно позвонить <br>
+                                    нам, и мы заполним ее сами :)
+                                </div>
+                                <div class="form-tel">
+                                    <a href="tel:79185421333">8 (918) 542-13-33</a>
+                                </div>
+                            </div>
+                            <div class="right-side modal-form-right-side">
+                                <div class="form-field">
+                                    <input type="text" class="form-input" placeholder="Ваше имя *"
+                                        name="Имя пользователя" required />
+                                </div>
+                                <div class="form-field">
+                                    <input type="email" class="form-input" placeholder="Ваш email *"
+                                        name="Email пользователя" required pattern="\S+@[a-z]+.[a-z]+" />
+                                </div>
+                                <div class="form-field">
+                                    <input type="tel" class="form-input tel-input" placeholder="Ваше телефон *"
+                                        name="Телефон пользователя" required
+                                        pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" />
+                                </div>
+                                <div class="form-field">
+                                    <input type="text" class="form-input" placeholder="Описание проекта"
+                                        name="Описание проекта" required />
+                                </div>
+                                <div class="form-field from-about-field">
+                                    <div class="input-wrapper">
+
+                                        <input type="text" class="form-input" placeholder="Откуда узнали о нас?"
+                                            name="where_know" id="#where_know" required />
+                                    </div>
+                                    <div class="btn-set">
+                                        <button type="button" class="from-about-btn">
+                                            Рекомендации
+                                        </button>
+                                        <button type="button" class="from-about-btn">
+                                            Реклама
+                                        </button>
+                                        <button type="button" class="from-about-btn">
+                                            СМИ
+                                        </button>
+                                        <button type="button" class="from-about-btn">
+                                            Соцсети
+                                        </button>
+                                        <button type="button" class="from-about-btn">
+                                            Выступления
+                                        </button>
+                                    </div>
+                                </div>
+                                <button type="submit" class="form-btn submit-btn modal-submit-btn">
+                                    Отправить
+                                </button>
+                            </div>
+                        </div>
+                        <div class="bottom-row bottom-row-modal">
+                            Нажимая на кнопку, вы даете согласие на
+                            обработку персональных данных и соглашаетесь с<br>
+                            политикой конфиденциальности
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- /.form-page-wrapper -->
+        </div>
+        <!-- /Modal -->
+        <!-- thanks-modal -->
+        <div id="thanks-modal" class="modal thanks-modal">
+            <div class="thanks-modal-wrapper">
+                <div class="thanks-modal-left-side">
+                    <img src="./img/success.png" alt="bottle" class="bottle-img">
+                </div>
+                <!-- /.thanks-modal-left-side -->
+                <div class="thanks-modal-right-side">
+                    <h3 class="application-submitted">
+                        Заявка отправлена. <br>
+                        <span class="red-color">Это успех!</span>
+                    </h3>
+                    <!-- /.application-submitted -->
+                    <p class="we-will-cont thanks-modal-p">
+                        Мы совсем скоро свяжемся с вами и решим все проблемы.<br>
+                        Только подождите немного
+                    </p>
+                    <!-- /.we-will-cont -->
+                    <p class="application-time thanks-modal-p">
+                        Обрабатываем заявки с 9:00 до 21:00 (GMT+3) с понедельника<br>
+                        по субботу.
+                    </p>
+                    <!-- /.application-time -->
+                </div>
+                <!-- /.thanks-modal-right-side -->
+
+            </div>
+            <!-- /.thanks-modal-wrapper -->
+        </div>
+        <!-- thanks-modal -->
         <div class="scroll-section"></div>
         <div class="case oxygen-case">
             <div class="case-header">

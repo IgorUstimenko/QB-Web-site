@@ -14,15 +14,16 @@ document.addEventListener("DOMContentLoaded", event => {
   );
   const telElements = document.querySelectorAll(".tel-input");
 
-  telElements.forEach(element => {
-    element.addEventListener("input", event => telMask(event.target));
+
+  telElements.forEach((element) => {
+    element.addEventListener("input", (event) => telMask(event.target));
   });
 
-  fromAboutInput.addEventListener("focus", event => {
+  fromAboutInput.addEventListener("focus", (event) => {
     fromAboutBtnsContainer.classList.add("hidden");
   });
 
-  fromAboutInput.addEventListener("blur", event => {
+  fromAboutInput.addEventListener("blur", (event) => {
     if (event.target.value.length > 0) {
       fromAboutBtnsContainer.classList.add("hidden");
 
@@ -32,15 +33,15 @@ document.addEventListener("DOMContentLoaded", event => {
     fromAboutBtnsContainer.classList.remove("hidden");
   });
 
-  fromAboutBtns.forEach(btn => {
-    btn.addEventListener("click", event => {
+  fromAboutBtns.forEach((btn) => {
+    btn.addEventListener("click", (event) => {
       const isChecked = event.target.classList.contains("active");
-      let formInput = document.querySelector('.whereInput');
+      let whereKnow = document.getElementById('#where_know');
 
-      formInput.value = btn.textContent;
+      whereKnow.value = btn.textContent;
 
 
-      fromAboutBtns.forEach(el => {
+      fromAboutBtns.forEach((el) => {
         el.classList.remove("active");
       });
 
@@ -53,16 +54,54 @@ document.addEventListener("DOMContentLoaded", event => {
 
       event.target.classList.remove("active");
       fromAboutInputWrapper.classList.remove("hidden");
-      formInput.value = '';
+      whereKnow.value = '';
+
 
 
     });
   });
 
-  form.addEventListener("submit", event => {});
+  form.addEventListener("submit", (event) => {});
 });
 
 function telMask(element) {
   const value = element.value.replace(/[^0-9]/g, "");
   element.value = value;
 }
+
+
+
+//   fromAboutBtns.forEach(btn => {
+//     btn.addEventListener("click", event => {
+//       const isChecked = event.target.classList.contains("active");
+//       let formInput = document.querySelector('.whereInput');
+
+//       formInput.value = btn.textContent;
+//       console.log(formInput.value)
+
+//       fromAboutBtns.forEach(el => {
+//         el.classList.remove("active");
+//       });
+
+//       if (!isChecked) {
+//         event.target.classList.add("active");
+//         fromAboutInputWrapper.classList.add("hidden");
+
+//         return;
+//       }
+
+//       event.target.classList.remove("active");
+//       fromAboutInputWrapper.classList.remove("hidden");
+//       formInput.value = '';
+
+
+//     });
+//   });
+
+//   form.addEventListener("submit", event => {});
+// });
+
+// function telMask(element) {
+//   const value = element.value.replace(/[^0-9]/g, "");
+//   element.value = value;
+// }

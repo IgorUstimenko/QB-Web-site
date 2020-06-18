@@ -1,7 +1,6 @@
 // Скрипт для отправки форм
 $(document).ready(function () {
 
-
 	//Заявка о сайте
 	$(".main-form").submit(function () {
 		var th = $(this);
@@ -17,6 +16,23 @@ $(document).ready(function () {
 		});
 		return false;
 	});
+
+	// Заявка со страницы кейсов
+	$(".callback-form").submit(function () {
+		var th = $(this);
+		$.ajax({
+			type: "POST",
+			url: "mail.php",
+			data: th.serialize()
+		}).done(function () {
+			$('#thanks-modal').modal();
+			setTimeout(function () {
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	});
+
 
 	// Подписка на рассылку
 	$(".sending-request").submit(function () {
