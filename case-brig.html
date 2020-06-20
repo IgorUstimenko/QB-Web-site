@@ -35,13 +35,13 @@
             <!-- /.links-ul-->
             <ul class="links-ul">
                 <li class="links-li">
-                    <a href="" class="link-li-a">О Союзе</a>
+                    <a href="index.html" class="link-li-a">О нас</a>
                 </li>
                 <li class="links-li">
-                    <a href="!#" class="link-li-a active">Портфолио</a>
+                    <a href="" onclick="return false;" class="link-li-a active">Портфолио</a>
                 </li>
                 <li class="links-li">
-                    <a href="!#" class="link-li-a">Блог</a>
+                    <a href="" onclick="return false;" class="link-li-a">Блог</a>
                 </li>
             </ul>
             <!-- links-ul -->
@@ -100,19 +100,19 @@
                                             name="where_know" id="#where_know" required />
                                     </div>
                                     <div class="btn-set">
-                                        <button type="button" class="from-about-btn">
+                                        <button type="button" class="from-about-btn modal-cases-btn">
                                             Рекомендации
                                         </button>
-                                        <button type="button" class="from-about-btn">
+                                        <button type="button" class="from-about-btn modal-cases-btn">
                                             Реклама
                                         </button>
-                                        <button type="button" class="from-about-btn">
+                                        <button type="button" class="from-about-btn modal-cases-btn">
                                             СМИ
                                         </button>
-                                        <button type="button" class="from-about-btn">
+                                        <button type="button" class="from-about-btn modal-cases-btn">
                                             Соцсети
                                         </button>
-                                        <button type="button" class="from-about-btn">
+                                        <button type="button" class="from-about-btn modal-cases-btn">
                                             Выступления
                                         </button>
                                     </div>
@@ -366,7 +366,10 @@
                     </div>
                 </div>
                 <div class="block-form">
-                    <form class="callback-form">
+                    <form class="callback-form" id="#case_form">
+                        <input type="hidden" name="project_name" value="BQAgency">
+                        <input type="hidden" name="admin_email" value="zhernokleew2004@gmail.com">
+                        <input type="hidden" name="form_subject" value="Заявка со страницы брига">
                         <div class="top-row">
                             <div class="left-side">
                                 <h3 class="form-header">
@@ -383,36 +386,39 @@
                             </div>
                             <div class="right-side">
                                 <div class="form-field">
-                                    <input type="text" class="form-input" placeholder="Ваше имя *" />
+                                    <input type="text" class="form-input" placeholder="Ваше имя *" name="user_name" />
                                 </div>
                                 <div class="form-field">
-                                    <input type="email" class="form-input" placeholder="Ваш email *" />
+                                    <input type="email" class="form-input" placeholder="Ваш email *"
+                                        name="user_email" />
                                 </div>
                                 <div class="form-field">
-                                    <input type="text" class="form-input tel-input" placeholder="Ваш телефон *" />
+                                    <input type="text" class="form-input tel-input" placeholder="Ваше телефон *"
+                                        name="user_phone" />
                                 </div>
                                 <div class="form-field">
-                                    <input type="text" class="form-input" placeholder="Описание проекта" />
+                                    <input type="text" class="form-input" placeholder="Описание проекта"
+                                        name="project_descr" />
                                 </div>
                                 <div class="form-field from-about-field">
-                                    <div class="input-wrapper">
-                                        <input type="text" class="form-input whereInput"
-                                            placeholder="Откуда узнали о нас?" />
+                                    <div class="input-wrapper" id="#where_input_wrapper">
+                                        <input type="text" class="form-input" placeholder="Откуда узнали о нас?"
+                                            id="#where_input" name="where_know" />
                                     </div>
-                                    <div class="btn-set">
-                                        <button type="button" class="from-about-btn">
+                                    <div class="btn-set" id="#btns_wrapper">
+                                        <button type="button" class="from-about-btn cases-btn">
                                             Рекомендации
                                         </button>
-                                        <button type="button" class="from-about-btn">
+                                        <button type="button" class="from-about-btn cases-btn">
                                             Реклама
                                         </button>
-                                        <button type="button" class="from-about-btn">
+                                        <button type="button" class="from-about-btn cases-btn">
                                             СМИ
                                         </button>
-                                        <button type="button" class="from-about-btn">
+                                        <button type="button" class="from-about-btn cases-btn">
                                             Соцсети
                                         </button>
-                                        <button type="button" class="from-about-btn">
+                                        <button type="button" class="from-about-btn cases-btn">
                                             Выступления
                                         </button>
                                     </div>
