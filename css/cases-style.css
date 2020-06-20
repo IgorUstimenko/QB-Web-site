@@ -721,7 +721,6 @@ body {
 
 .thanks-modal-p {
   font-size: 1.2375rem;
-  margin-left: 2.6em;
 }
 
 .close-modal {
@@ -1149,6 +1148,7 @@ body {
     white-space: nowrap;
     margin-bottom: 1.5em;
     margin-top: 2em;
+    margin-left: 0em;
   }
 
   .thanks-modal-p {
