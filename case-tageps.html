@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ТагЭпс</title>
+    <title>Эпсилон</title>
     <!-- Подключение стилей -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     <link rel="stylesheet" href="./css/reset.css" />
@@ -35,13 +35,13 @@
             <!-- /.links-ul-->
             <ul class="links-ul">
                 <li class="links-li">
-                    <a href="" class="link-li-a">О Союзе</a>
+                    <a href="index.html" class="link-li-a">О нас</a>
                 </li>
                 <li class="links-li">
-                    <a href="!#" class="link-li-a">Портфолио</a>
+                    <a href="case-td.html" class="link-li-a active">Портфолио</a>
                 </li>
                 <li class="links-li">
-                    <a href="!#" class="link-li-a">Блог</a>
+                    <a href="" class="link-li-a" onclick="return false;">Блог</a>
                 </li>
             </ul>
             <!-- links-ul -->
@@ -175,7 +175,7 @@
                     </a>
                 </div>
                 <div class="case-header-info">
-                    <div class="info-icon">
+                    <div class="info-icon" style="width: 2.5rem; margin-top: 1.5em;">
                         <img src="./img/cases/tageps/logo_TE.svg" alt="" />
                     </div>
                     <div class="info-text-wrapper">
@@ -248,7 +248,8 @@
                     </div>
                 </div>
                 <div class="case-hero-image third-hero-image" data-aos="fade-left">
-                    <video autoplay loop src="./img/cases/tageps/epsilon web.mp4" muted></video>
+                    <video autoplay loop src="./img/cases/tageps/epsilon web.mp4" muted
+                        style="width: 90%; height: 40%;"></video>
                 </div>
                 <div class="case-customer-info">
                     <div class="row" data-aos="fade-in-up" data-aos-anchor-placement="bottom-bottom">
@@ -329,9 +330,6 @@
                         к которым бояться приступить.
                     </div>
                 </div>
-
-
-
                 <div class="our-works">
                     <div class="work first-work" style="
                                 background-image: url('./img/cases/our-works/kislorod-work.png');
@@ -343,7 +341,9 @@
                         <div class="work-title">
                             Медтехника <br />кислород
                         </div>
-                        <button class="more-btn">Посмотреть</button>
+                        <a href="case-kislorod.html">
+                            <button class="more-btn">Посмотреть</button>
+                        </a>
                     </div>
                     <div class="work second-work" style="
                                 background-image: url('./img/cases/our-works/td-work.png');
@@ -355,16 +355,23 @@
                         <div class="work-title">
                             Управляющая компания Твой Дом
                         </div>
-                        <button class="more-btn">Посмотреть</button>
+                        <a href="./case-td.html">
+                            <button class="more-btn">Посмотреть</button>
+                        </a>
                     </div>
                     <div class="scroll-section"></div>
-                    <div class="work third-work">
+                    <div class="work third-work" style="
+                    background-image: url('./img/cases/our-works/brig-work.png');
+                ">>
                         <div class="work-type">
-                            Интернет-магазин
+                            корпоративный сайт
                             <div class="work-year">2020</div>
                         </div>
-                        <div class="work-title">Магазин техники TagGSM</div>
-                        <button class="more-btn">Посмотреть</button>
+                        <div class="work-title">Транспортная
+                            компания Бриг</div>
+                        <a href="case-brig.html">
+                            <button class="more-btn">Посмотреть</button>
+                        </a>
                     </div>
                 </div>
                 <div class="block-form">
@@ -447,12 +454,30 @@
                 </div>
                 <div class="column-footer">
                     <div class="socials">
-                        <a href=""><img src="./img/cases/socials/inst-icon.svg" alt="" /></a><a href=""><img
-                                src="./img/cases/socials/yt-icon.svg" alt="" /></a><a href=""><img
-                                src="./img/cases/socials/fb-icon.svg" alt="" /></a><a href=""><img
-                                src="./img/cases/socials/telegram-icon.svg" alt="" /></a><a href=""><img
-                                src="./img/cases/socials/vk-icon.svg" alt="" /></a><a href=""><img
-                                src="./img/cases/socials/behance-icon.svg" alt="" /></a>
+                        <a href="https://www.instagram.com/blossomquantumagency/" target="_blank">
+                            <img src="./img/cases/socials/inst-icon.svg" alt="inst-icon"
+                                style="width: 1rem; height: 1rem;" />
+                        </a>
+                        <a href="#" onclick="return false;">
+                            <img src="./img/cases/socials/yt-icon.svg" alt="yt-icon"
+                                style="width: 1.1875rem; height: 0.9375rem;" />
+                        </a>
+                        <a href="#" onclick="return false;">
+                            <img src="./img/cases/socials/fb-icon.svg" alt="fb-icon"
+                                style="width: 0.5625rem; height: 1rem;" />
+                        </a>
+                        <a href="https://t.me/blossomquantum" target="_blank">
+                            <img src="./img/cases/socials/telegram-icon.svg" alt="tg-icon"
+                                style="width: 1rem; height: 0.875rem;" />
+                        </a>
+                        <a href="https://vk.com/blossomquantum" target="_blank">
+                            <img src="./img/cases/socials/vk-icon.svg" alt="vk-icon"
+                                style="width: 1.3125rem; height: 0.75rem;" />
+                        </a>
+                        <a href="https://www.behance.net/blossomit" target="_blank">
+                            <img src="./img/cases/socials/behance-icon.svg" alt="be-icon"
+                                style="width: 1.125rem; height: 0.75rem;" />
+                        </a>
                     </div>
                 </div>
             </div>
@@ -462,7 +487,7 @@
                     <a href="mailto:hey@bqagency.ru">hey@bqagency.ru</a>
                 </div>
                 <div class="column-footer">
-                    <a href="#">Презентация компании в pdf</a>
+                    <a href="./img/PresentationBQ.pdf" download="">Презентация компании в pdf</a>
                 </div>
             </div>
             <div class="column third-column">
@@ -744,7 +769,7 @@
                                 <form class="main-mobile-form">
                                     <input type="hidden" name="project_name" value="BQAgency">
                                     <input type="hidden" name="admin_email" value="zhernokleew2004@gmail.com">
-                                    <input type="hidden" name="form_subject" value="Заявка с мобильной версии">
+                                    <input type="hidden" name="form_subject" value="Заявка с мобильной версии Эпсилона">
 
                                     <input type="text" name="Имя пользователя" placeholder="Ваше имя *"
                                         class="mobile-sending-input" required>
@@ -787,7 +812,7 @@
                             </div>
                             <!-- /.mobile-contact-point-name -->
                             <div class="mobile-contact-point-descr">
-                                hey@BQAgency.ru
+                                hey@bqagency.ru
                             </div>
                             <!-- /.mobile-contact-point-descr -->
                         </div>
@@ -809,39 +834,39 @@
                             </div>
                             <!-- /.mobile-contact-point-name -->
                             <div class="mobile-contact-point-descr">
-                                hr@BQAgency.ru
+                                hr@bqagency.ru
                             </div>
                             <!-- /.mobile-contact-point-descr -->
                         </div>
                         <!-- /.mobile-contact-point-wrapper -->
                         <div class="mobile-soc-line-wrapper">
-                            <a href="!#">
+                            <a href="https://www.instagram.com/blossomquantumagency/" target="_blank">
                                 <img src="./img/mobile-img/mobile-soc-icons/inst.svg" alt="Icon of soc"
                                     class="mobile-soc-icon">
                             </a>
-                            <a href="!#">
+                            <a href="!#" onclick="return false;">
                                 <img src="./img/mobile-img/mobile-soc-icons/yt.svg" alt="Icon of soc"
                                     class="mobile-soc-icon">
                             </a>
-                            <a href="!#">
+                            <a href="!#" onclick="return false;">
                                 <img src="./img/mobile-img/mobile-soc-icons/fb.svg" alt="Icon of soc"
                                     class="mobile-soc-icon">
                             </a>
-                            <a href="!#">
+                            <a href="https://t.me/blossomquantum" target="_blank">
                                 <img src="./img/mobile-img/mobile-soc-icons/tl.svg" alt="Icon of soc"
                                     class="mobile-soc-icon">
                             </a>
-                            <a href="!#">
+                            <a href="https://vk.com/blossomquantum" target="_blank">
                                 <img src="./img/mobile-img/mobile-soc-icons/vk.svg" alt="Icon of soc"
                                     class="mobile-soc-icon">
                             </a>
-                            <a href="!#">
+                            <a href="https://www.behance.net/blossomit" target="_blank">
                                 <img src="./img/mobile-img/mobile-soc-icons/be.svg" alt="Icon of soc"
                                     class="mobile-soc-icon">
                             </a>
                         </div>
                         <!-- /.mobile-soc-line-wrapper -->
-                        <a class=" mobile-police-link-wrapper" href="1#">
+                        <a class=" mobile-police-link-wrapper" href="#">
                             <div class="mobile-police-link">
                                 Политика в отношении обработки персональных данных
                             </div>

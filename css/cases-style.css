@@ -246,7 +246,7 @@ body {
   content: "";
   display: block;
   position: absolute;
-  height: 2px;
+  height: 0.125rem;
   background-color: #f54068;
   width: 100vw;
   z-index: -1;
@@ -283,7 +283,7 @@ body {
 .conclusion-block {
   margin-left: 18.7rem;
   padding: 3.5rem 5.5rem;
-  border-left: 4px solid #f54068;
+  border-left: 0.25rem solid #f54068;
   margin-bottom: 10.5625rem;
 }
 
@@ -462,7 +462,7 @@ body {
   color: #242424;
 
   border: none;
-  border-bottom: 2px solid #242424;
+  border-bottom: 0.125rem solid #242424;
 }
 
 .block-form .callback-form .top-row .right-side .form-field>.form-input:focus~.form-field-label {
@@ -528,7 +528,7 @@ body {
   line-height: 140%;
   color: #242424;
   border: none;
-  border-bottom: 2px solid #242424;
+  border-bottom: 0.125rem solid #242424;
   background: transparent;
   text-align: center;
   cursor: pointer;
@@ -555,7 +555,7 @@ body {
 
 .block-form .callback-form .right-side .form-btn.submit-btn {
   color: #f54068;
-  border-bottom: 2px solid #f54068;
+  border-bottom: 0.125rem solid #f54068;
   margin: 5.125rem 0;
 }
 
@@ -735,6 +735,10 @@ body {
   height: 34.4375rem;
   margin-left: -13em;
 }
+
+
+
+
 
 @media (max-device-width: 600px) {
   .mobile-version {
