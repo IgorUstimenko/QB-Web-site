@@ -140,7 +140,7 @@ body {
   margin-bottom: 1.3125rem;
 }
 
-.back-btn .btn-arrow>img {
+.back-btn .btn-arrow > img {
   width: 100%;
 }
 
@@ -187,13 +187,13 @@ body {
   margin-top: 7.5rem;
 }
 
-.case-content .case-hero-image>img {
+.case-content .case-hero-image > img {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
 
-.case-customer-info .row+.row {
+.case-customer-info .row + .row {
   margin-top: 9.9375rem;
 }
 
@@ -262,7 +262,7 @@ body {
   margin: 10.5rem 0;
 }
 
-.case-bottom-image>img {
+.case-bottom-image > img {
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -313,19 +313,22 @@ body {
 
 .our-works .work.first-work {
   margin: 0;
-  background: url("./../img/cases/our-works/brig-work.png") no-repeat left bottom;
+  background: url("./../img/cases/our-works/brig-work.png") no-repeat left
+    bottom;
   background-size: cover;
   width: 40%;
 }
 
 .our-works .work.second-work {
-  background: url("./../img/cases/our-works/tageps-work.png") no-repeat left bottom;
+  background: url("./../img/cases/our-works/tageps-work.png") no-repeat left
+    bottom;
   background-size: cover;
   width: calc(35% - 0.4375rem);
 }
 
 .our-works .work.third-work {
-  background: url("./../img/cases/our-works/taggsm-work.png") no-repeat left bottom;
+  background: url("./../img/cases/our-works/taggsm-work.png") no-repeat left
+    bottom;
   background-size: cover;
   width: calc(25% - 0.4375rem);
 }
@@ -465,7 +468,13 @@ body {
   border-bottom: 0.125rem solid #242424;
 }
 
-.block-form .callback-form .top-row .right-side .form-field>.form-input:focus~.form-field-label {
+.block-form
+  .callback-form
+  .top-row
+  .right-side
+  .form-field
+  > .form-input:focus
+  ~ .form-field-label {
   top: -1rem;
   font-size: 0.5rem;
 }
@@ -478,7 +487,12 @@ body {
   padding: 0;
 }
 
-.block-form .callback-form .top-row .right-side .form-field .input-wrapper.hidden {
+.block-form
+  .callback-form
+  .top-row
+  .right-side
+  .form-field
+  .input-wrapper.hidden {
   width: 0;
 }
 
@@ -503,7 +517,12 @@ body {
   overflow: hidden;
 }
 
-.block-form .callback-form .top-row .right-side .form-field.from-about-field .btn-set {
+.block-form
+  .callback-form
+  .top-row
+  .right-side
+  .form-field.from-about-field
+  .btn-set {
   display: flex;
   /* overflow: hidden; */
   /* justify-content: space-around; */
@@ -512,12 +531,23 @@ body {
   width: 100%;
 }
 
-.block-form .callback-form .top-row .right-side .form-field.from-about-field .btn-set.hidden {
+.block-form
+  .callback-form
+  .top-row
+  .right-side
+  .form-field.from-about-field
+  .btn-set.hidden {
   width: 0;
   /* flex: 0; */
 }
 
-.block-form .callback-form .top-row .right-side .form-field.from-about-field .btn-set .from-about-btn {
+.block-form
+  .callback-form
+  .top-row
+  .right-side
+  .form-field.from-about-field
+  .btn-set
+  .from-about-btn {
   display: block;
   width: 100%;
   padding: 0 1.3125rem 1.3125rem 1rem;
@@ -534,7 +564,13 @@ body {
   cursor: pointer;
 }
 
-.block-form .callback-form .top-row .right-side .form-field.from-about-field .btn-set .from-about-btn.active {
+.block-form
+  .callback-form
+  .top-row
+  .right-side
+  .form-field.from-about-field
+  .btn-set
+  .from-about-btn.active {
   border-bottom-color: #f54068;
   color: #f54068;
 }
@@ -660,7 +696,8 @@ body {
   padding-bottom: 1em;
 }
 
-.modal-form-wrapper {}
+.modal-form-wrapper {
+}
 
 .modal-block-form-wrapper {
   margin-top: 0em;
@@ -735,10 +772,6 @@ body {
   height: 34.4375rem;
   margin-left: -13em;
 }
-
-
-
-
 
 @media (max-device-width: 600px) {
   .mobile-version {
@@ -821,7 +854,7 @@ body {
     margin-top: 9rem;
   }
 
-  .case-content .case-hero-image>img {
+  .case-content .case-hero-image > img {
     height: 25.341rem;
     width: 95.5%;
     object-fit: cover;
@@ -962,12 +995,13 @@ body {
   /* Форма */
 
   .do-you-need-a-site-page {
-    margin: 0 auto;
-    margin-top: 21em;
+    margin-top: 226em;
   }
 
   .mobile-form-box {
     width: 27.84rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .mobile-form-content-wrapper {
@@ -1159,7 +1193,7 @@ body {
     font-size: 1.589rem;
   }
 
-  .thanks-modal-p+.thanks-modal-p {
+  .thanks-modal-p + .thanks-modal-p {
     margin-bottom: 2.7em;
   }
 
