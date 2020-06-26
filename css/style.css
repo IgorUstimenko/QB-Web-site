@@ -49,7 +49,7 @@ body {
 
 .logos-ul {
   justify-content: space-between;
-  margin-right: 5.79em;
+  margin-right: 0em;
   margin-top: 0.2em;
 }
 
@@ -69,13 +69,11 @@ body {
 }
 
 .links-li + .links-li {
-  padding-left: 2.9em;
+  padding-left: 4em;
 }
 
-.user-icon {
-  margin-top: 0.1em;
-  margin-left: 2.25em;
-  margin-right: 2.2em;
+.logo {
+  margin-left: 1.3em;
 }
 
 .link-li-a {

@@ -112,11 +112,19 @@ body {
 }
 
 .main-nav .logos-ul {
-  margin-right: 0;
+  margin-right: 0em;
+}
+
+.logo {
+  margin-left: 0.2em;
 }
 
 .links-ul {
-  margin-left: 2rem;
+  margin-left: 0em;
+}
+
+.links-li + .links-li {
+  padding-left: 6em;
 }
 
 .case-header {
